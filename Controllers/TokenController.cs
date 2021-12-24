@@ -1,60 +1,44 @@
 ﻿using System;
 using System.Net;
 using System.Web.Http;
-using Indigo.CardReq;
-using Indigo.Models;
 using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
-using Veneka.Module.TranzwareCompassPlusFIMI;
-using System.IO;
-using static Veneka.Module.TranzwareCompassPlusFIMI.ServicesValidated;
-using System.Linq;
-using System.Text.RegularExpressions;
 using Newtonsoft.Json.Linq;
-using System.Configuration;
-using Veneka.Module.TranzwareCompassPlusFIMI.Models;
-using Indigo.Utility;
 using Indigo.Auth;
+using Veneka.Indigo.Abstractons.Models;
 
 namespace Indigo.Controllers
 {
     [Serializable]
     public class TokenController : ApiController
     {
-            // GET: Login
-            [HttpPost]
+        // GET: Login
+        [HttpPost]
 
-            public JObject Auth([FromBody] Token login)
+        public JObject Auth([FromBody] Token login)
+        {
+
+            AuthenticationResponse resp = null;
+            JObject myCleanJsonObject = null;
+
+            try
             {
-
-               AuthenticationResponse resp = null;
-
-                try
-                {
-                    //string  Fidelity_API = new Fidelity_API();
-                    string username = login.username;
-                    string password = login.password;
-                    string resul = "Success";
-                     JObject myCleanJsonObject = null;
-
-
-
-
-
-                //Sending to wsdl card request fuction
-
-                //Sending to wsdl card request fuction
+                
+                string resul = "Success";
+               
+                                
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-                    ServicePointManager.ServerCertificateValidationCallback +=
-                        (sender, cert, chain, sslPolicyErrors) => { return true; };
+                ServicePointManager.ServerCertificateValidationCallback +=
+                    (sender, cert, chain, sslPolicyErrors) => { return true; };
 
-                    AuthenticationClient prof = new AuthenticationClient();
+                AuthenticationClient prof = new AuthenticationClient();
 
 
-                if (username != null && password != null)
+                if (!string.IsNullOrEmpty(login.UserName) && !string.IsNullOrEmpty(login.UserName) )
                 {
-                    resp = prof.Login(username, password);
+                    resp = prof.Login(login.UserName, login.Password);
 
-                    if (resp.AuthToken != null) {
+                    if (resp.AuthToken != null)
+                    {
 
                         var result = new
                         {
@@ -68,8 +52,7 @@ namespace Indigo.Controllers
                         System.Web.Script.Serialization.JavaScriptSerializer js = new System.Web.Script.Serialization.JavaScriptSerializer();
 
                         var rt = js.Serialize(result);
-
-                        //rt = JsonConvert.SerializeObject(result, new JsonSerializerSettings { Formatting = Formatting.None });
+                       
                         rt = rt.Replace(@"\\", "");
 
                         myCleanJsonObject = JObject.Parse(rt);
@@ -77,22 +60,46 @@ namespace Indigo.Controllers
                     }
 
                 }
-
-                   
-
-
-
-                    return myCleanJsonObject;
-
-
-
-                }
-                catch (IndexOutOfRangeException)
+                else
                 {
+                    var result = new
+                    {
+                        Message = "Failure UserName and Password are required",
+                        Code = 400
+                       
+                    };
+                    System.Web.Script.Serialization.JavaScriptSerializer js = new System.Web.Script.Serialization.JavaScriptSerializer();
 
+                    var rt = js.Serialize(result);
 
-                    return (JObject)"Exception";
+                    rt = rt.Replace(@"\\", "");
+
+                    myCleanJsonObject = JObject.Parse(rt);
                 }
+
+                return myCleanJsonObject;
+
+
+            }
+            catch (Exception exec)
+            {
+                var result = new
+                {
+                    Message = $"{exec}",
+                    Code = 500
+
+                };
+                System.Web.Script.Serialization.JavaScriptSerializer js = new System.Web.Script.Serialization.JavaScriptSerializer();
+
+                var rt = js.Serialize(result);
+
+                rt = rt.Replace(@"\\", "");
+
+                myCleanJsonObject = JObject.Parse(rt);
+
+                return myCleanJsonObject = JObject.Parse(rt);
+                
             }
         }
     }
+}

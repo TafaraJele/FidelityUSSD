@@ -327,23 +327,12 @@
     <Compile Include="Controllers\getCardBalanceController.cs" />
     <Compile Include="Controllers\StatusController.cs" />
     <Compile Include="Controllers\TokenController.cs" />
-    <Compile Include="Enums\MessageType.cs" />
-    <Compile Include="Enums\ResponseType.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountDetails.cs" />
-    <Compile Include="Models\BalanceEnquiry.cs" />
-    <Compile Include="Models\CardList.cs" />
-    <Compile Include="Models\CardStatus.cs" />
-    <Compile Include="Models\FundsLoad.cs" />
-    <Compile Include="Models\Messages.cs" />
-    <Compile Include="Models\StatementResponse.cs" />
-    <Compile Include="Models\Statements.cs" />
-    <Compile Include="Models\TextPlainFormatter.cs" />
-    <Compile Include="Models\Token.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\MyAppConfigSettings.cs" />
+    <Compile Include="Utility\CommonServices.cs" />
     <Compile Include="Utility\FIMILogger.cs" />
     <Compile Include="Utility\ILogger.cs" />
   </ItemGroup>
@@ -1513,6 +1502,14 @@
     <WCFMetadataStorage Include="Connected Services\IndigoWebService\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Veneka.Indigo.Abstractons\Veneka.Indigo.Abstractions.csproj">
+      <Project>{134c9ded-123c-4300-99fd-6108584b13fb}</Project>
+      <Name>Veneka.Indigo.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Veneka.Indigo.Core\Veneka.Indigo.Core.csproj">
+      <Project>{1dfaf3b6-3263-4989-9639-c95de4c696c1}</Project>
+      <Name>Veneka.Indigo.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="intergrations\Veneka.Module.TranzwareCompassPlusFIMI\Veneka.Module.TranzwareCompassPlusFIMI.csproj">
       <Project>{a6a322b1-4916-40db-8d02-d598f9a2b21d}</Project>
       <Name>Veneka.Module.TranzwareCompassPlusFIMI</Name>
