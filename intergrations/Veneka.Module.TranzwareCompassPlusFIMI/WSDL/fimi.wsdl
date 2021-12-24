@@ -1,0 +1,4645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TWO 5.2.6.3 -->
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:types="http://schemas.compassplus.com/two/1.0/fimi_types.xsd" xmlns:mess="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:wsdl="http://schemas.compassplus.com/two/1.0/fimi.wsdl" xmlns:user="http://schemas.compassplus.com/two/1.0/fimi_userdefined.xsd" targetNamespace="http://schemas.compassplus.com/two/1.0/fimi.wsdl">
+	<types>
+		<xs:schema elementFormDefault="unqualified" attributeFormDefault="unqualified">
+			<xs:import namespace="http://schemas.compassplus.com/two/1.0/fimi.xsd" schemaLocation="fimi.xsd"/>
+		</xs:schema>
+	</types>
+	<message name="ATMCommandRq">
+		<part name="Request" element="mess:ATMCommandRq"/>
+	</message>
+	<message name="ATMCommandRp">
+		<part name="Response" element="mess:ATMCommandRp"/>
+	</message>
+	<message name="AcctCreditRq">
+		<part name="Request" element="mess:AcctCreditRq"/>
+	</message>
+	<message name="AcctCreditRp">
+		<part name="Response" element="mess:AcctCreditRp"/>
+	</message>
+	<message name="AcctDebitRq">
+		<part name="Request" element="mess:AcctDebitRq"/>
+	</message>
+	<message name="AcctDebitRp">
+		<part name="Response" element="mess:AcctDebitRp"/>
+	</message>
+	<message name="AddEMVScriptRq">
+		<part name="Request" element="mess:AddEMVScriptRq"/>
+	</message>
+	<message name="AddEMVScriptRp">
+		<part name="Response" element="mess:AddEMVScriptRp"/>
+	</message>
+	<message name="AddRateRq">
+		<part name="Request" element="mess:AddRateRq"/>
+	</message>
+	<message name="AddRateRp">
+		<part name="Response" element="mess:AddRateRp"/>
+	</message>
+	<message name="AdjustToVISARq">
+		<part name="Request" element="mess:AdjustToVISARq"/>
+	</message>
+	<message name="AdjustToVISARp">
+		<part name="Response" element="mess:AdjustToVISARp"/>
+	</message>
+	<message name="BalanceInquiryRq">
+		<part name="Request" element="mess:BalanceInquiryRq"/>
+	</message>
+	<message name="BalanceInquiryRp">
+		<part name="Response" element="mess:BalanceInquiryRp"/>
+	</message>
+	<message name="BeginTransactionRq">
+		<part name="Request" element="mess:BeginTransactionRq"/>
+	</message>
+	<message name="BeginTransactionRp">
+		<part name="Response" element="mess:BeginTransactionRp"/>
+	</message>
+	<message name="CNSCardConfigRq">
+		<part name="Request" element="mess:CNSCardConfigRq"/>
+	</message>
+	<message name="CNSCardConfigRp">
+		<part name="Response" element="mess:CNSCardConfigRp"/>
+	</message>
+	<message name="CardRiskControlRq">
+		<part name="Request" element="mess:CardRiskControlRq"/>
+	</message>
+	<message name="CardRiskControlRp">
+		<part name="Response" element="mess:CardRiskControlRp"/>
+	</message>
+	<message name="ChangeAcctBalancesRq">
+		<part name="Request" element="mess:ChangeAcctBalancesRq"/>
+	</message>
+	<message name="ChangeAcctBalancesRp">
+		<part name="Response" element="mess:ChangeAcctBalancesRp"/>
+	</message>
+	<message name="ChangePasswordRq">
+		<part name="Request" element="mess:ChangePasswordRq"/>
+	</message>
+	<message name="ChangePasswordRp">
+		<part name="Response" element="mess:ChangePasswordRp"/>
+	</message>
+	<message name="CommitRq">
+		<part name="Request" element="mess:CommitRq"/>
+	</message>
+	<message name="CommitRp">
+		<part name="Response" element="mess:CommitRp"/>
+	</message>
+	<message name="ConfirmCopyRequestToVISARq">
+		<part name="Request" element="mess:ConfirmCopyRequestToVISARq"/>
+	</message>
+	<message name="ConfirmCopyRequestToVISARp">
+		<part name="Response" element="mess:ConfirmCopyRequestToVISARp"/>
+	</message>
+	<message name="CreateAccountRq">
+		<part name="Request" element="mess:CreateAccountRq"/>
+	</message>
+	<message name="CreateAccountRp">
+		<part name="Response" element="mess:CreateAccountRp"/>
+	</message>
+	<message name="CreateTBCustomerRq">
+		<part name="Request" element="mess:CreateTBCustomerRq"/>
+	</message>
+	<message name="CreateTBCustomerRp">
+		<part name="Response" element="mess:CreateTBCustomerRp"/>
+	</message>
+	<message name="CreateVCardRq">
+		<part name="Request" element="mess:CreateVCardRq"/>
+	</message>
+	<message name="CreateVCardRp">
+		<part name="Response" element="mess:CreateVCardRp"/>
+	</message>
+	<message name="DeleteEMVScriptRq">
+		<part name="Request" element="mess:DeleteEMVScriptRq"/>
+	</message>
+	<message name="DeleteEMVScriptRp">
+		<part name="Response" element="mess:DeleteEMVScriptRp"/>
+	</message>
+	<message name="DeleteRateRq">
+		<part name="Request" element="mess:DeleteRateRq"/>
+	</message>
+	<message name="DeleteRateRp">
+		<part name="Response" element="mess:DeleteRateRp"/>
+	</message>
+	<message name="FeeToVISARq">
+		<part name="Request" element="mess:FeeToVISARq"/>
+	</message>
+	<message name="FeeToVISARp">
+		<part name="Response" element="mess:FeeToVISARp"/>
+	</message>
+	<message name="GetATMActivityRq">
+		<part name="Request" element="mess:GetATMActivityRq"/>
+	</message>
+	<message name="GetATMActivityRp">
+		<part name="Response" element="mess:GetATMActivityRp"/>
+	</message>
+	<message name="GetATMAdminTransRq">
+		<part name="Request" element="mess:GetATMAdminTransRq"/>
+	</message>
+	<message name="GetATMAdminTransRp">
+		<part name="Response" element="mess:GetATMAdminTransRp"/>
+	</message>
+	<message name="GetATMEventsRq">
+		<part name="Request" element="mess:GetATMEventsRq"/>
+	</message>
+	<message name="GetATMEventsRp">
+		<part name="Response" element="mess:GetATMEventsRp"/>
+	</message>
+	<message name="GetATMFitnessRq">
+		<part name="Request" element="mess:GetATMFitnessRq"/>
+	</message>
+	<message name="GetATMFitnessRp">
+		<part name="Response" element="mess:GetATMFitnessRp"/>
+	</message>
+	<message name="GetATMHardwareRq">
+		<part name="Request" element="mess:GetATMHardwareRq"/>
+	</message>
+	<message name="GetATMHardwareRp">
+		<part name="Response" element="mess:GetATMHardwareRp"/>
+	</message>
+	<message name="GetATMHoppersRq">
+		<part name="Request" element="mess:GetATMHoppersRq"/>
+	</message>
+	<message name="GetATMHoppersRp">
+		<part name="Response" element="mess:GetATMHoppersRp"/>
+	</message>
+	<message name="GetATMMediaRq">
+		<part name="Request" element="mess:GetATMMediaRq"/>
+	</message>
+	<message name="GetATMMediaRp">
+		<part name="Response" element="mess:GetATMMediaRp"/>
+	</message>
+	<message name="GetATMSensorsRq">
+		<part name="Request" element="mess:GetATMSensorsRq"/>
+	</message>
+	<message name="GetATMSensorsRp">
+		<part name="Response" element="mess:GetATMSensorsRp"/>
+	</message>
+	<message name="GetATMStatusRq">
+		<part name="Request" element="mess:GetATMStatusRq"/>
+	</message>
+	<message name="GetATMStatusRp">
+		<part name="Response" element="mess:GetATMStatusRp"/>
+	</message>
+	<message name="GetAcct2CardLimitsRq">
+		<part name="Request" element="mess:GetAcct2CardLimitsRq"/>
+	</message>
+	<message name="GetAcct2CardLimitsRp">
+		<part name="Response" element="mess:GetAcct2CardLimitsRp"/>
+	</message>
+	<message name="GetAcctInfoRq">
+		<part name="Request" element="mess:GetAcctInfoRq"/>
+	</message>
+	<message name="GetAcctInfoRp">
+		<part name="Response" element="mess:GetAcctInfoRp"/>
+	</message>
+	<message name="GetAcctLimitsRq">
+		<part name="Request" element="mess:GetAcctLimitsRq"/>
+	</message>
+	<message name="GetAcctLimitsRp">
+		<part name="Response" element="mess:GetAcctLimitsRp"/>
+	</message>
+	<message name="GetAcctStatementRq">
+		<part name="Request" element="mess:GetAcctStatementRq"/>
+	</message>
+	<message name="GetAcctStatementRp">
+		<part name="Response" element="mess:GetAcctStatementRp"/>
+	</message>
+	<message name="GetBackOfficeInfoRq">
+		<part name="Request" element="mess:GetBackOfficeInfoRq"/>
+	</message>
+	<message name="GetBackOfficeInfoRp">
+		<part name="Response" element="mess:GetBackOfficeInfoRp"/>
+	</message>
+	<message name="GetCardInfoRq">
+		<part name="Request" element="mess:GetCardInfoRq"/>
+	</message>
+	<message name="GetCardInfoRp">
+		<part name="Response" element="mess:GetCardInfoRp"/>
+	</message>
+	<message name="GetCardLimitsRq">
+		<part name="Request" element="mess:GetCardLimitsRq"/>
+	</message>
+	<message name="GetCardLimitsRp">
+		<part name="Response" element="mess:GetCardLimitsRp"/>
+	</message>
+	<message name="GetCardStatementRq">
+		<part name="Request" element="mess:GetCardStatementRq"/>
+	</message>
+	<message name="GetCardStatementRp">
+		<part name="Response" element="mess:GetCardStatementRp"/>
+	</message>
+	<message name="GetCorrespAcctInfoRq">
+		<part name="Request" element="mess:GetCorrespAcctInfoRq"/>
+	</message>
+	<message name="GetCorrespAcctInfoRp">
+		<part name="Response" element="mess:GetCorrespAcctInfoRp"/>
+	</message>
+	<message name="GetEMVScriptsRq">
+		<part name="Request" element="mess:GetEMVScriptsRq"/>
+	</message>
+	<message name="GetEMVScriptsRp">
+		<part name="Response" element="mess:GetEMVScriptsRp"/>
+	</message>
+	<message name="GetFIMIClerksRq">
+		<part name="Request" element="mess:GetFIMIClerksRq"/>
+	</message>
+	<message name="GetFIMIClerksRp">
+		<part name="Response" element="mess:GetFIMIClerksRp"/>
+	</message>
+	<message name="GetFIMITransRq">
+		<part name="Request" element="mess:GetFIMITransRq"/>
+	</message>
+	<message name="GetFIMITransRp">
+		<part name="Response" element="mess:GetFIMITransRp"/>
+	</message>
+	<message name="GetPersonsHierarchyRq">
+		<part name="Request" element="mess:GetPersonsHierarchyRq"/>
+	</message>
+	<message name="GetPersonsHierarchyRp">
+		<part name="Response" element="mess:GetPersonsHierarchyRp"/>
+	</message>
+	<message name="GetPersonInfoRq">
+		<part name="Request" element="mess:GetPersonInfoRq"/>
+	</message>
+	<message name="GetPersonInfoRp">
+		<part name="Response" element="mess:GetPersonInfoRp"/>
+	</message>
+	<message name="GetRateGroupsRq">
+		<part name="Request" element="mess:GetRateGroupsRq"/>
+	</message>
+	<message name="GetRateGroupsRp">
+		<part name="Response" element="mess:GetRateGroupsRp"/>
+	</message>
+	<message name="GetRatesRq">
+		<part name="Request" element="mess:GetRatesRq"/>
+	</message>
+	<message name="GetRatesRp">
+		<part name="Response" element="mess:GetRatesRp"/>
+	</message>
+	<message name="GetRetailerListRq">
+		<part name="Request" element="mess:GetRetailerListRq"/>
+	</message>
+	<message name="GetRetailerListRp">
+		<part name="Response" element="mess:GetRetailerListRp"/>
+	</message>
+	<message name="GetTLADirRq">
+		<part name="Request" element="mess:GetTLADirRq"/>
+	</message>
+	<message name="GetTLADirRp">
+		<part name="Response" element="mess:GetTLADirRp"/>
+	</message>
+	<message name="GetTermListRq">
+		<part name="Request" element="mess:GetTermListRq"/>
+	</message>
+	<message name="GetTermListRp">
+		<part name="Response" element="mess:GetTermListRp"/>
+	</message>
+	<message name="GetTransInfoRq">
+		<part name="Request" element="mess:GetTransInfoRq"/>
+	</message>
+	<message name="GetTransInfoRp">
+		<part name="Response" element="mess:GetTransInfoRp"/>
+	</message>
+	<message name="InitSessionRq">
+		<part name="Request" element="mess:InitSessionRq"/>
+	</message>
+	<message name="InitSessionRp">
+		<part name="Response" element="mess:InitSessionRp"/>
+	</message>
+	<message name="LocalStoplistRq">
+		<part name="Request" element="mess:LocalStoplistRq"/>
+	</message>
+	<message name="LocalStoplistRp">
+		<part name="Response" element="mess:LocalStoplistRp"/>
+	</message>
+	<message name="LogonRq">
+		<part name="Request" element="mess:LogonRq"/>
+	</message>
+	<message name="LogonRp">
+		<part name="Response" element="mess:LogonRp"/>
+	</message>
+	<message name="LogoffRq">
+		<part name="Request" element="mess:LogoffRq"/>
+	</message>
+	<message name="LogoffRp">
+		<part name="Response" element="mess:LogoffRp"/>
+	</message>
+	<message name="MCStoplistRq">
+		<part name="Request" element="mess:MCStoplistRq"/>
+	</message>
+	<message name="MCStoplistRp">
+		<part name="Response" element="mess:MCStoplistRp"/>
+	</message>
+	<message name="ModifyCorrespAcctRq">
+		<part name="Request" element="mess:ModifyCorrespAcctRq"/>
+	</message>
+	<message name="ModifyCorrespAcctRp">
+		<part name="Response" element="mess:ModifyCorrespAcctRp"/>
+	</message>
+	<message name="ModifyRateRq">
+		<part name="Request" element="mess:ModifyRateRq"/>
+	</message>
+	<message name="ModifyRateRp">
+		<part name="Response" element="mess:ModifyRateRp"/>
+	</message>
+	<message name="POSCommandRq">
+		<part name="Request" element="mess:POSCommandRq"/>
+	</message>
+	<message name="POSCommandRp">
+		<part name="Response" element="mess:POSCommandRp"/>
+	</message>
+	<message name="POSStateRq">
+		<part name="Request" element="mess:POSStateRq"/>
+	</message>
+	<message name="POSStateRp">
+		<part name="Response" element="mess:POSStateRp"/>
+	</message>
+	<message name="RepresentToVISARq">
+		<part name="Request" element="mess:RepresentToVISARq"/>
+	</message>
+	<message name="RepresentToVISARp">
+		<part name="Response" element="mess:RepresentToVISARp"/>
+	</message>
+	<message name="ResetBadPINTriesRq">
+		<part name="Request" element="mess:ResetBadPINTriesRq"/>
+	</message>
+	<message name="ResetBadPINTriesRp">
+		<part name="Response" element="mess:ResetBadPINTriesRp"/>
+	</message>
+	<message name="ResetCard2AcctLinkRq">
+		<part name="Request" element="mess:ResetCard2AcctLinkRq"/>
+	</message>
+	<message name="ResetCard2AcctLinkRp">
+		<part name="Response" element="mess:ResetCard2AcctLinkRp"/>
+	</message>
+	<message name="Reset_IB_BadPINTriesRq">
+		<part name="Request" element="mess:Reset_IB_BadPINTriesRq"/>
+	</message>
+	<message name="Reset_IB_BadPINTriesRp">
+		<part name="Response" element="mess:Reset_IB_BadPINTriesRp"/>
+	</message>
+	<message name="Reset_IB_PINRq">
+		<part name="Request" element="mess:Reset_IB_PINRq"/>
+	</message>
+	<message name="Reset_IB_PINRp">
+		<part name="Response" element="mess:Reset_IB_PINRp"/>
+	</message>
+	<message name="ReverseTransactionRq">
+		<part name="Request" element="mess:ReverseTransactionRq"/>
+	</message>
+	<message name="ReverseTransactionRp">
+		<part name="Response" element="mess:ReverseTransactionRp"/>
+	</message>
+	<message name="RollBackRq">
+		<part name="Request" element="mess:RollBackRq"/>
+	</message>
+	<message name="RollBackRp">
+		<part name="Response" element="mess:RollBackRp"/>
+	</message>
+	<message name="SetAcct2CardLimitsRq">
+		<part name="Request" element="mess:SetAcct2CardLimitsRq"/>
+	</message>
+	<message name="SetAcct2CardLimitsRp">
+		<part name="Response" element="mess:SetAcct2CardLimitsRp"/>
+	</message>
+	<message name="SetAcct2CardStatusRq">
+		<part name="Request" element="mess:SetAcct2CardStatusRq"/>
+	</message>
+	<message name="SetAcct2CardStatusRp">
+		<part name="Response" element="mess:SetAcct2CardStatusRp"/>
+	</message>
+	<message name="SetAcctLimitsRq">
+		<part name="Request" element="mess:SetAcctLimitsRq"/>
+	</message>
+	<message name="SetAcctLimitsRp">
+		<part name="Response" element="mess:SetAcctLimitsRp"/>
+	</message>
+	<message name="SetAcctStatusRq">
+		<part name="Request" element="mess:SetAcctStatusRq"/>
+	</message>
+	<message name="SetAcctStatusRp">
+		<part name="Response" element="mess:SetAcctStatusRp"/>
+	</message>
+	<message name="SetCard2AcctDescrRq">
+		<part name="Request" element="mess:SetCard2AcctDescrRq"/>
+	</message>
+	<message name="SetCard2AcctDescrRp">
+		<part name="Response" element="mess:SetCard2AcctDescrRp"/>
+	</message>
+	<message name="SetCardExpirationRq">
+		<part name="Request" element="mess:SetCardExpirationRq"/>
+	</message>
+	<message name="SetCardExpirationRp">
+		<part name="Response" element="mess:SetCardExpirationRp"/>
+	</message>
+	<message name="SetCardLimitsRq">
+		<part name="Request" element="mess:SetCardLimitsRq"/>
+	</message>
+	<message name="SetCardLimitsRp">
+		<part name="Response" element="mess:SetCardLimitsRp"/>
+	</message>
+	<message name="SetCardPVVRq">
+		<part name="Request" element="mess:SetCardPVVRq"/>
+	</message>
+	<message name="SetCardPVVRp">
+		<part name="Response" element="mess:SetCardPVVRp"/>
+	</message>
+	<message name="SetCardProfileRq">
+		<part name="Request" element="mess:SetCardProfileRq"/>
+	</message>
+	<message name="SetCardProfileRp">
+		<part name="Response" element="mess:SetCardProfileRp"/>
+	</message>
+	<message name="SetCardStatusRq">
+		<part name="Request" element="mess:SetCardStatusRq"/>
+	</message>
+	<message name="SetCardStatusRp">
+		<part name="Response" element="mess:SetCardStatusRp"/>
+	</message>
+	<message name="SetEMVCardParamsRq">
+		<part name="Request" element="mess:SetEMVCardParamsRq"/>
+	</message>
+	<message name="SetEMVCardParamsRp">
+		<part name="Response" element="mess:SetEMVCardParamsRp"/>
+	</message>
+	<message name="SetEMVScriptSeqNoRq">
+		<part name="Request" element="mess:SetEMVScriptSeqNoRq"/>
+	</message>
+	<message name="SetEMVScriptSeqNoRp">
+		<part name="Response" element="mess:SetEMVScriptSeqNoRp"/>
+	</message>
+	<message name="SetReissuedCardVariantRq">
+		<part name="Request" element="mess:SetReissuedCardVariantRq"/>
+	</message>
+	<message name="SetReissuedCardVariantRp">
+		<part name="Response" element="mess:SetReissuedCardVariantRp"/>
+	</message>
+	<message name="SetTmpCardLimitsRq">
+		<part name="Request" element="mess:SetTmpCardLimitsRq"/>
+	</message>
+	<message name="SetTmpCardLimitsRp">
+		<part name="Response" element="mess:SetTmpCardLimitsRp"/>
+	</message>
+	<message name="TextToVISARq">
+		<part name="Request" element="mess:TextToVISARq"/>
+	</message>
+	<message name="TextToVISARp">
+		<part name="Response" element="mess:TextToVISARp"/>
+	</message>
+	<message name="UpdateCard2AcctLinkRq">
+		<part name="Request" element="mess:UpdateCard2AcctLinkRq"/>
+	</message>
+	<message name="UpdateCard2AcctLinkRp">
+		<part name="Response" element="mess:UpdateCard2AcctLinkRp"/>
+	</message>
+	<message name="UpdateEMVScriptRq">
+		<part name="Request" element="mess:UpdateEMVScriptRq"/>
+	</message>
+	<message name="UpdateEMVScriptRp">
+		<part name="Response" element="mess:UpdateEMVScriptRp"/>
+	</message>
+	<message name="VISAStoplistRq">
+		<part name="Request" element="mess:VISAStoplistRq"/>
+	</message>
+	<message name="VISAStoplistRp">
+		<part name="Response" element="mess:VISAStoplistRp"/>
+	</message>
+	<message name="ResetCardEMVATCRq">
+		<part name="Request" element="mess:ResetCardEMVATCRq"/>
+	</message>
+	<message name="ResetCardEMVATCRp">
+		<part name="Response" element="mess:ResetCardEMVATCRp"/>
+	</message>
+	<message name="GetCMSBufferRq">
+		<part name="Request" element="mess:GetCMSBufferRq"/>
+	</message>
+	<message name="GetCMSBufferRp">
+		<part name="Response" element="mess:GetCMSBufferRp"/>
+	</message>
+	<message name="GetCMSArchiveRq">
+		<part name="Request" element="mess:GetCMSArchiveRq"/>
+	</message>
+	<message name="GetCMSArchiveRp">
+		<part name="Response" element="mess:GetCMSArchiveRp"/>
+	</message>
+	<message name="GetCMSCommandsRq">
+		<part name="Request" element="mess:GetCMSCommandsRq"/>
+	</message>
+	<message name="GetCMSCommandsRp">
+		<part name="Response" element="mess:GetCMSCommandsRp"/>
+	</message>
+	<message name="AddCardVenorRq">
+		<part name="Request" element="mess:AddCardVendorRq"/>
+	</message>
+	<message name="AddCardVendorRp">
+		<part name="Response" element="mess:AddCardVendorRp"/>
+	</message>
+	<message name="DelCardVendorRq">
+		<part name="Request" element="mess:DelCardVendorRq"/>
+	</message>
+	<message name="DelCardVendorRp">
+		<part name="Response" element="mess:DelCardVendorRp"/>
+	</message>
+	<message name="GetIssuerHistoryRq">
+		<part name="Request" element="mess:GetIssuerHistoryRq"/>
+	</message>
+	<message name="GetIssuerHistoryRp">
+		<part name="Response" element="mess:GetIssuerHistoryRp"/>
+	</message>
+	<message name="GetIssuerHistoryDetailsRq">
+		<part name="Request" element="mess:GetIssuerHistoryDetailsRq"/>
+	</message>
+	<message name="GetIssuerHistoryDetailsRp">
+		<part name="Response" element="mess:GetIssuerHistoryDetailsRp"/>
+	</message>
+	<message name="GetUnitStateRq">
+		<part name="Request" element="mess:GetUnitStateRq"/>
+	</message>
+	<message name="GetUnitStateRp">
+		<part name="Response" element="mess:GetUnitStateRp"/>
+	</message>
+	<message name="UnitCommandRq">
+		<part name="Request" element="mess:UnitCommandRq"/>
+	</message>
+	<message name="UnitCommandRp">
+		<part name="Response" element="mess:UnitCommandRp"/>
+	</message>
+	<message name="SetTmpAcctLimitsRq">
+		<part name="Request" element="mess:SetTmpAcctLimitsRq"/>
+	</message>
+	<message name="SetTmpAcctLimitsRp">
+		<part name="Response" element="mess:SetTmpAcctLimitsRp"/>
+	</message>
+	<message name="POSRequestRq">
+		<part name="Request" element="mess:POSRequestRq"/>
+	</message>
+	<message name="POSRequestRp">
+		<part name="Response" element="mess:POSRequestRp"/>
+	</message>
+	<message name="GetWorkingKeyRq">
+		<part name="Request" element="mess:GetWorkingKeyRq"/>
+	</message>
+	<message name="GetWorkingKeyRp">
+		<part name="Response" element="mess:GetWorkingKeyRp"/>
+	</message>
+	<message name="GetPVV_PINOffsetRq">
+		<part name="Request" element="mess:GetPVV_PINOffsetRq"/>
+	</message>
+	<message name="GetPVV_PINOffsetRp">
+		<part name="Response" element="mess:GetPVV_PINOffsetRp"/>
+	</message>
+	<message name="GetCVVRq">
+		<part name="Request" element="mess:GetCVVRq"/>
+	</message>
+	<message name="GetCVVRp">
+		<part name="Response" element="mess:GetCVVRp"/>
+	</message>
+	<message name="CheckPVV_PINOffsetRq">
+		<part name="Request" element="mess:CheckPVV_PINOffsetRq"/>
+	</message>
+	<message name="CheckPVV_PINOffsetRp">
+		<part name="Response" element="mess:CheckPVV_PINOffsetRp"/>
+	</message>
+	<message name="GetTBCustHistoryRq">
+		<part name="Request" element="mess:GetTBCustHistoryRq"/>
+	</message>
+	<message name="GetTBCustHistoryRp">
+		<part name="Response" element="mess:GetTBCustHistoryRp"/>
+	</message>
+	<message name="SetExtraAuthLevelRq">
+		<part name="Request" element="mess:SetExtraAuthLevelRq"/>
+	</message>
+	<message name="SetExtraAuthLevelRp">
+		<part name="Response" element="mess:SetExtraAuthLevelRp"/>
+	</message>
+	<message name="GetNDCAuditJournalRq">
+		<part name="Request" element="mess:GetNDCAuditJournalRq"/>
+	</message>
+	<message name="GetNDCAuditJournalRp">
+		<part name="Response" element="mess:GetNDCAuditJournalRp"/>
+	</message>
+	<message name="GetDDCAuditJournalRq">
+		<part name="Request" element="mess:GetDDCAuditJournalRq"/>
+	</message>
+	<message name="GetDDCAuditJournalRp">
+		<part name="Response" element="mess:GetDDCAuditJournalRp"/>
+	</message>
+	<message name="MCGlobalStoplistRq">
+		<part name="Request" element="mess:MCGlobalStoplistRq"/>
+	</message>
+	<message name="MCGlobalStoplistRp">
+		<part name="Response" element="mess:MCGlobalStoplistRp"/>
+	</message>
+	<message name="SetCardUserFieldsRq">
+		<part name="Request" element="mess:SetCardUserFieldsRq"/>
+	</message>
+	<message name="SetCardUserFieldsRp">
+		<part name="Response" element="mess:SetCardUserFieldsRp"/>
+	</message>
+	<message name="SetAccountUserFieldsRq">
+		<part name="Request" element="mess:SetAccountUserFieldsRq"/>
+	</message>
+	<message name="SetAccountUserFieldsRp">
+		<part name="Response" element="mess:SetAccountUserFieldsRp"/>
+	</message>
+	<message name="SetPersonUserFiledsRq">
+		<part name="Request" element="mess:SetPersonUserFieldsRq"/>
+	</message>
+	<message name="SetPersonUserFieldsRp">
+		<part name="Response" element="mess:SetPersonUserFieldsRp"/>
+	</message>
+	<message name="CryptoFunctionRq">
+		<part name="Request" element="mess:CryptoFunctionRq"/>
+	</message>
+	<message name="CryptoFunctionRp">
+		<part name="Response" element="mess:CryptoFunctionRp"/>
+	</message>
+	<message name="CreateCardRq">
+		<part name="Request" element="mess:CreateCardRq"/>
+	</message>
+	<message name="CreateCardRp">
+		<part name="Response" element="mess:CreateCardRp"/>
+	</message>
+	<message name="CreatePersonRq">
+		<part name="Request" element="mess:CreatePersonRq"/>
+	</message>
+	<message name="CreatePersonRp">
+		<part name="Response" element="mess:CreatePersonRp"/>
+	</message>
+	<message name="GetUnitEventsRq">
+		<part name="Request" element="mess:GetUnitEventsRq"/>
+	</message>
+	<message name="GetUnitEventsRp">
+		<part name="Response" element="mess:GetUnitEventsRp"/>
+	</message>
+	<message name="ChangeAlphaNumericPasswordRq">
+		<part name="Request" element="mess:ChangeAlphaNumericPasswordRq"/>
+	</message>
+	<message name="ChangeAlphaNumericPasswordRp">
+		<part name="Response" element="mess:ChangeAlphaNumericPasswordRp"/>
+	</message>
+	<message name="GetFIMIClerkPropertiesRq">
+		<part name="Request" element="mess:GetFIMIClerkPropertiesRq"/>
+	</message>
+	<message name="GetFIMIClerkPropertiesRp">
+		<part name="Response" element="mess:GetFIMIClerkPropertiesRp"/>
+	</message>
+	<message name="SetFIMIClerkPropertiesRq">
+		<part name="Request" element="mess:SetFIMIClerkPropertiesRq"/>
+	</message>
+	<message name="SetFIMIClerkPropertiesRp">
+		<part name="Response" element="mess:SetFIMIClerkPropertiesRp"/>
+	</message>
+	<message name="GetCardProfileLimitsRq">
+		<part name="Request" element="mess:GetCardProfileLimitsRq"/>
+	</message>
+	<message name="GetCardProfileLimitsRp">
+		<part name="Response" element="mess:GetCardProfileLimitsRp"/>
+	</message>
+	<message name="SetCardProfileLimitsRq">
+		<part name="Request" element="mess:SetCardProfileLimitsRq"/>
+	</message>
+	<message name="SetCardProfileLimitsRp">
+		<part name="Response" element="mess:SetCardProfileLimitsRp"/>
+	</message>
+	<message name="ConfigureCMSProfileRq">
+		<part name="Request" element="mess:ConfigureCMSProfileRq"/>
+	</message>
+	<message name="ConfigureCMSProfileRp">
+		<part name="Response" element="mess:ConfigureCMSProfileRp"/>
+	</message>
+	<message name="AddPersonConfidentialInfoRq">
+		<part name="Request" element="mess:AddPersonConfidentialInfoRq"/>
+	</message>
+	<message name="AddPersonConfidentialInfoRp">
+		<part name="Response" element="mess:AddPersonConfidentialInfoRp"/>
+	</message>
+	<message name="DelPersonConfidentialInfoRq">
+		<part name="Request" element="mess:DelPersonConfidentialInfoRq"/>
+	</message>
+	<message name="DelPersonConfidentialInfoRp">
+		<part name="Response" element="mess:DelPersonConfidentialInfoRp"/>
+	</message>
+	<message name="ResetCardLimitsCountersRq">
+		<part name="Request" element="mess:ResetCardLimitsCounterRq"/>
+	</message>
+	<message name="ResetCardLimitsCounterRp">
+		<part name="Response" element="mess:ResetCardLimitsCounterRp"/>
+	</message>
+	<message name="ResesAcctLimitsCounterRq">
+		<part name="Request" element="mess:ResetAcctLimitsCounterRq"/>
+	</message>
+	<message name="ResetAcctLimitsCounterRp">
+		<part name="Response" element="mess:ResetAcctLimitsCounterRp"/>
+	</message>
+	<message name="ResetAcct2CardLimitsCounterRq">
+		<part name="Request" element="mess:ResetAcct2CardLimitsCounterRq"/>
+	</message>
+	<message name="ResetAcct2CardLimitsCounterRp">
+		<part name="Response" element="mess:ResetAcct2CardLimitsCounterRp"/>
+	</message>
+	<message name="ResetBadDynAuthPwdTriesRq">
+		<part name="Request" element="mess:ResetBadDynAuthPwdTriesRq"/>
+	</message>
+	<message name="ResetBadDynAuthPwdTriesRp">
+		<part name="Response" element="mess:ResetBadDynAuthPwdTriesRp"/>
+	</message>
+	<message name="GetReportListRq">
+		<part name="Request" element="mess:GetReportListRq"/>
+	</message>
+	<message name="GetReportListRp">
+		<part name="Response" element="mess:GetReportListRp"/>
+	</message>
+	<message name="ExecuteReportRq">
+		<part name="Request" element="mess:ExecuteReportRq"/>
+	</message>
+	<message name="ExecuteReportRp">
+		<part name="Response" element="mess:ExecuteReportRp"/>
+	</message>
+	<message name="GetReportsRequestsRq">
+		<part name="Request" element="mess:GetReportsRequestsRq"/>
+	</message>
+	<message name="GetReportsRequestsRp">
+		<part name="Response" element="mess:GetReportsRequestsRp"/>
+	</message>
+	<message name="GetReportRq">
+		<part name="Request" element="mess:GetReportRq"/>
+	</message>
+	<message name="GetReportRp">
+		<part name="Response" element="mess:GetReportRp"/>
+	</message>
+	<message name="DeleteReportRequestRq">
+		<part name="Request" element="mess:DeleteReportRequestRq"/>
+	</message>
+	<message name="DeleteReportRequestRp">
+		<part name="Response" element="mess:DeleteReportRequestRp"/>
+	</message>
+	<message name="ChangeECStatusRq">
+		<part name="Request" element="mess:ChangeECStatusRq"/>
+	</message>
+	<message name="ChangeECStatusRp">
+		<part name="Response" element="mess:ChangeECStatusRp"/>
+	</message>
+	<message name="BMSGetFormFieldsRq">
+		<part name="Request" element="mess:BMSGetFormFieldsRq"/>
+	</message>
+	<message name="BMSGetFormFieldsRp">
+		<part name="Response" element="mess:BMSGetFormFieldsRp"/>
+	</message>
+	<message name="BMSGetFormsRq">
+		<part name="Request" element="mess:BMSGetFormsRq"/>
+	</message>
+	<message name="BMSGetFormsRp">
+		<part name="Response" element="mess:BMSGetFormsRp"/>
+	</message>
+	<message name="BMSGetMessageFieldsRq">
+		<part name="Request" element="mess:BMSGetMessageFieldsRq"/>
+	</message>
+	<message name="BMSGetMessageFieldsRp">
+		<part name="Response" element="mess:BMSGetMessageFieldsRp"/>
+	</message>
+	<message name="BMSGetMessagesRq">
+		<part name="Request" element="mess:BMSGetMessagesRq"/>
+	</message>
+	<message name="BMSGetMessagesRp">
+		<part name="Response" element="mess:BMSGetMessagesRp"/>
+	</message>
+	<message name="BMSReadMessagesRq">
+		<part name="Request" element="mess:BMSReadMessagesRq"/>
+	</message>
+	<message name="BMSReadMessagesRp">
+		<part name="Response" element="mess:BMSReadMessagesRp"/>
+	</message>
+	<message name="BMSSendMessageRq">
+		<part name="Request" element="mess:BMSSendMessageRq"/>
+	</message>
+	<message name="BMSSendMessageRp">
+		<part name="Response" element="mess:BMSSendMessageRp"/>
+	</message>
+	<message name="GenerateDynamicPasswordRq">
+		<part name="Request" element="mess:GenerateDynamicPasswordRq"/>
+	</message>
+	<message name="GenerateDynamicPasswordRp">
+		<part name="Response" element="mess:GenerateDynamicPasswordRp"/>
+	</message>
+	<message name="GetPrefixInfoRq">
+		<part name="Request" element="mess:GetPrefixInfoRq"/>
+	</message>
+	<message name="GetPrefixInfoRp">
+		<part name="Response" element="mess:GetPrefixInfoRp"/>
+	</message>
+	<message name="AddTBTransferRq">
+		<part name="Request" element="mess:AddTBTransferRq"/>
+	</message>
+	<message name="AddTBTransferRp">
+		<part name="Response" element="mess:AddTBTransferRp"/>
+	</message>
+	<message name="DelTBTransferRq">
+		<part name="Request" element="mess:DelTBTransferRq"/>
+	</message>
+	<message name="DelTBTransferRp">
+		<part name="Response" element="mess:DelTBTransferRp"/>
+	</message>
+	<message name="AdjustToMCRq">
+		<part name="Request" element="mess:AdjustToMCRq"/>
+	</message>
+	<message name="AdjustToMCRp">
+		<part name="Response" element="mess:AdjustToMCRp"/>
+	</message>
+	<message name="RepresentToMCRq">
+		<part name="Request" element="mess:RepresentToMCRq"/>
+	</message>
+	<message name="RepresentToMCRp">
+		<part name="Response" element="mess:RepresentToMCRp"/>
+	</message>
+	<message name="ChargebackToMCRq">
+		<part name="Request" element="mess:ChargebackToMCRq"/>
+	</message>
+	<message name="ChargebackToMCRp">
+		<part name="Response" element="mess:ChargebackToMCRp"/>
+	</message>
+	<message name="ChargebackReversalToMcRq">
+		<part name="Request" element="mess:ChargebackReversalToMCRq"/>
+	</message>
+	<message name="ChargebackReversalToMCRp">
+		<part name="Response" element="mess:ChargebackReversalToMCRp"/>
+	</message>
+	<message name="UpdateRetailerRq">
+		<part name="Request" element="mess:UpdateRetailerRq"/>
+	</message>
+	<message name="UpdateRetailerRp">
+		<part name="Response" element="mess:UpdateRetailerRp"/>
+	</message>
+	<message name="AddTBPaymentRq">
+		<part name="Request" element="mess:AddTBPaymentRq"/>
+	</message>
+	<message name="AddTBPaymentRp">
+		<part name="Response" element="mess:AddTBPaymentRp"/>
+	</message>
+	<message name="DelTBPaymentRq">
+		<part name="Request" element="mess:DelTBPaymentRq"/>
+	</message>
+	<message name="DelTBPaymentRp">
+		<part name="Response" element="mess:DelTBPaymentRp"/>
+	</message>
+	<message name="LocalChargebackRq">
+		<part name="Request" element="mess:LocalChargebackRq"/>
+	</message>
+	<message name="LocalChargebackRp">
+		<part name="Response" element="mess:LocalChargebackRp"/>
+	</message>
+	<message name="LocalChargebackReversalRq">
+		<part name="Request" element="mess:LocalChargebackReversalRq"/>
+	</message>
+	<message name="LocalChargebackReversalRp">
+		<part name="Response" element="mess:LocalChargebackReversalRp"/>
+	</message>
+	<message name="SetDynamicPVV_PINOffsetRq">
+		<part name="Request" element="mess:SetDynamicPVV_PINOffsetRq"/>
+	</message>
+	<message name="SetDynamicPVV_PINOffsetRp">
+		<part name="Response" element="mess:SetDynamicPVV_PINOffsetRp"/>
+	</message>
+	<message name="ResetAlphaNumericPasswordRq">
+		<part name="Request" element="mess:ResetAlphaNumericPasswordRq"/>
+	</message>
+	<message name="ResetAlphaNumericPasswordRp">
+		<part name="Response" element="mess:ResetAlphaNumericPasswordRp"/>
+	</message>
+	<message name="CreateIssuerObjectsRq">
+		<part name="Request" element="mess:CreateIssuerObjectsRq"/>
+	</message>
+	<message name="CreateIssuerObjectsRp">
+		<part name="Response" element="mess:CreateIssuerObjectsRp"/>
+	</message>
+	<message name="PutEventRq">
+		<part name="Request" element="mess:PutEventRq"/>
+	</message>
+	<message name="PutEventRp">
+		<part name="Response" element="mess:PutEventRp"/>
+	</message>
+	<message name="GetRepositoryKeyRq">
+		<part name="Request" element="mess:GetRepositoryKeyRq"/>
+	</message>
+	<message name="GetRepositoryKeyRp">
+		<part name="Response" element="mess:GetRepositoryKeyRp"/>
+	</message>
+	<message name="FileHeaderRq">
+		<part name="Request" element="mess:FileHeaderRq"/>
+	</message>
+	<message name="FileHeaderRp">
+		<part name="Response" element="mess:FileHeaderRp"/>
+	</message>
+	<message name="GetIAConfigurationRq">
+		<part name="Request" element="mess:GetIAConfigurationRq"/>
+	</message>
+	<message name="GetIAConfigurationRp">
+		<part name="Response" element="mess:GetIAConfigurationRp"/>
+	</message>
+	<message name="UserDefinedRq">
+		<part name="Request" element="mess:UserDefinedRq"/>
+	</message>
+	<message name="UserDefinedRp">
+		<part name="Response" element="mess:UserDefinedRp"/>
+	</message>
+	<message name="SetIAConfigurationRq">
+		<part name="Request" element="mess:SetIAConfigurationRq"/>
+	</message>
+	<message name="SetIAConfigurationRp">
+		<part name="Response" element="mess:SetIAConfigurationRp"/>
+	</message>
+	<message name="DeclineFault">
+		<part name="Response" element="mess:DeclineRp"/>
+	</message>
+	<message name="GetAcctGroupLimitsRq">
+		<part name="Request" element="mess:GetAcctGroupLimitsRq"/>
+	</message>
+	<message name="GetAcctGroupLimitsRp">
+		<part name="Response" element="mess:GetAcctGroupLimitsRp"/>
+	</message>
+	<message name="UpdatePersonRq">
+		<part name="Request" element="mess:UpdatePersonRq"/>
+	</message>
+	<message name="UpdatePersonRp">
+		<part name="Response" element="mess:UpdatePersonRp"/>
+	</message>
+	<message name="CopyCardLimitCountersRq">
+		<part name="Request" element="mess:CopyCardLimitCountersRq"/>
+	</message>
+	<message name="CopyCardLimitCountersRp">
+		<part name="Response" element="mess:CopyCardLimitCountersRp"/>
+	</message>
+	<message name="SetNeedChangePasswordRq">
+		<part name="Request" element="mess:SetNeedChangePasswordRq"/>
+	</message>
+	<message name="SetNeedChangePasswordRp">
+		<part name="Response" element="mess:SetNeedChangePasswordRp"/>
+	</message>
+	<message name="DeleteOperatorSessionsRq">
+		<part name="Request" element="mess:DeleteOperatorSessionsRq"/>
+	</message>
+	<message name="DeleteOperatorSessionsRp">
+		<part name="Response" element="mess:DeleteOperatorSessionsRp"/>
+	</message>
+	<message name="TerminalRiskControlRq">
+		<part name="Request" element="mess:TerminalRiskControlRq"/>
+	</message>
+	<message name="TerminalRiskControlRp">
+		<part name="Rsponse" element="mess:TerminalRiskControlRp"/>
+	</message>
+	<message name="GetFIMIClerkAddressesRq">
+		<part name="Request" element="mess:GetFIMIClerkAddressesRq"/>
+	</message>
+	<message name="GetFIMIClerkAddressesRp">
+		<part name="Response" element="mess:GetFIMIClerkAddressesRp"/>
+	</message>
+	<message name="GetTranIdRq">
+		<part name="Request" element="mess:GetTranIdRq"/>
+	</message>
+	<message name="GetTranIdRp">
+		<part name="Response" element="mess:GetTranIdRp"/>
+	</message>
+	<message name="AmExStoplistRq">
+		<part name="Request" element="mess:AmExStoplistRq"/>
+	</message>
+	<message name="AmExStoplistRp">
+		<part name="Response" element="mess:AmExStoplistRp"/>
+	</message>
+	<message name="SetCardPersonRq">
+		<part name="Request" element="mess:SetCardPersonRq"/>
+	</message>
+	<message name="SetCardPersonRp">
+		<part name="Response" element="mess:SetCardPersonRp"/>
+	</message>
+	<message name="SetAccountPersonRq">
+		<part name="Request" element="mess:SetAccountPersonRq"/>
+	</message>
+	<message name="SetAccountPersonRp">
+		<part name="Response" element="mess:SetAccountPersonRp"/>
+	</message>
+	<message name="SetAccountOverdraftRq">
+		<part name="Request" element="mess:SetAccountOverdraftRq"/>
+	</message>
+	<message name="SetAccountOverdraftRp">
+		<part name="Response" element="mess:SetAccountOverdraftRp"/>
+	</message>
+	<message name="AddTBRetailerRq">
+		<part name="Request" element="mess:AddTBRetailerRq"/>
+	</message>
+	<message name="AddTBRetailerRp">
+		<part name="Response" element="mess:AddTBRetailerRp"/>
+	</message>
+	<message name="DeleteTBRetailerRq">
+		<part name="Request" element="mess:DeleteTBRetailerRq"/>
+	</message>
+	<message name="DeleteTBRetailerRp">
+		<part name="Response" element="mess:DeleteTBRetailerRp"/>
+	</message>
+	<message name="GetVCProductsRq">
+		<part name="Request" element="mess:GetVCProductsRq"/>
+	</message>
+	<message name="GetVCProductsRp">
+		<part name="Response" element="mess:GetVCProductsRp"/>
+	</message>
+	<message name="GetTerminalAdditionslFieldsRq">
+		<part name="Request" element="mess:GetTerminalAdditionalFieldsRq"/>
+	</message>
+	<message name="GetTerminalAdditionslFieldsRp">
+		<part name="Response" element="mess:GetTerminalAdditionalFieldsRp"/>
+	</message>
+	<message name="SetTerminalAdditionalFieldsRq">
+		<part name="Request" element="mess:SetTerminalAdditionalFieldsRq"/>
+	</message>
+	<message name="SetTerminalAdditionalFieldsRp">
+		<part name="Response" element="mess:SetTerminalAdditionalFieldsRp"/>
+	</message>
+	<message name="DiscoverStoplistRq">
+		<part name="Request" element="mess:DiscoverStoplistRq"/>
+	</message>
+	<message name="DiscoverStoplistRp">
+		<part name="Response" element="mess:DiscoverStoplistRp"/>
+	</message>
+	<message name="UpdateTerminalRq">
+		<part name="Request" element="mess:UpdateTerminalRq"/>
+	</message>
+	<message name="UpdateTerminalRp">
+		<part name="Response" element="mess:UpdateTerminalRp"/>
+	</message>
+	<message name="GetExcludedPINListRq">
+		<part name="Request" element="mess:GetExcludedPINListRq"/>
+	</message>
+	<message name="GetExcludedPINListRp">
+		<part name="Response" element="mess:GetExcludedPINListRp"/>
+	</message>
+	<message name="AttachCardToTBCustomerRq">
+		<part name="Request" element="mess:AttachCardToTBCustomerRq"/>
+	</message>
+	<message name="AttachCardToTBCustomerRp">
+		<part name="Response" element="mess:AttachCardToTBCustomerRp"/>
+	</message>
+	<message name="DetachCardFromTBCustomerRq">
+		<part name="Request" element="mess:DetachCardFromTBCustomerRq"/>
+	</message>
+	<message name="DetachCardFromTBCustomerRp">
+		<part name="Response" element="mess:DetachCardFromTBCustomerRp"/>
+	</message>
+	<message name="AttachForeignCardToTBCustomerRq">
+		<part name="Request" element="mess:AttachForeignCardToTBCustomerRq"/>
+	</message>
+	<message name="AttachForeignCardToTBCustomerRp">
+		<part name="Response" element="mess:AttachForeignCardToTBCustomerRp"/>
+	</message>
+	<message name="DetachForeignCardFromTBCustomerRq">
+		<part name="Request" element="mess:DetachForeignCardFromTBCustomerRq"/>
+	</message>
+	<message name="DetachForeignCardFromTBCustomerRp">
+		<part name="Response" element="mess:DetachForeignCardFromTBCustomerRp"/>
+	</message>
+	<message name="GetCardAutopaymentsRq">
+		<part name="Request" element="mess:GetCardAutopaymentsRq"/>
+	</message>
+	<message name="GetCardAutopaymentsRp">
+		<part name="Response" element="mess:GetCardAutopaymentsRp"/>
+	</message>
+	<message name="AttachAutopaymentToCardRq">
+		<part name="Request" element="mess:AttachAutopaymentToCardRq"/>
+	</message>
+	<message name="AttachAutopaymentToCardRp">
+		<part name="Response" element="mess:AttachAutopaymentToCardRp"/>
+	</message>
+	<message name="DetachAutopaymentFromCardRq">
+		<part name="Request" element="mess:DetachAutopaymentFromCardRq"/>
+	</message>
+	<message name="DetachAutopaymentFromCardRp">
+		<part name="Response" element="mess:DetachAutopaymentFromCardRp"/>
+	</message>
+	<message name="EditCardAutopaymentRq">
+		<part name="Request" element="mess:EditCardAutopaymentRq"/>
+	</message>
+	<message name="EditCardAutopaymentRp">
+		<part name="Response" element="mess:EditCardAutopaymentRp"/>
+	</message>
+	<message name="StandAloneReversalRq">
+		<part name="Request" element="mess:StandAloneReversalRq"/>
+	</message>
+	<message name="StandAloneReversalRp">
+		<part name="Response" element="mess:StandAloneReversalRp"/>
+	</message>
+	<message name="DeleteCardRq">
+		<part name="Request" element="mess:DeleteCardRq"/>
+	</message>
+	<message name="DeleteCardRp">
+		<part name="Response" element="mess:DeleteCardRp"/>
+	</message>
+	<message name="DeleteTBCustomerRq">
+		<part name="Request" element="mess:DeleteTBCustomerRq"/>
+	</message>
+	<message name="DeleteTBCustomerRp">
+		<part name="Response" element="mess:DeleteTBCustomerRp"/>
+	</message>
+	<message name="DeleteAccountRq">
+		<part name="Request" element="mess:DeleteAccountRq"/>
+	</message>
+	<message name="DeleteAccountRp">
+		<part name="Response" element="mess:DeleteAccountRp"/>
+	</message>
+	<message name="DeletePersonRq">
+		<part name="Request" element="mess:DeletePersonRq"/>
+	</message>
+	<message name="DeletePersonRp">
+		<part name="Response" element="mess:DeletePersonRp"/>
+	</message>
+   <message name="AddCMSAbonentRq">
+      <part name="Request" element="mess:AddCMSAbonentRq"/>
+   </message>
+   <message name="AddCMSAbonentRp">
+      <part name="Response" element="mess:AddCMSAbonentRp"/>
+   </message>
+   <message name="RemoveCMSAbonentRq">
+      <part name="Request" element="mess:RemoveCMSAbonentRq"/>
+   </message>
+   <message name="RemoveCMSAbonentRp">
+      <part name="Response" element="mess:RemoveCMSAbonentRp"/>
+   </message>
+   <message name="ChangeCMSAbonentRq">
+      <part name="Request" element="mess:ChangeCMSAbonentRq"/>
+   </message>
+   <message name="ChangeCMSAbonentRp">
+      <part name="Response" element="mess:ChangeCMSAbonentRp"/>
+   </message>
+   <message name="SetCard3DSecureAuthenticationRq">
+      <part name="Request" element="mess:SetCard3DSecureAuthenticationRq"/>
+   </message>
+   <message name="SetCard3DSecureAuthenticationRp">
+      <part name="Response" element="mess:SetCard3DSecureAuthenticationRp"/>
+   </message>
+   <message name="GetAvatarRq">
+      <part name="Request" element="mess:GetAvatarRq"/>
+   </message>
+   <message name="GetAvatarRp">
+      <part name="Response" element="mess:GetAvatarRp"/>
+   </message>
+   <message name="SetAvatarRq">
+      <part name="Request" element="mess:SetAvatarRq"/>
+   </message>
+   <message name="SetAvatarRp">
+      <part name="Response" element="mess:SetAvatarRp"/>
+   </message>
+   <message name="ChangePersonConfidentialInfoRq">
+      <part name="Request" element="mess:ChangePersonConfidentialInfoRq"/>
+   </message>
+   <message name="ChangePersonConfidentialInfoRp">
+      <part name="Response" element="mess:ChangePersonConfidentialInfoRp"/>
+   </message>
+   <message name="GetIssuerFeesForOwnTermRq">
+      <part name="Request" element="mess:GetIssuerFeesForOwnTermRq"/>
+   </message>
+   <message name="GetIssuerFeesForOwnTermRp">
+      <part name="Response" element="mess:GetIssuerFeesForOwnTermRp"/>
+   </message>
+   <message name="SetIssuerFeesForOwnTermRq">
+      <part name="Request" element="mess:SetIssuerFeesForOwnTermRq"/>
+   </message>
+   <message name="SetIssuerFeesForOwnTermRp">
+      <part name="Response" element="mess:SetIssuerFeesForOwnTermRp"/>
+   </message>
+   <message name="GetIssuerFeesForExternalTermRq">
+      <part name="Request" element="mess:GetIssuerFeesForExternalTermRq"/>
+   </message>
+   <message name="GetIssuerFeesForExternalTermRp">
+      <part name="Response" element="mess:GetIssuerFeesForExternalTermRp"/>
+   </message>
+   <message name="SetIssuerFeesForExternalTermRq">
+      <part name="Request" element="mess:SetIssuerFeesForExternalTermRq"/>
+   </message>
+   <message name="SetIssuerFeesForExternalTermRp">
+      <part name="Response" element="mess:SetIssuerFeesForExternalTermRp"/>
+   </message>
+	<portType name="fimi">
+		<operation name="ATMCommandRq">
+			<input message="wsdl:ATMCommandRq"/>
+			<output message="wsdl:ATMCommandRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AcctCreditRq">
+			<input message="wsdl:AcctCreditRq"/>
+			<output message="wsdl:AcctCreditRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AcctDebitRq">
+			<input message="wsdl:AcctDebitRq"/>
+			<output message="wsdl:AcctDebitRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AddCardVendorRq">
+			<input message="wsdl:AddCardVenorRq"/>
+			<output message="wsdl:AddCardVendorRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DelCardVendorRq">
+			<input message="wsdl:DelCardVendorRq"/>
+			<output message="wsdl:DelCardVendorRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AddEMVScriptRq">
+			<input message="wsdl:AddEMVScriptRq"/>
+			<output message="wsdl:AddEMVScriptRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AddRateRq">
+			<input message="wsdl:AddRateRq"/>
+			<output message="wsdl:AddRateRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AdjustToVISARq">
+			<input message="wsdl:AdjustToVISARq"/>
+			<output message="wsdl:AdjustToVISARp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BeginTransactionRq">
+			<input message="wsdl:BeginTransactionRq"/>
+			<output message="wsdl:BeginTransactionRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BalanceInquiryRq">
+			<input message="wsdl:BalanceInquiryRq"/>
+			<output message="wsdl:BalanceInquiryRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CNSCardConfigRq">
+			<input message="wsdl:CNSCardConfigRq"/>
+			<output message="wsdl:CNSCardConfigRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CardRiskControlRq">
+			<input message="wsdl:CardRiskControlRq"/>
+			<output message="wsdl:CardRiskControlRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ChangeAcctBalancesRq">
+			<input message="wsdl:ChangeAcctBalancesRq"/>
+			<output message="wsdl:ChangeAcctBalancesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ChangePasswordRq">
+			<input message="wsdl:ChangePasswordRq"/>
+			<output message="wsdl:ChangePasswordRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CommitRq">
+			<input message="wsdl:CommitRq"/>
+			<output message="wsdl:CommitRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ConfirmCopyRequestToVISARq">
+			<input message="wsdl:ConfirmCopyRequestToVISARq"/>
+			<output message="wsdl:ConfirmCopyRequestToVISARp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CreateAccountRq">
+			<input message="wsdl:CreateAccountRq"/>
+			<output message="wsdl:CreateAccountRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CreateTBCustomerRq">
+			<input message="wsdl:CreateTBCustomerRq"/>
+			<output message="wsdl:CreateTBCustomerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CreateVCardRq">
+			<input message="wsdl:CreateVCardRq"/>
+			<output message="wsdl:CreateVCardRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteEMVScriptRq">
+			<input message="wsdl:DeleteEMVScriptRq"/>
+			<output message="wsdl:DeleteEMVScriptRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteRateRq">
+			<input message="wsdl:DeleteRateRq"/>
+			<output message="wsdl:DeleteRateRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="FeeToVISARq">
+			<input message="wsdl:FeeToVISARq"/>
+			<output message="wsdl:FeeToVISARp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMActivityRq">
+			<input message="wsdl:GetATMActivityRq"/>
+			<output message="wsdl:GetATMActivityRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMAdminTransRq">
+			<input message="wsdl:GetATMAdminTransRq"/>
+			<output message="wsdl:GetATMAdminTransRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMEventsRq">
+			<input message="wsdl:GetATMEventsRq"/>
+			<output message="wsdl:GetATMEventsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMFitnessRq">
+			<input message="wsdl:GetATMFitnessRq"/>
+			<output message="wsdl:GetATMFitnessRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMHardwareRq">
+			<input message="wsdl:GetATMHardwareRq"/>
+			<output message="wsdl:GetATMHardwareRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMHoppersRq">
+			<input message="wsdl:GetATMHoppersRq"/>
+			<output message="wsdl:GetATMHoppersRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMMediaRq">
+			<input message="wsdl:GetATMMediaRq"/>
+			<output message="wsdl:GetATMMediaRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMSensorsRq">
+			<input message="wsdl:GetATMSensorsRq"/>
+			<output message="wsdl:GetATMSensorsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetATMStatusRq">
+			<input message="wsdl:GetATMStatusRq"/>
+			<output message="wsdl:GetATMStatusRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetAcct2CardLimitsRq">
+			<input message="wsdl:GetAcct2CardLimitsRq"/>
+			<output message="wsdl:GetAcct2CardLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetAcctInfoRq">
+			<input message="wsdl:GetAcctInfoRq"/>
+			<output message="wsdl:GetAcctInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetAcctLimitsRq">
+			<input message="wsdl:GetAcctLimitsRq"/>
+			<output message="wsdl:GetAcctLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetAcctStatementRq">
+			<input message="wsdl:GetAcctStatementRq"/>
+			<output message="wsdl:GetAcctStatementRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetBackOfficeInfoRq">
+			<input message="wsdl:GetBackOfficeInfoRq"/>
+			<output message="wsdl:GetBackOfficeInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCardInfoRq">
+			<input message="wsdl:GetCardInfoRq"/>
+			<output message="wsdl:GetCardInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCardLimitsRq">
+			<input message="wsdl:GetCardLimitsRq"/>
+			<output message="wsdl:GetCardLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCardStatementRq">
+			<input message="wsdl:GetCardStatementRq"/>
+			<output message="wsdl:GetCardStatementRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCorrespAcctInfoRq">
+			<input message="wsdl:GetCorrespAcctInfoRq"/>
+			<output message="wsdl:GetCorrespAcctInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetEMVScriptsRq">
+			<input message="wsdl:GetEMVScriptsRq"/>
+			<output message="wsdl:GetEMVScriptsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetFIMIClerksRq">
+			<input message="wsdl:GetFIMIClerksRq"/>
+			<output message="wsdl:GetFIMIClerksRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetFIMITransRq">
+			<input message="wsdl:GetFIMITransRq"/>
+			<output message="wsdl:GetFIMITransRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetPersonsHierarchyRq">
+			<input message="wsdl:GetPersonsHierarchyRq"/>
+			<output message="wsdl:GetPersonsHierarchyRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetPersonInfoRq">
+			<input message="wsdl:GetPersonInfoRq"/>
+			<output message="wsdl:GetPersonInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetRateGroupsRq">
+			<input message="wsdl:GetRateGroupsRq"/>
+			<output message="wsdl:GetRateGroupsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetRatesRq">
+			<input message="wsdl:GetRatesRq"/>
+			<output message="wsdl:GetRatesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetRetailerListRq">
+			<input message="wsdl:GetRetailerListRq"/>
+			<output message="wsdl:GetRetailerListRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetTLADirRq">
+			<input message="wsdl:GetTLADirRq"/>
+			<output message="wsdl:GetTLADirRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetTermListRq">
+			<input message="wsdl:GetTermListRq"/>
+			<output message="wsdl:GetTermListRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetTransInfoRq">
+			<input message="wsdl:GetTransInfoRq"/>
+			<output message="wsdl:GetTransInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCMSBufferRq">
+			<input message="wsdl:GetCMSBufferRq"/>
+			<output message="wsdl:GetCMSBufferRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCMSArchiveRq">
+			<input message="wsdl:GetCMSArchiveRq"/>
+			<output message="wsdl:GetCMSArchiveRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCMSCommandsRq">
+			<input message="wsdl:GetCMSCommandsRq"/>
+			<output message="wsdl:GetCMSCommandsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetIssuerHistoryRq">
+			<input message="wsdl:GetIssuerHistoryRq"/>
+			<output message="wsdl:GetIssuerHistoryRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetIssuerHistoryDetailsRq">
+			<input message="wsdl:GetIssuerHistoryDetailsRq"/>
+			<output message="wsdl:GetIssuerHistoryDetailsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetUnitStateRq">
+			<input message="wsdl:GetUnitStateRq"/>
+			<output message="wsdl:GetUnitStateRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetWorkingKeyRq">
+			<input message="wsdl:GetWorkingKeyRq"/>
+			<output message="wsdl:GetWorkingKeyRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetPVV_PINOffsetRq">
+			<input message="wsdl:GetPVV_PINOffsetRq"/>
+			<output message="wsdl:GetPVV_PINOffsetRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCVVRq">
+			<input message="wsdl:GetCVVRq"/>
+			<output message="wsdl:GetCVVRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetTBCustHistoryRq">
+			<input message="wsdl:GetTBCustHistoryRq"/>
+			<output message="wsdl:GetTBCustHistoryRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CheckPVV_PINOffsetRq">
+			<input message="wsdl:CheckPVV_PINOffsetRq"/>
+			<output message="wsdl:CheckPVV_PINOffsetRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="UnitCommandRq">
+			<input message="wsdl:UnitCommandRq"/>
+			<output message="wsdl:UnitCommandRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="InitSessionRq">
+			<input message="wsdl:InitSessionRq"/>
+			<output message="wsdl:InitSessionRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="LocalStoplistRq">
+			<input message="wsdl:LocalStoplistRq"/>
+			<output message="wsdl:LocalStoplistRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="LogonRq">
+			<input message="wsdl:LogonRq"/>
+			<output message="wsdl:LogonRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="LogoffRq">
+			<input message="wsdl:LogoffRq"/>
+			<output message="wsdl:LogoffRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="MCStoplistRq">
+			<input message="wsdl:MCStoplistRq"/>
+			<output message="wsdl:MCStoplistRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="MCGlobalStoplistRq">
+			<input message="wsdl:MCGlobalStoplistRq"/>
+			<output message="wsdl:MCGlobalStoplistRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ModifyCorrespAcctRq">
+			<input message="wsdl:ModifyCorrespAcctRq"/>
+			<output message="wsdl:ModifyCorrespAcctRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ModifyRateRq">
+			<input message="wsdl:ModifyRateRq"/>
+			<output message="wsdl:ModifyRateRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="POSCommandRq">
+			<input message="wsdl:POSCommandRq"/>
+			<output message="wsdl:POSCommandRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="POSStateRq">
+			<input message="wsdl:POSStateRq"/>
+			<output message="wsdl:POSStateRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="POSRequestRq">
+			<input message="wsdl:POSRequestRq"/>
+			<output message="wsdl:POSRequestRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="RepresentToVISARq">
+			<input message="wsdl:RepresentToVISARq"/>
+			<output message="wsdl:RepresentToVISARp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetBadPINTriesRq">
+			<input message="wsdl:ResetBadPINTriesRq"/>
+			<output message="wsdl:ResetBadPINTriesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetCardEMVATCRq">
+			<input message="wsdl:ResetCardEMVATCRq"/>
+			<output message="wsdl:ResetCardEMVATCRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetCard2AcctLinkRq">
+			<input message="wsdl:ResetCard2AcctLinkRq"/>
+			<output message="wsdl:ResetCard2AcctLinkRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="Reset_IB_BadPINTriesRq">
+			<input message="wsdl:Reset_IB_BadPINTriesRq"/>
+			<output message="wsdl:Reset_IB_BadPINTriesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="Reset_IB_PINRq">
+			<input message="wsdl:Reset_IB_PINRq"/>
+			<output message="wsdl:Reset_IB_PINRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ReverseTransactionRq">
+			<input message="wsdl:ReverseTransactionRq"/>
+			<output message="wsdl:ReverseTransactionRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="RollBackRq">
+			<input message="wsdl:RollBackRq"/>
+			<output message="wsdl:RollBackRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetAcct2CardLimitsRq">
+			<input message="wsdl:SetAcct2CardLimitsRq"/>
+			<output message="wsdl:SetAcct2CardLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetAcct2CardStatusRq">
+			<input message="wsdl:SetAcct2CardStatusRq"/>
+			<output message="wsdl:SetAcct2CardStatusRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetAcctLimitsRq">
+			<input message="wsdl:SetAcctLimitsRq"/>
+			<output message="wsdl:SetAcctLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetAcctStatusRq">
+			<input message="wsdl:SetAcctStatusRq"/>
+			<output message="wsdl:SetAcctStatusRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCard2AcctDescrRq">
+			<input message="wsdl:SetCard2AcctDescrRq"/>
+			<output message="wsdl:SetCard2AcctDescrRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardExpirationRq">
+			<input message="wsdl:SetCardExpirationRq"/>
+			<output message="wsdl:SetCardExpirationRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardLimitsRq">
+			<input message="wsdl:SetCardLimitsRq"/>
+			<output message="wsdl:SetCardLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardPVVRq">
+			<input message="wsdl:SetCardPVVRq"/>
+			<output message="wsdl:SetCardPVVRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetDynamicPVV_PINOffsetRq">
+			<input message="wsdl:SetDynamicPVV_PINOffsetRq"/>
+			<output message="wsdl:SetDynamicPVV_PINOffsetRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardProfileRq">
+			<input message="wsdl:SetCardProfileRq"/>
+			<output message="wsdl:SetCardProfileRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardStatusRq">
+			<input message="wsdl:SetCardStatusRq"/>
+			<output message="wsdl:SetCardStatusRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetEMVCardParamsRq">
+			<input message="wsdl:SetEMVCardParamsRq"/>
+			<output message="wsdl:SetEMVCardParamsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetEMVScriptSeqNoRq">
+			<input message="wsdl:SetEMVScriptSeqNoRq"/>
+			<output message="wsdl:SetEMVScriptSeqNoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetReissuedCardVariantRq">
+			<input message="wsdl:SetReissuedCardVariantRq"/>
+			<output message="wsdl:SetReissuedCardVariantRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetDDCAuditJournalRq">
+			<input message="wsdl:GetDDCAuditJournalRq"/>
+			<output message="wsdl:GetDDCAuditJournalRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetNDCAuditJournalRq">
+			<input message="wsdl:GetNDCAuditJournalRq"/>
+			<output message="wsdl:GetNDCAuditJournalRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetTmpCardLimitsRq">
+			<input message="wsdl:SetTmpCardLimitsRq"/>
+			<output message="wsdl:SetTmpCardLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetTmpAcctLimitsRq">
+			<input message="wsdl:SetTmpAcctLimitsRq"/>
+			<output message="wsdl:SetTmpAcctLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetExtraAuthLevelRq">
+			<input message="wsdl:SetExtraAuthLevelRq"/>
+			<output message="wsdl:SetExtraAuthLevelRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="TextToVISARq">
+			<input message="wsdl:TextToVISARq"/>
+			<output message="wsdl:TextToVISARp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="UpdateCard2AcctLinkRq">
+			<input message="wsdl:UpdateCard2AcctLinkRq"/>
+			<output message="wsdl:UpdateCard2AcctLinkRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="UpdateEMVScriptRq">
+			<input message="wsdl:UpdateEMVScriptRq"/>
+			<output message="wsdl:UpdateEMVScriptRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetAccountUserFieldsRq">
+			<input message="wsdl:SetAccountUserFieldsRq"/>
+			<output message="wsdl:SetAccountUserFieldsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardUserFieldsRq">
+			<input message="wsdl:SetCardUserFieldsRq"/>
+			<output message="wsdl:SetCardUserFieldsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetPersonUserFieldsRq">
+			<input message="wsdl:SetPersonUserFiledsRq"/>
+			<output message="wsdl:SetPersonUserFieldsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="VISAStoplistRq">
+			<input message="wsdl:VISAStoplistRq"/>
+			<output message="wsdl:VISAStoplistRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CryptoFunctionRq">
+			<input message="wsdl:CryptoFunctionRq"/>
+			<output message="wsdl:CryptoFunctionRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CreateCardRq">
+			<input message="wsdl:CreateCardRq"/>
+			<output message="wsdl:CreateCardRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CreatePersonRq">
+			<input message="wsdl:CreatePersonRq"/>
+			<output message="wsdl:CreatePersonRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetUnitEventsRq">
+			<input message="wsdl:GetUnitEventsRq"/>
+			<output message="wsdl:GetUnitEventsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ChangeAlphaNumericPasswordRq">
+			<input message="wsdl:ChangeAlphaNumericPasswordRq"/>
+			<output message="wsdl:ChangeAlphaNumericPasswordRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetFIMIClerkPropertiesRq">
+			<input message="wsdl:GetFIMIClerkPropertiesRq"/>
+			<output message="wsdl:GetFIMIClerkPropertiesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetFIMIClerkPropertiesRq">
+			<input message="wsdl:SetFIMIClerkPropertiesRq"/>
+			<output message="wsdl:SetFIMIClerkPropertiesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCardProfileLimitsRq">
+			<input message="wsdl:GetCardProfileLimitsRq"/>
+			<output message="wsdl:GetCardProfileLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardProfileLimitsRq">
+			<input message="wsdl:SetCardProfileLimitsRq"/>
+			<output message="wsdl:SetCardProfileLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ConfigureCMSProfileRq">
+			<input message="wsdl:ConfigureCMSProfileRq"/>
+			<output message="wsdl:ConfigureCMSProfileRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AddPersonConfidentialInfoRq">
+			<input message="wsdl:AddPersonConfidentialInfoRq"/>
+			<output message="wsdl:AddPersonConfidentialInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DelPersonConfidentialInfoRq">
+			<input message="wsdl:DelPersonConfidentialInfoRq"/>
+			<output message="wsdl:DelPersonConfidentialInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetCardLimitsCounterRq">
+			<input message="wsdl:ResetCardLimitsCountersRq"/>
+			<output message="wsdl:ResetCardLimitsCounterRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetAcctLimitsCounterRq">
+			<input message="wsdl:ResesAcctLimitsCounterRq"/>
+			<output message="wsdl:ResetAcctLimitsCounterRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetAcct2CardLimitsCounterRq">
+			<input message="wsdl:ResetAcct2CardLimitsCounterRq"/>
+			<output message="wsdl:ResetAcct2CardLimitsCounterRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetBadDynAuthPwdTriesRq">
+			<input message="wsdl:ResetBadDynAuthPwdTriesRq"/>
+			<output message="wsdl:ResetBadDynAuthPwdTriesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetReportListRq">
+			<input message="wsdl:GetReportListRq"/>
+			<output message="wsdl:GetReportListRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ExecuteReportRq">
+			<input message="wsdl:ExecuteReportRq"/>
+			<output message="wsdl:ExecuteReportRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetReportsRequestsRq">
+			<input message="wsdl:GetReportsRequestsRq"/>
+			<output message="wsdl:GetReportsRequestsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetReportRq">
+			<input message="wsdl:GetReportRq"/>
+			<output message="wsdl:GetReportRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteReportRequestRq">
+			<input message="wsdl:DeleteReportRequestRq"/>
+			<output message="wsdl:DeleteReportRequestRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ChangeECStatusRq">
+			<input message="wsdl:ChangeECStatusRq"/>
+			<output message="wsdl:ChangeECStatusRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BMSGetFormFieldsRq">
+			<input message="wsdl:BMSGetFormFieldsRq"/>
+			<output message="wsdl:BMSGetFormFieldsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BMSGetFormsRq">
+			<input message="wsdl:BMSGetFormsRq"/>
+			<output message="wsdl:BMSGetFormsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BMSGetMessageFieldsRq">
+			<input message="wsdl:BMSGetMessageFieldsRq"/>
+			<output message="wsdl:BMSGetMessageFieldsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BMSGetMessagesRq">
+			<input message="wsdl:BMSGetMessagesRq"/>
+			<output message="wsdl:BMSGetMessagesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BMSReadMessagesRq">
+			<input message="wsdl:BMSReadMessagesRq"/>
+			<output message="wsdl:BMSReadMessagesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="BMSSendMessageRq">
+			<input message="wsdl:BMSSendMessageRq"/>
+			<output message="wsdl:BMSSendMessageRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GenerateDynamicPasswordRq">
+			<input message="wsdl:GenerateDynamicPasswordRq"/>
+			<output message="wsdl:GenerateDynamicPasswordRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetPrefixInfoRq">
+			<input message="wsdl:GetPrefixInfoRq"/>
+			<output message="wsdl:GetPrefixInfoRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AddTBTransferRq">
+			<input message="wsdl:AddTBTransferRq"/>
+			<output message="wsdl:AddTBTransferRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DellTBTransferRq">
+			<input message="wsdl:DelTBTransferRq"/>
+			<output message="wsdl:DelTBTransferRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AdjustToMCRq">
+			<input message="wsdl:AdjustToMCRq"/>
+			<output message="wsdl:AdjustToMCRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="RepresentToMCRq">
+			<input message="wsdl:RepresentToMCRq"/>
+			<output message="wsdl:RepresentToMCRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="LocalChargebackRq">
+			<input message="wsdl:LocalChargebackRq"/>
+			<output message="wsdl:LocalChargebackRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="LocalChargebackReversalRq">
+			<input message="wsdl:LocalChargebackReversalRq"/>
+			<output message="wsdl:LocalChargebackReversalRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ChargebackToMCRq">
+			<input message="wsdl:ChargebackToMCRq"/>
+			<output message="wsdl:ChargebackToMCRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ChargebackReversalToMCRq">
+			<input message="wsdl:ChargebackReversalToMcRq"/>
+			<output message="wsdl:ChargebackReversalToMCRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="UpdateRetailerRq">
+			<input message="wsdl:UpdateRetailerRq"/>
+			<output message="wsdl:UpdateRetailerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AddTBPaymentRq">
+			<input message="wsdl:AddTBPaymentRq"/>
+			<output message="wsdl:AddTBPaymentRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DelTBPaymentRq">
+			<input message="wsdl:DelTBPaymentRq"/>
+			<output message="wsdl:DelTBPaymentRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="ResetAlphaNumericPasswordRq">
+			<input message="wsdl:ResetAlphaNumericPasswordRq"/>
+			<output message="wsdl:ResetAlphaNumericPasswordRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CreateIssuerObjectsRq">
+			<input message="wsdl:CreateIssuerObjectsRq"/>
+			<output message="wsdl:CreateIssuerObjectsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="PutEventRq">
+			<input message="wsdl:PutEventRq"/>
+			<output message="wsdl:PutEventRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetRepositoryKeyRq">
+			<input message="wsdl:GetRepositoryKeyRq"/>
+			<output message="wsdl:GetRepositoryKeyRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="FileHeaderRq">
+			<input message="wsdl:FileHeaderRq"/>
+			<output message="wsdl:FileHeaderRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetIAConfigurationRq">
+			<input message="wsdl:GetIAConfigurationRq"/>
+			<output message="wsdl:GetIAConfigurationRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="UserDefinedRq">
+			<input message="wsdl:UserDefinedRq"/>
+			<output message="wsdl:UserDefinedRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetIAConfigurationRq">
+			<input message="wsdl:SetIAConfigurationRq"/>
+			<output message="wsdl:SetIAConfigurationRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetAcctGroupLimitsRq">
+			<input message="wsdl:GetAcctGroupLimitsRq"/>
+			<output message="wsdl:GetAcctGroupLimitsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="UpdatePersonRq">
+			<input message="wsdl:UpdatePersonRq"/>
+			<output message="wsdl:UpdatePersonRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="CopyCardLimitCountersRq">
+			<input message="wsdl:CopyCardLimitCountersRq"/>
+			<output message="wsdl:CopyCardLimitCountersRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetNeedChangePasswordRq">
+			<input message="wsdl:SetNeedChangePasswordRq"/>
+			<output message="wsdl:SetNeedChangePasswordRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteOperatorSessionsRq">
+			<input message="wsdl:DeleteOperatorSessionsRq"/>
+			<output message="wsdl:DeleteOperatorSessionsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="TerminalRiskControlRq">
+			<input message="wsdl:TerminalRiskControlRq"/>
+			<output message="wsdl:TerminalRiskControlRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetFIMIClerkAddressesRq">
+			<input message="wsdl:GetFIMIClerkAddressesRq"/>
+			<output message="wsdl:GetFIMIClerkAddressesRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetTranIdRq">
+			<input message="wsdl:GetTranIdRq"/>
+			<output message="wsdl:GetTranIdRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AmExStoplistRq">
+			<input message="wsdl:AmExStoplistRq"/>
+			<output message="wsdl:AmExStoplistRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetCardPersonRq">
+			<input message="wsdl:SetCardPersonRq"/>
+			<output message="wsdl:SetCardPersonRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetAccountPersonRq">
+			<input message="wsdl:SetAccountPersonRq"/>
+			<output message="wsdl:SetAccountPersonRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetAccountOverdraftRq">
+			<input message="wsdl:SetAccountOverdraftRq"/>
+			<output message="wsdl:SetAccountOverdraftRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AddTBRetailerRq">
+			<input message="wsdl:AddTBRetailerRq"/>
+			<output message="wsdl:AddTBRetailerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteTBRetailerRq">
+			<input message="wsdl:DeleteTBRetailerRq"/>
+			<output message="wsdl:DeleteTBRetailerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetVCProductsRq">
+			<input message="wsdl:GetVCProductsRq"/>
+			<output message="wsdl:GetVCProductsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetTerminalAdditionalFieldsRq">
+			<input message="wsdl:GetTerminalAdditionslFieldsRq"/>
+			<output message="wsdl:GetTerminalAdditionslFieldsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="SetTerminalAdditionalFieldsRq">
+			<input message="wsdl:SetTerminalAdditionalFieldsRq"/>
+			<output message="wsdl:SetTerminalAdditionalFieldsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DiscoverStoplistRq">
+			<input message="wsdl:DiscoverStoplistRq"/>
+			<output message="wsdl:DiscoverStoplistRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="UpdateTerminalRq">
+			<input message="wsdl:UpdateTerminalRq"/>
+			<output message="wsdl:UpdateTerminalRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetExcludedPINListRq">
+			<input message="wsdl:GetExcludedPINListRq"/>
+			<output message="wsdl:GetExcludedPINListRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AttachCardToTBCustomerRq">
+			<input message="wsdl:AttachCardToTBCustomerRq"/>
+			<output message="wsdl:AttachCardToTBCustomerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DetachCardFromTBCustomerRq">
+			<input message="wsdl:DetachCardFromTBCustomerRq"/>
+			<output message="wsdl:DetachCardFromTBCustomerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AttachForeignCardToTBCustomerRq">
+			<input message="wsdl:AttachForeignCardToTBCustomerRq"/>
+			<output message="wsdl:AttachForeignCardToTBCustomerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DetachForeignCardFromTBCustomerRq">
+			<input message="wsdl:DetachForeignCardFromTBCustomerRq"/>
+			<output message="wsdl:DetachForeignCardFromTBCustomerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="GetCardAutopaymentsRq">
+			<input message="wsdl:GetCardAutopaymentsRq"/>
+			<output message="wsdl:GetCardAutopaymentsRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="AttachAutopaymentToCardRq">
+			<input message="wsdl:AttachAutopaymentToCardRq"/>
+			<output message="wsdl:AttachAutopaymentToCardRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DetachAutopaymentFromCardRq">
+			<input message="wsdl:DetachAutopaymentFromCardRq"/>
+			<output message="wsdl:DetachAutopaymentFromCardRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="EditCardAutopaymentRq">
+			<input message="wsdl:EditCardAutopaymentRq"/>
+			<output message="wsdl:EditCardAutopaymentRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="StandAloneReversalRq">
+			<input message="wsdl:StandAloneReversalRq"/>
+			<output message="wsdl:StandAloneReversalRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteCardRq">
+			<input message="wsdl:DeleteCardRq"/>
+			<output message="wsdl:DeleteCardRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteTBCustomerRq">
+			<input message="wsdl:DeleteTBCustomerRq"/>
+			<output message="wsdl:DeleteTBCustomerRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeleteAccountRq">
+			<input message="wsdl:DeleteAccountRq"/>
+			<output message="wsdl:DeleteAccountRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+		<operation name="DeletePersonRq">
+			<input message="wsdl:DeletePersonRq"/>
+			<output message="wsdl:DeletePersonRp"/>
+			<fault name="DeclineFault" message="wsdl:DeclineFault"/>
+		</operation>
+      <operation name="AddCMSAbonentRq">
+         <input message="wsdl:AddCMSAbonentRq"/>
+         <output message="wsdl:AddCMSAbonentRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="RemoveCMSAbonentRq">
+         <input message="wsdl:RemoveCMSAbonentRq"/>
+         <output message="wsdl:RemoveCMSAbonentRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="ChangeCMSAbonentRq">
+         <input message="wsdl:ChangeCMSAbonentRq"/>
+         <output message="wsdl:ChangeCMSAbonentRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="SetCard3DSecureAuthenticationRq">
+         <input message="wsdl:SetCard3DSecureAuthenticationRq"/>
+         <output message="wsdl:SetCard3DSecureAuthenticationRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="GetAvatarRq">
+         <input message="wsdl:GetAvatarRq"/>
+         <output message="wsdl:GetAvatarRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="SetAvatarRq">
+         <input message="wsdl:SetAvatarRq"/>
+         <output message="wsdl:SetAvatarRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="ChangePersonConfidentialInfoRq">
+         <input message="wsdl:ChangePersonConfidentialInfoRq"/>
+         <output message="wsdl:ChangePersonConfidentialInfoRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="GetIssuerFeesForOwnTermRq">
+         <input message="wsdl:GetIssuerFeesForOwnTermRq"/>
+         <output message="wsdl:GetIssuerFeesForOwnTermRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="SetIssuerFeesForOwnTermRq">
+         <input message="wsdl:SetIssuerFeesForOwnTermRq"/>
+         <output message="wsdl:SetIssuerFeesForOwnTermRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="GetIssuerFeesForExternalTermRq">
+         <input message="wsdl:GetIssuerFeesForExternalTermRq"/>
+         <output message="wsdl:GetIssuerFeesForExternalTermRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="SetIssuerFeesForExternalTermRq">
+         <input message="wsdl:SetIssuerFeesForExternalTermRq"/>
+         <output message="wsdl:SetIssuerFeesForExternalTermRp"/>
+         <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+	</portType>
+	<binding name="fimi" type="wsdl:fimi">
+		<soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="ATMCommandRq">
+			<soap12:operation soapAction="urn:#ATMCommandRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AcctCreditRq">
+			<soap12:operation soapAction="urn:#AcctCreditRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AcctDebitRq">
+			<soap12:operation soapAction="urn:#AcctDebitRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AddCardVendorRq">
+			<soap12:operation soapAction="urn:#AddCardVendorRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DelCardVendorRq">
+			<soap12:operation soapAction="urn:#DelCardVendorRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AddEMVScriptRq">
+			<soap12:operation soapAction="urn:#AddEMVScriptRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AddRateRq">
+			<soap12:operation soapAction="urn:#AddRateRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AdjustToVISARq">
+			<soap12:operation soapAction="urn:#AdjustToVISARq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BalanceInquiryRq">
+			<soap12:operation soapAction="urn:#BalanceInquiryRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BeginTransactionRq">
+			<soap12:operation soapAction="urn:#BeginTransactionRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CNSCardConfigRq">
+			<soap12:operation soapAction="urn:#CNSCardConfigRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CardRiskControlRq">
+			<soap12:operation soapAction="urn:#CardRiskControlRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ChangeAcctBalancesRq">
+			<soap12:operation soapAction="urn:#ChangeAcctBalancesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ChangePasswordRq">
+			<soap12:operation soapAction="urn:#ChangePasswordRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CommitRq">
+			<soap12:operation soapAction="urn:#CommitRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ConfirmCopyRequestToVISARq">
+			<soap12:operation soapAction="urn:#ConfirmCopyRequestToVISARq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CreateAccountRq">
+			<soap12:operation soapAction="urn:#CreateAccountRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CreateTBCustomerRq">
+			<soap12:operation soapAction="urn:#CreateTBCustomerRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CreateVCardRq">
+			<soap12:operation soapAction="urn:#CreateVCardRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteEMVScriptRq">
+			<soap12:operation soapAction="urn:#DeleteEMVScriptRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteRateRq">
+			<soap12:operation soapAction="urn:#DeleteRateRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="FeeToVISARq">
+			<soap12:operation soapAction="urn:#FeeToVISARq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMActivityRq">
+			<soap12:operation soapAction="urn:#GetATMActivityRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMAdminTransRq">
+			<soap12:operation soapAction="urn:#GetATMAdminTransRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMEventsRq">
+			<soap12:operation soapAction="urn:#GetATMEventsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMFitnessRq">
+			<soap12:operation soapAction="urn:#GetATMFitnessRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMHardwareRq">
+			<soap12:operation soapAction="urn:#GetATMHardwareRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMHoppersRq">
+			<soap12:operation soapAction="urn:#GetATMHoppersRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMMediaRq">
+			<soap12:operation soapAction="urn:#GetATMMediaRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMSensorsRq">
+			<soap12:operation soapAction="urn:#GetATMSensorsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetATMStatusRq">
+			<soap12:operation soapAction="urn:#GetATMStatusRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetAcct2CardLimitsRq">
+			<soap12:operation soapAction="urn:#GetAcct2CardLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetAcctInfoRq">
+			<soap12:operation soapAction="urn:#GetAcctInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetAcctLimitsRq">
+			<soap12:operation soapAction="urn:#GetAcctLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetAcctStatementRq">
+			<soap12:operation soapAction="urn:#GetAcctStatementRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetBackOfficeInfoRq">
+			<soap12:operation soapAction="urn:#GetBackOfficeInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCardInfoRq">
+			<soap12:operation soapAction="urn:#GetCardInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCardLimitsRq">
+			<soap12:operation soapAction="urn:#GetCardLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCardStatementRq">
+			<soap12:operation soapAction="urn:#GetCardStatementRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCorrespAcctInfoRq">
+			<soap12:operation soapAction="urn:#GetCorrespAcctInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetEMVScriptsRq">
+			<soap12:operation soapAction="urn:#GetEMVScriptsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetFIMIClerksRq">
+			<soap12:operation soapAction="urn:#GetFIMIClerksRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetFIMITransRq">
+			<soap12:operation soapAction="urn:#GetFIMITransRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetPersonsHierarchyRq">
+			<soap12:operation soapAction="urn:#GetPersonsHierarchyRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetPersonInfoRq">
+			<soap12:operation soapAction="urn:#GetPersonInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetRateGroupsRq">
+			<soap12:operation soapAction="urn:#GetRateGroupsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetRatesRq">
+			<soap12:operation soapAction="urn:#GetRatesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetRetailerListRq">
+			<soap12:operation soapAction="urn:#GetRetailerListRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetTLADirRq">
+			<soap12:operation soapAction="urn:#GetTLADirRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetTermListRq">
+			<soap12:operation soapAction="urn:#GetTermListRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetTransInfoRq">
+			<soap12:operation soapAction="urn:#GetTransInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCMSBufferRq">
+			<soap12:operation soapAction="urn:#GetCMSBufferRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCMSArchiveRq">
+			<soap12:operation soapAction="urn:#GetCMSArchiveRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCMSCommandsRq">
+			<soap12:operation soapAction="urn:#GetCMSCommandsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetIssuerHistoryRq">
+			<soap12:operation soapAction="urn:#GetIssuerHistoryRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetIssuerHistoryDetailsRq">
+			<soap12:operation soapAction="urn:#GetIssuerHistoryDetailsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetUnitStateRq">
+			<soap12:operation soapAction="urn:#GetUnitStateRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetWorkingKeyRq">
+			<soap12:operation soapAction="urn:#GetWorkingKeyRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetPVV_PINOffsetRq">
+			<soap12:operation soapAction="urn:#GetPVV_PINOffsetRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCVVRq">
+			<soap12:operation soapAction="urn:#GetCVVRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetTBCustHistoryRq">
+			<soap12:operation soapAction="urn:#GetTBCustHistoryRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CheckPVV_PINOffsetRq">
+			<soap12:operation soapAction="urn:#CheckPVV_PINOffsetRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="UnitCommandRq">
+			<soap12:operation soapAction="urn:#UnitCommandRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="InitSessionRq">
+			<soap12:operation soapAction="urn:#InitSessionRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="LocalStoplistRq">
+			<soap12:operation soapAction="urn:#LocalStoplistRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="LogonRq">
+			<soap12:operation soapAction="urn:#LogonRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="LogoffRq">
+			<soap12:operation soapAction="urn:#LogoffRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="MCStoplistRq">
+			<soap12:operation soapAction="urn:#MCStoplistRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="MCGlobalStoplistRq">
+			<soap12:operation soapAction="urn:#MCGlobalStoplistRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ModifyCorrespAcctRq">
+			<soap12:operation soapAction="urn:#ModifyCorrespAcctRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ModifyRateRq">
+			<soap12:operation soapAction="urn:#ModifyRateRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="POSCommandRq">
+			<soap12:operation soapAction="urn:#POSCommandRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="POSStateRq">
+			<soap12:operation soapAction="urn:#POSStateRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="POSRequestRq">
+			<soap12:operation soapAction="urn:#POSRequestRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="RepresentToVISARq">
+			<soap12:operation soapAction="urn:#RepresentToVISARq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetBadPINTriesRq">
+			<soap12:operation soapAction="urn:#ResetBadPINTriesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetCardEMVATCRq">
+			<soap12:operation soapAction="urn:#ResetCardEMVATCRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetCard2AcctLinkRq">
+			<soap12:operation soapAction="urn:#ResetCard2AcctLinkRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="Reset_IB_BadPINTriesRq">
+			<soap12:operation soapAction="urn:#Reset_IB_BadPINTriesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="Reset_IB_PINRq">
+			<soap12:operation soapAction="urn:#Reset_IB_PINRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ReverseTransactionRq">
+			<soap12:operation soapAction="urn:#ReverseTransactionRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="RollBackRq">
+			<soap12:operation soapAction="urn:#RollBackRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetAcct2CardLimitsRq">
+			<soap12:operation soapAction="urn:#SetAcct2CardLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetAcct2CardStatusRq">
+			<soap12:operation soapAction="urn:#SetAcct2CardStatusRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetAcctLimitsRq">
+			<soap12:operation soapAction="urn:#SetAcctLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetAcctStatusRq">
+			<soap12:operation soapAction="urn:#SetAcctStatusRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCard2AcctDescrRq">
+			<soap12:operation soapAction="urn:#SetCard2AcctDescrRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardExpirationRq">
+			<soap12:operation soapAction="urn:#SetCardExpirationRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardLimitsRq">
+			<soap12:operation soapAction="urn:#SetCardLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardPVVRq">
+			<soap12:operation soapAction="urn:#SetCardPVVRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetDynamicPVV_PINOffsetRq">
+			<soap12:operation soapAction="urn:#SetDynamicCardPVVRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardProfileRq">
+			<soap12:operation soapAction="urn:#SetCardProfileRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardStatusRq">
+			<soap12:operation soapAction="urn:#SetCardStatusRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetEMVCardParamsRq">
+			<soap12:operation soapAction="urn:#SetEMVCardParamsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetEMVScriptSeqNoRq">
+			<soap12:operation soapAction="urn:#SetEMVScriptSeqNoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetReissuedCardVariantRq">
+			<soap12:operation soapAction="urn:#SetReissuedCardVariantRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetDDCAuditJournalRq">
+			<soap12:operation soapAction="urn:#GetDDCAuditJournalRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetNDCAuditJournalRq">
+			<soap12:operation soapAction="urn:#GetNDCAuditJournalRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetTmpCardLimitsRq">
+			<soap12:operation soapAction="urn:#SetTmpCardLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetTmpAcctLimitsRq">
+			<soap12:operation soapAction="urn:#SetTmpAcctLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetExtraAuthLevelRq">
+			<soap12:operation soapAction="urn:#SetExtraAuthLevelRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="TextToVISARq">
+			<soap12:operation soapAction="urn:#TextToVISARq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="UpdateCard2AcctLinkRq">
+			<soap12:operation soapAction="urn:#UpdateCard2AcctLinkRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="UpdateEMVScriptRq">
+			<soap12:operation soapAction="urn:#UpdateEMVScriptRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetAccountUserFieldsRq">
+			<soap12:operation soapAction="urn:#SetAccountUserFieldsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardUserFieldsRq">
+			<soap12:operation soapAction="urn:#SetCardUserFieldsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetPersonUserFieldsRq">
+			<soap12:operation soapAction="urn:#SetPersonUserFieldsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="VISAStoplistRq">
+			<soap12:operation soapAction="urn:#VISAStoplistRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CryptoFunctionRq">
+			<soap12:operation soapAction="urn:#CryptoFunctionRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CreateCardRq">
+			<soap12:operation soapAction="urn:#CreateCardRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CreatePersonRq">
+			<soap12:operation soapAction="urn:#CreatePersonRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetUnitEventsRq">
+			<soap12:operation soapAction="urn:#GetUnitEventsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ChangeAlphaNumericPasswordRq">
+			<soap12:operation soapAction="urn:#ChangeAlphaNumericPasswordRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetFIMIClerkPropertiesRq">
+			<soap12:operation soapAction="urn:#GetFIMIClerkPropertiesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetFIMIClerkPropertiesRq">
+			<soap12:operation soapAction="urn:#SetFIMIClerkPropertiesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetCardProfileLimitsRq">
+			<soap12:operation soapAction="urn:#GetCardProfileLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardProfileLimitsRq">
+			<soap12:operation soapAction="urn:#SetCardProfileLimitsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ConfigureCMSProfileRq">
+			<soap12:operation soapAction="urn:#ConfigureCMSProfileRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AddPersonConfidentialInfoRq">
+			<soap12:operation soapAction="urn:#AddConfidentialInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DelPersonConfidentialInfoRq">
+			<soap12:operation soapAction="urn:#DelConfidentialInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetCardLimitsCounterRq">
+			<soap12:operation soapAction="urn:#ResetCardLimitsCounterRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetAcctLimitsCounterRq">
+			<soap12:operation soapAction="urn:#ResetAcctLimitsCounterRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetAcct2CardLimitsCounterRq">
+			<soap12:operation soapAction="urn:#ResetAcct2CardLimitsCounterRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetBadDynAuthPwdTriesRq">
+			<soap12:operation soapAction="urn:#ResetBadDynAuthPwdTriesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetReportListRq">
+			<soap12:operation soapAction="urn:#GetReportListRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ExecuteReportRq">
+			<soap12:operation soapAction="urn:#ExecuteReportRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetReportsRequestsRq">
+			<soap12:operation soapAction="urn:#GetReportRequestsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetReportRq">
+			<soap12:operation soapAction="urn:#GetReportRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteReportRequestRq">
+			<soap12:operation soapAction="urn:#DeleteReportRequestRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ChangeECStatusRq">
+			<soap12:operation soapAction="urn:#ChangeCardECStatusRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BMSGetFormFieldsRq">
+			<soap12:operation soapAction="urn:#BMSGetFormFieldsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BMSGetFormsRq">
+			<soap12:operation soapAction="urn:#BMSGetFormsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BMSGetMessageFieldsRq">
+			<soap12:operation soapAction="urn:#BMSGetMessageFieldsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BMSGetMessagesRq">
+			<soap12:operation soapAction="urn:#BMSGetMessagesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BMSReadMessagesRq">
+			<soap12:operation soapAction="urn:#BMSReadMessagesRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="BMSSendMessageRq">
+			<soap12:operation soapAction="urn:#BMSSendMessageRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GenerateDynamicPasswordRq">
+			<soap12:operation soapAction="urn:#GenerateDynamicPasswordRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetPrefixInfoRq">
+			<soap12:operation soapAction="urn:#GetPrefixInfoRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AddTBTransferRq">
+			<soap12:operation soapAction="urn:#AddTBTransferRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DellTBTransferRq">
+			<soap12:operation soapAction="urn:#DellTBTransferRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AdjustToMCRq">
+			<soap12:operation soapAction="urn:#AdjustToMCRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="RepresentToMCRq">
+			<soap12:operation soapAction="urn:#RepresentmentToMCRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="LocalChargebackRq">
+			<soap12:operation soapAction="urn:#ChargebackToLocalRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="LocalChargebackReversalRq">
+			<soap12:operation soapAction="urn:#ChargebackReversalToLocalRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ChargebackToMCRq">
+			<soap12:operation soapAction="urn:#ChargebackToMCRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ChargebackReversalToMCRq">
+			<soap12:operation soapAction="urn:#ChargebackReversalToMCRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="UpdateRetailerRq">
+			<soap12:operation soapAction="urn:#UpdateRetailerRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AddTBPaymentRq">
+			<soap12:operation soapAction="urn:#AddTBPaymentRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DelTBPaymentRq">
+			<soap12:operation soapAction="urn:#DelTBPaymentRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="ResetAlphaNumericPasswordRq">
+			<soap12:operation soapAction="urn:#ResetAlphaNumericPassword"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CreateIssuerObjectsRq">
+			<soap12:operation soapAction="urn:#CreateIssuerObjectsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="PutEventRq">
+			<soap12:operation soapAction="urn:#PutEventRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetRepositoryKeyRq">
+			<soap12:operation soapAction="urn:#GetRepositoryKeyRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="FileHeaderRq">
+			<soap12:operation soapAction="urn:#FileHeaderRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetIAConfigurationRq">
+			<soap12:operation soapAction="urn:#GetIAConfigurationRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="UserDefinedRq">
+			<soap12:operation soapAction="urn:#UserDefinedRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetIAConfigurationRq">
+			<soap12:operation soapAction="urn:#SetIAConfigurationRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetAcctGroupLimitsRq">
+			<soap12:operation soapAction="urn:#GetAcctGroupLimitsRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="UpdatePersonRq">
+			<soap12:operation soapAction="urn:#UpdatePersonRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="CopyCardLimitCountersRq">
+			<soap12:operation soapAction="urn:#CopyCardLimitCountersRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetNeedChangePasswordRq">
+			<soap12:operation soapAction="urn:#SetNeedChangePasswordRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteOperatorSessionsRq">
+			<soap12:operation soapAction="urn:#DeleteOperatorSessionsRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="TerminalRiskControlRq">
+			<soap12:operation soapAction="urn:#TerminalRiskControlRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetFIMIClerkAddressesRq">
+			<soap12:operation soapAction="urn:#GetFIMIClerkAddressesRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetTranIdRq">
+			<soap12:operation soapAction="urn:#GetTranIdRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AmExStoplistRq">
+			<soap12:operation soapAction="urn:#AmExStoplistRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetCardPersonRq">
+			<soap12:operation soapAction="urn:#SetCardPersonRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetAccountPersonRq">
+			<soap12:operation soapAction="urn:#SetAccountPersonRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetAccountOverdraftRq">
+			<soap12:operation soapAction="urn:#SetAccountOverdraftRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AddTBRetailerRq">
+			<soap12:operation soapAction="urn:#AddTBRetailerRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteTBRetailerRq">
+			<soap12:operation soapAction="urn:#DeleteTBRetailerRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetVCProductsRq">
+			<soap12:operation soapAction="urn:#GetVCProductsRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetTerminalAdditionalFieldsRq">
+			<soap12:operation soapAction="urn:#GetTerminalAdditionalFieldsRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="SetTerminalAdditionalFieldsRq">
+			<soap12:operation soapAction="urn:#SetTerminalAdditionalFieldsRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DiscoverStoplistRq">
+			<soap12:operation soapAction="urn:#DiscoverStoplistRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="UpdateTerminalRq">
+			<soap12:operation soapAction="urn:#UpdateTerminalRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetExcludedPINListRq">
+			<soap12:operation soapAction="urn:#GetExcludedPINListRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AttachCardToTBCustomerRq">
+			<soap12:operation soapAction="urn:#AttachCardToTBCustomerRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DetachCardFromTBCustomerRq">
+			<soap12:operation soapAction="urn:#DetachCardFromTBCustomerRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="AttachForeignCardToTBCustomerRq">
+			<soap12:operation soapAction="urn:#AttachForeignCardToTBCustomerRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DetachForeignCardFromTBCustomerRq">
+			<soap12:operation soapAction="urn:#DetachForeignCardFromTBCustomerRq" soapActionRequired="true"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+      <operation name="GetCardAutopaymentsRq">
+			<soap12:operation soapAction="urn:#GetCardAutopaymentsRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+      <operation name="AttachAutopaymentToCardRq">
+			<soap12:operation soapAction="urn:#AttachAutopaymentToCardRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+      <operation name="DetachAutopaymentFromCardRq">
+			<soap12:operation soapAction="urn:#DetachAutopaymentFromCardRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+      <operation name="EditCardAutopaymentRq">
+			<soap12:operation soapAction="urn:#EditCardAutopaymentRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="StandAloneReversalRq">
+			<soap12:operation soapAction="urn:#StandAloneReversalRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteCardRq">
+			<soap12:operation soapAction="urn:#DeleteCardRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteTBCustomerRq">
+			<soap12:operation soapAction="urn:#DeleteTBCustomerRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeleteAccountRq">
+			<soap12:operation soapAction="urn:#DeleteAccountRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="DeletePersonRq">
+			<soap12:operation soapAction="urn:#DeletePersonRq"/>
+			<input>
+				<soap12:body use="literal"/>
+			</input>
+			<output>
+				<soap12:body use="literal"/>
+			</output>
+			<fault name="DeclineFault">
+				<soap12:fault name="DeclineFault" use="literal"/>
+			</fault>
+		</operation>
+      <operation name="AddCMSAbonentRq">
+         <soap12:operation soapAction="urn:#AddCMSAbonentRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="RemoveCMSAbonentRq">
+         <soap12:operation soapAction="urn:#RemoveCMSAbonentRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="ChangeCMSAbonentRq">
+         <soap12:operation soapAction="urn:#ChangeCMSAbonentRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="SetCard3DSecureAuthenticationRq">
+         <soap12:operation soapAction="urn:#SetCard3DSecureAuthenticationRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="GetAvatarRq">
+         <soap12:operation soapAction="urn:#GetAvatarRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="SetAvatarRq">
+         <soap12:operation soapAction="urn:#SetAvatarRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="ChangePersonConfidentialInfoRq">
+         <soap12:operation soapAction="urn:#ChangePersonConfidentialInfoRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="GetIssuerFeesForOwnTermRq">
+         <soap12:operation soapAction="urn:#GetIssuerFeesForOwnTermRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="SetIssuerFeesForOwnTermRq">
+         <soap12:operation soapAction="urn:#SetIssuerFeesForOwnTermRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="GetIssuerFeesForExternalTermRq">
+         <soap12:operation soapAction="urn:#GetIssuerFeesForExternalTermRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+      <operation name="SetIssuerFeesForExternalTermRq">
+         <soap12:operation soapAction="urn:#SetIssuerFeesForExternalTermRq"/>
+         <input>
+            <soap12:body use="literal"/>
+         </input>
+         <output>
+            <soap12:body use="literal"/>
+         </output>
+         <fault name="DeclineFault">
+            <soap12:fault name="DeclineFault" use="literal"/>
+         </fault>
+      </operation>
+	</binding>
+	<service name="fimi">
+		<port name="fimi" binding="wsdl:fimi">
+			<soap12:address location="http://localhost:21000/"/>
+		</port>
+	</service>
+</definitions>

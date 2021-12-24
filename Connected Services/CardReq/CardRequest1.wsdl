@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.veneka.com/Indigo" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CardRequest" targetNamespace="http://schemas.veneka.com/Indigo" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ICardRequest_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.veneka.com/Indigo/Imports">
+      <xsd:import schemaLocation="https://localhost:505/CardRequest.svc?xsd=xsd0" namespace="http://schemas.veneka.com/Indigo" />
+      <xsd:import schemaLocation="https://localhost:505/CardRequest.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://localhost:505/CardRequest.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IndigoCardIssuanceService.util" />
+      <xsd:import schemaLocation="https://localhost:505/CardRequest.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesCardManagement.API.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICardRequest_RequestCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestCard" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_RequestCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_RequestCardExt_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestCardExt" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_RequestCardExt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestCardExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_RequestedCardStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestedCardStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_RequestedCardStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestedCardStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_QueryCardRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryCardRequest" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_QueryCardRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryCardRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_ActivateCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateCard" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_ActivateCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_ChangeCardStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeCardStatus" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_ChangeCardStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeCardStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_VerifyPersonByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyPersonByID" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_VerifyPersonByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyPersonByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_QueryCardByAWBNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryCardByAWBNumber" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_QueryCardByAWBNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryCardByAWBNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardbyContactNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardbyContactNumber" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardbyContactNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardbyContactNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardbyContactNumberExt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardbyContactNumberExt" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardbyContactNumberExt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardbyContactNumberExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardListbyContactNumberExt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardListbyContactNumberExt" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardListbyContactNumberExt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardListbyContactNumberExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardsByPrepaidAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsByPrepaidAccount" />
+  </wsdl:message>
+  <wsdl:message name="ICardRequest_GetCardsByPrepaidAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsByPrepaidAccountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICardRequest">
+    <wsdl:operation name="RequestCard">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/RequestCard" message="tns:ICardRequest_RequestCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/RequestCardResponse" message="tns:ICardRequest_RequestCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestCardExt">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/RequestCardExt" message="tns:ICardRequest_RequestCardExt_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/RequestCardExtResponse" message="tns:ICardRequest_RequestCardExt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestedCardStatus">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/RequestedCardStatus" message="tns:ICardRequest_RequestedCardStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/RequestedCardStatusResponse" message="tns:ICardRequest_RequestedCardStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCardRequest">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/QueryCardRequest" message="tns:ICardRequest_QueryCardRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/QueryCardRequestResponse" message="tns:ICardRequest_QueryCardRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateCard">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/ActivateCard" message="tns:ICardRequest_ActivateCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/ActivateCardResponse" message="tns:ICardRequest_ActivateCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCardStatus">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/ChangeCardStatus" message="tns:ICardRequest_ChangeCardStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/ChangeCardStatusResponse" message="tns:ICardRequest_ChangeCardStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPersonByID">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/VerifyPersonByID" message="tns:ICardRequest_VerifyPersonByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/VerifyPersonByIDResponse" message="tns:ICardRequest_VerifyPersonByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCardByAWBNumber">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/QueryCardByAWBNumber" message="tns:ICardRequest_QueryCardByAWBNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/QueryCardByAWBNumberResponse" message="tns:ICardRequest_QueryCardByAWBNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardbyContactNumber">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardbyContactNumber" message="tns:ICardRequest_GetCardbyContactNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardbyContactNumberResponse" message="tns:ICardRequest_GetCardbyContactNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardbyContactNumberExt">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardbyContactNumberExt" message="tns:ICardRequest_GetCardbyContactNumberExt_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardbyContactNumberExtResponse" message="tns:ICardRequest_GetCardbyContactNumberExt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardListbyContactNumberExt">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardListbyContactNumberExt" message="tns:ICardRequest_GetCardListbyContactNumberExt_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardListbyContactNumberExtResponse" message="tns:ICardRequest_GetCardListbyContactNumberExt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsByPrepaidAccount">
+      <wsdl:input wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardsByPrepaidAccount" message="tns:ICardRequest_GetCardsByPrepaidAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.veneka.com/Indigo/ICardRequest/GetCardsByPrepaidAccountResponse" message="tns:ICardRequest_GetCardsByPrepaidAccount_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ICardRequest" type="tns:ICardRequest">
+    <wsp:PolicyReference URI="#WSHttpBinding_ICardRequest_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RequestCard">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/RequestCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestCardExt">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/RequestCardExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestedCardStatus">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/RequestedCardStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCardRequest">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/QueryCardRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateCard">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/ActivateCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCardStatus">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/ChangeCardStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPersonByID">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/VerifyPersonByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCardByAWBNumber">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/QueryCardByAWBNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardbyContactNumber">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/GetCardbyContactNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardbyContactNumberExt">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/GetCardbyContactNumberExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardListbyContactNumberExt">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/GetCardListbyContactNumberExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsByPrepaidAccount">
+      <soap12:operation soapAction="http://schemas.veneka.com/Indigo/ICardRequest/GetCardsByPrepaidAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CardRequest">
+    <wsdl:port name="WSHttpBinding_ICardRequest" binding="tns:WSHttpBinding_ICardRequest">
+      <soap12:address location="https://localhost:505/CardRequest.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://localhost:505/CardRequest.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

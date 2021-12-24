@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4f57492e-a703-4cef-bbc5-0bd383119d8e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://localhost:505/CardRequest.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CardRequest.xsd" MetadataType="Schema" ID="f5b37201-dfc6-4d88-8fe6-5f939aaf9943" SourceId="1" SourceUrl="https://localhost:505/CardRequest.svc?xsd=xsd1" />
+    <MetadataFile FileName="CardRequest1.xsd" MetadataType="Schema" ID="d2a64cb2-ed8f-4fbc-a6dc-77a15499f682" SourceId="1" SourceUrl="https://localhost:505/CardRequest.svc?xsd=xsd0" />
+    <MetadataFile FileName="CardRequest1.wsdl" MetadataType="Wsdl" ID="f48df48e-e97c-4bc1-83bc-8cb43d6b8f3c" SourceId="1" SourceUrl="https://localhost:505/CardRequest.svc?wsdl" />
+    <MetadataFile FileName="CardRequest2.xsd" MetadataType="Schema" ID="22f9b36d-0cc2-4bb7-b42d-f070093aab22" SourceId="1" SourceUrl="https://localhost:505/CardRequest.svc?xsd=xsd2" />
+    <MetadataFile FileName="CardRequest3.xsd" MetadataType="Schema" ID="7c6fdf03-c0cf-4646-9efb-e491d9329635" SourceId="1" SourceUrl="https://localhost:505/CardRequest.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

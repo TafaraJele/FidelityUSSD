@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.veneka.com/Indigo" elementFormDefault="qualified" targetNamespace="http://schemas.veneka.com/Indigo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://localhost:505/CardRequest.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IndigoCardIssuanceService.util" />
+  <xs:import schemaLocation="https://localhost:505/CardRequest.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesCardManagement.API.DataContracts" />
+  <xs:element name="RequestCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Request">
+    <xs:sequence>
+      <xs:element name="AccountType" type="xs:int" />
+      <xs:element name="BranchCode" nillable="true" type="xs:string" />
+      <xs:element name="CardIssueMethodId" type="xs:int" />
+      <xs:element name="CardIssueType" type="xs:int" />
+      <xs:element minOccurs="0" name="CmsId" type="xs:long" />
+      <xs:element minOccurs="0" name="ContactNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContractNumber" nillable="true" type="xs:string" />
+      <xs:element name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element name="CustomerAccountNumber" nillable="true" type="xs:string" />
+      <xs:element name="CustomerFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+      <xs:element name="CustomerLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerMiddleName" nillable="true" type="xs:string" />
+      <xs:element name="CustomerTitle" type="xs:int" />
+      <xs:element name="CustomerType" type="xs:int" />
+      <xs:element name="DomicileBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdNumber" nillable="true" type="xs:string" />
+      <xs:element name="IssuerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameOnCard" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrintingBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Priority" type="xs:int" />
+      <xs:element name="ProductCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RequestBranchCode" nillable="true" type="xs:string" />
+      <xs:element name="RequestChannel" type="xs:int" />
+      <xs:element minOccurs="0" name="RequestReferenceNumber" nillable="true" type="xs:string" />
+      <xs:element name="Residency" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Request" nillable="true" type="tns:Request" />
+  <xs:element name="RequestCardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestCardResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Response">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="Response" Namespace="http://schemas.veneka.com/Indigo" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Response" nillable="true" type="tns:Response" />
+  <xs:complexType name="BaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ResponseException" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponseMessage" nillable="true" type="xs:string" />
+      <xs:element name="ResponseType" type="tns:ResponseCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+  <xs:simpleType name="ResponseCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="00" />
+      <xs:enumeration value="01" />
+      <xs:enumeration value="02" />
+      <xs:enumeration value="03" />
+      <xs:enumeration value="04" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResponseCode" nillable="true" type="tns:ResponseCode" />
+  <xs:element name="RequestCardExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="tns:Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestCardExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestCardExtResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestedCardStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="referenceNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestedCardStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestedCardStatusResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryCardRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="referenceNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryCardRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QueryCardRequestResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="referenceNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateCardResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActivateCardResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeCardStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cardReferenceNumber" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IndigoCardIssuanceService.util" minOccurs="0" name="newStatus" type="q1:CardStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeCardStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangeCardStatusResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerifyPersonByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AWBRefNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IDNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerifyPersonByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesCardManagement.API.DataContracts" minOccurs="0" name="VerifyPersonByIDResult" nillable="true" type="q2:CardManagementResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryCardByAWBNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AWBRefNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryCardByAWBNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesCardManagement.API.DataContracts" minOccurs="0" name="QueryCardByAWBNumberResult" nillable="true" type="q3:CardManagementResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardbyContactNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardbyContactNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCardbyContactNumberResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardbyContactNumberExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="last4Digits" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardbyContactNumberExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCardbyContactNumberExtResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardListbyContactNumberExt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardListbyContactNumberExtResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCardListbyContactNumberExtResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardsByPrepaidAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lastFourDigits" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="prepaidAccountNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardsByPrepaidAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCardsByPrepaidAccountResult" nillable="true" type="tns:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

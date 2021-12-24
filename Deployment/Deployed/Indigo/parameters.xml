@@ -1,0 +1,6 @@
+﻿<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="NsanoUpdated" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Kent\\Desktop\\github\ Deployments\\FidelityDeployed\\FidelityUSSD\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Kent\\Desktop\\github\ Deployments\\FidelityDeployed\\FidelityUSSD\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>
