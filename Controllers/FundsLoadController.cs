@@ -32,8 +32,6 @@ namespace Indigo.Controllers
 
         public FundLoadResponse FundsLoad([FromBody] FundsLoad funds)
         {
-            //initialising Response
-            Response resp = null;
             Application application = new Application();
             CommonServices services = new CommonServices();
             var fimilogger = FIMILogger.GetFimiLoggerInstance();
