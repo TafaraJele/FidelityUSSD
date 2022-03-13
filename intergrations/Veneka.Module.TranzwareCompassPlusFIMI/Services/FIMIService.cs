@@ -90,10 +90,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
 
             var lo = FIMILogger.GetFimiLoggerInstance();
 
-          
-
             //lo.Info("Endpoint " + client.Endpoint.Address.Uri.ToString());
-
 
             //client.pro
 
@@ -133,11 +130,9 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
                 }
             }
 
-
             lo.Info("Certificate Issuer : " + client.ClientCredentials.ClientCertificate.Certificate.Issuer);
             lo.Info("Certificate Subject :" + client.ClientCredentials.ClientCertificate.Certificate.Subject);
             lo.Info("Certificate Thumb print" + client.ClientCredentials.ClientCertificate.Certificate.Thumbprint);
-
 
             IgnoreUntrustedSSL = true;
         }

@@ -1058,8 +1058,6 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
             var myCleanJsonObject = JObject.Parse(rt);
 
-
-
             return myCleanJsonObject;
         }
 
