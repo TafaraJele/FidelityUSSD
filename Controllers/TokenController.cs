@@ -4,7 +4,7 @@ using System.Web.Http;
 using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
 using Newtonsoft.Json.Linq;
 using Indigo.Auth;
-using Veneka.Indigo.Abstractons.Models;
+using Veneka.Indigo.Abstractions.Models;
 
 namespace Indigo.Controllers
 {

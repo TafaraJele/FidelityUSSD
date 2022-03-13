@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indigo", "Indigo.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Module.TranzwareCompassPlusFIMI", "intergrations\Veneka.Module.TranzwareCompassPlusFIMI\Veneka.Module.TranzwareCompassPlusFIMI.csproj", "{A6A322B1-4916-40DB-8D02-D598F9A2B21D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Indigo.Core", "..\Veneka.Indigo.Core\Veneka.Indigo.Core.csproj", "{1DFAF3B6-3263-4989-9639-C95DE4C696C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Indigo.Abstractions", "..\Veneka.Indigo.Abstractions\Veneka.Indigo.Abstractions.csproj", "{B76356B6-D03B-4C8B-B92A-35EC9152639F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Indigo.Abstractions", "..\Veneka.Indigo.Abstractons\Veneka.Indigo.Abstractions.csproj", "{134C9DED-123C-4300-99FD-6108584B13FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Indigo.Core", "..\Veneka.Indigo.Core\Veneka.Indigo.Core.csproj", "{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{A6A322B1-4916-40DB-8D02-D598F9A2B21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A322B1-4916-40DB-8D02-D598F9A2B21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6A322B1-4916-40DB-8D02-D598F9A2B21D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DFAF3B6-3263-4989-9639-C95DE4C696C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DFAF3B6-3263-4989-9639-C95DE4C696C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DFAF3B6-3263-4989-9639-C95DE4C696C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DFAF3B6-3263-4989-9639-C95DE4C696C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{134C9DED-123C-4300-99FD-6108584B13FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{134C9DED-123C-4300-99FD-6108584B13FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{134C9DED-123C-4300-99FD-6108584B13FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{134C9DED-123C-4300-99FD-6108584B13FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76356B6-D03B-4C8B-B92A-35EC9152639F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76356B6-D03B-4C8B-B92A-35EC9152639F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76356B6-D03B-4C8B-B92A-35EC9152639F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76356B6-D03B-4C8B-B92A-35EC9152639F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

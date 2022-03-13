@@ -5,7 +5,9 @@ using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Web;
-using Veneka.Indigo.Abstractons.Models;
+using Veneka.Indigo.Abstractions.Enums;
+using Veneka.Indigo.Abstractions.Models;
+
 
 namespace Indigo.Utility
 {
@@ -54,7 +56,7 @@ namespace Indigo.Utility
 
             if (response.ResponseType == ResponseCode._00)
             {
-                basicResponse.ResponseType = Veneka.Indigo.Abstractons.Enums.ResponseType.SUCCESS;
+                basicResponse.ResponseType = ResponseType.SUCCESS;
                 if (string.IsNullOrEmpty(response.Value))
                 {
                     fimilogger.Info($"Card was not found");
@@ -73,8 +75,8 @@ namespace Indigo.Utility
             else
             {
                 fimilogger.Info($"There was an error requesting the card from Indigo Message {response.ResponseMessage}, ");
-                basicResponse.ResponseType = Veneka.Indigo.Abstractons.Enums.ResponseType.ERROR;
-                basicResponse.Messages.Add(new Messages { Code = "99", MessageType = Veneka.Indigo.Abstractons.Enums.MessageType.ERROR, Message = response.ResponseMessage, Exception = response.ResponseException });
+                basicResponse.ResponseType = ResponseType.ERROR;
+                basicResponse.Messages.Add(new Messages { Code = "99", MessageType = MessageType.ERROR, Message = response.ResponseMessage, Exception = response.ResponseException });
             }
 
             return basicResponse;

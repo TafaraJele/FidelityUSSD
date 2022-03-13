@@ -5,8 +5,9 @@ using Indigo.CardReq;
 using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
 using System.Configuration;
 using Indigo.Utility;
-using Veneka.Indigo.Core.Services;
-using Veneka.Indigo.Abstractons.Models;
+using Veneka.Indigo.Abstractions.Enums;
+using Veneka.Indigo.Abstractions.Models;
+using Veneka.Indigo.Core;
 
 namespace Indigo.Controllers
 {
@@ -48,7 +49,7 @@ namespace Indigo.Controllers
 
             fimilogger.Info($"Logging basic response {basicResponse.ResponseType} {basicResponse.IsAccountCardFound}");
         
-            if (basicResponse.ResponseType != Veneka.Indigo.Abstractons.Enums.ResponseType.SUCCESS || !basicResponse.IsAccountCardFound)
+            if (basicResponse.ResponseType != ResponseType.SUCCESS || !basicResponse.IsAccountCardFound)
             {
                 return response;
             }

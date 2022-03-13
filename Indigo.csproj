@@ -1502,12 +1502,12 @@
     <WCFMetadataStorage Include="Connected Services\IndigoWebService\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Veneka.Indigo.Abstractons\Veneka.Indigo.Abstractions.csproj">
-      <Project>{134c9ded-123c-4300-99fd-6108584b13fb}</Project>
+    <ProjectReference Include="..\Veneka.Indigo.Abstractions\Veneka.Indigo.Abstractions.csproj">
+      <Project>{B76356B6-D03B-4C8B-B92A-35EC9152639F}</Project>
       <Name>Veneka.Indigo.Abstractions</Name>
     </ProjectReference>
     <ProjectReference Include="..\Veneka.Indigo.Core\Veneka.Indigo.Core.csproj">
-      <Project>{1dfaf3b6-3263-4989-9639-c95de4c696c1}</Project>
+      <Project>{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}</Project>
       <Name>Veneka.Indigo.Core</Name>
     </ProjectReference>
     <ProjectReference Include="intergrations\Veneka.Module.TranzwareCompassPlusFIMI\Veneka.Module.TranzwareCompassPlusFIMI.csproj">
