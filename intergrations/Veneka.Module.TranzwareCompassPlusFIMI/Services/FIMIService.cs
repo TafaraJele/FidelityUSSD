@@ -1,4 +1,5 @@
 ﻿using Common.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -562,6 +563,49 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             }
 
             return response;
+        }
+        public AcctDebitRp1 DebitPrepaidAccount(AcctDebitRq1 acctDebitRp)
+        {
+            _log.Trace(m => m("Call To DebitCreditRq()"));
+
+            //Ignore untrusted SSL errror.
+            AddUntrustedSSL();
+            //AcctDebitRq1 response = null;
+
+            try
+            {
+                var response = client.AcctDebitRq(acctDebitRp);
+                response.Response.Echo = String.Empty;
+
+                var responseData = JsonConvert.SerializeObject(response);
+                _log.Trace($"Log response {responseData}");
+                return response;
+            }
+            catch (FaultException<ResponseCodes.DeclineRp> fex)
+            {
+                _log.Warn(fex);
+                var messageFault = fex.CreateMessageFault();
+                var decline = messageFault.GetDetail<ResponseCodes.DeclineRp>();
+
+                var response = new AcctDebitRp1()
+                {
+                    Response = new AcctDebitRp
+                    {
+                        NextChallenge = decline.Response.NextChallenge,
+                        Response = decline.Response.Response,
+                        Ver = decline.Response.Ver,
+                        Product = decline.Response.Product,
+                        Echo = fex.Message
+                    }
+                };
+                return response;
+            }
+            catch (CommunicationException commEx)
+            {
+                _log.Warn(commEx);
+            }
+
+            return null;
         }
         #endregion
 

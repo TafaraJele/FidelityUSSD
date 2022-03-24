@@ -1061,6 +1061,90 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             return myCleanJsonObject;
         }
 
+        public JObject DebitPrepaidAccount(int sessionId, string sessionKey, ref string nextChallenge, AcctCredit accountInfo)
+        {
+            var nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge));
+            string Account = "";
+            Decimal Amount = 0;
+
+            var loge = FIMILogger.GetFimiLoggerInstance();
+            loge.Info("**********Calling DebitPrepaidAccount Information**********");
+
+            List<AccResponse> cardDetails = new List<AccResponse>();
+
+            var result = new
+            {
+
+                // ApprovalCode = response.Response.ApprovalCode,
+                //AvailBalance = response.Response.AvailBalance,
+                Message = "",
+                Code = 0,
+
+
+            };
+
+
+            AcctDebitRq accreq = new AcctDebitRq()
+            {
+                Ver = 13.6M,
+                Clerk = this._clerk,
+                Password = nextPwd,
+                SessionSpecified = true,
+                Session = sessionId,
+                Account = accountInfo.Account,
+                Amount = accountInfo.Amount,
+                IgnoreImpact = 1,
+                IgnoreImpactSpecified = true
+
+            };
+
+            //_defaultVal.LoadDefaults(INTEGRATION_NAME, accreq);
+            if (loge != null)
+                loge.Info($"SessionId={sessionId}, SessionKey={sessionKey}, NextChallenge={nextChallenge}, Password={nextPwd}");
+
+            var response = _fimiService.DebitPrepaidAccount(new  AcctDebitRq1 { Request = accreq });
+
+
+            loge.Info("Checking AcctDebitRq1() response errors");
+            if (response == null || response.Response == null)
+            {
+
+
+                loge.Info("Checking AcctDebitRq1() response is null or false");
+
+            }
+            else
+            {
+
+
+                loge.Info("Checking AcctDebitRq1() response valid");
+
+                result = new
+                {
+
+                    // ApprovalCode = response.Response.ApprovalCode,
+                    //AvailBalance = response.Response.AvailBalance,
+                    Message = "Success",
+                    Code = 200
+
+
+                };
+
+
+            }
+
+            System.Web.Script.Serialization.JavaScriptSerializer js = new System.Web.Script.Serialization.JavaScriptSerializer();
+
+            var rt = js.Serialize(result);
+
+            //rt = JsonConvert.SerializeObject(result, new JsonSerializerSettings { Formatting = Formatting.None });
+            rt = rt.Replace(@"\\", "");
+
+            var myCleanJsonObject = JObject.Parse(rt);
+
+            return myCleanJsonObject;
+        }
+
         public List<Status> GetCardStatus(int sessionId, string sessionKey, ref string nextChallenge, GetCardInfo cardInfo)
         {
             var nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge));

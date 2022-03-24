@@ -49,7 +49,7 @@ namespace Indigo.Utility
                 (sender, cert, chain, sslPolicyErrors) => { return true; };
 
             CardRequestClient IndigoClient = new CardRequestClient();
-            fimilogger.Info($"Calling Indigo get card by prepaid account endpoint configuration name");
+            fimilogger.Info($"Calling Indigo get card by prepaid account endpoint configuration name URL {IndigoClient.Endpoint.Address} ");
             var response = IndigoClient.GetCardsByPrepaidAccount(request.CardLastFourDigits, request.AccountNumber, request.Token);
             //Sending to wsdl for card request
             fimilogger.Info($"Logging Response for get card by prepaid account CARD NUMBER : {response.Value}");

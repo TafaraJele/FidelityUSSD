@@ -1,56 +1,48 @@
-﻿using System;
-using System.Net;
-using System.Web.Http;
-using Indigo.CardReq;
-using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
-using Veneka.Module.TranzwareCompassPlusFIMI;
-using System.IO;
-using static Veneka.Module.TranzwareCompassPlusFIMI.ServicesValidated;
+﻿using Indigo.Utility;
+using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
-using Newtonsoft.Json.Linq;
-using System.Configuration;
-using Veneka.Module.TranzwareCompassPlusFIMI.Models;
-using Indigo.Utility;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 using Veneka.Indigo.Abstractions.Models;
 using Veneka.Indigo.Core;
 
 namespace Indigo.Controllers
 {
     /// <summary>
-    /// Loads funds to prepaid account
+    /// 
     /// </summary>
-    [Serializable]
-    public class FundsLoadController : ApiController
+    public class DefundPrepaidAccountController : ApiController
     {
         /// <summary>
-        /// Loads funds to account
+        /// Defunds account given account number
         /// </summary>
         /// <param name="funds"></param>
         /// <returns></returns>
         [HttpPost]
 
-        public FundLoadResponse FundsLoad([FromBody] FundsLoad funds)
+        public FundLoadResponse Defund([FromBody] FundsLoad funds)
         {
             Application application = new Application();
             CommonServices services = new CommonServices();
             var fimilogger = FIMILogger.GetFimiLoggerInstance();
             try
             {
-                fimilogger.Info("************Funds load controller**********");
+                fimilogger.Info("************Defund load controller**********");
                 //by passing certificates
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                 ServicePointManager.ServerCertificateValidationCallback +=
                     (sender, cert, chain, sslPolicyErrors) => { return true; };
                 var settings = services.GetSettings();
 
-                var response = application.Fundsload(funds, settings);
+                var response = application.Defund(funds, settings);
 
                 return response;
             }
             catch (Exception ex)
             {
-                fimilogger.Info($"Logging Funds load exception {ex.Message}");
+                fimilogger.Info($"Logging Defund load exception {ex.Message}");
 
                 var response = new FundLoadResponse
                 {
@@ -63,11 +55,5 @@ namespace Indigo.Controllers
 
         }
 
-        
-
     }
-
 }
-
-
-
