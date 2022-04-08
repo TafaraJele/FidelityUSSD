@@ -527,7 +527,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
                 ToTimeSpecified = true,
                 NewerTran = 1,
                 NewerTranSpecified = true,
-                
+
 
 
 
@@ -869,8 +869,6 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
             var response = _fimiService.GetCardInfo(new GetCardInfoRq1 { Request = CardInfo });
 
-
-
             logga.Info("Checking GetCardInfo() response errors");
             if (response == null || response.Response == null)
             {
@@ -880,11 +878,14 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             else
             {
 
+
                 logga.Info("GetCardInfo() response valid");
                 nextChallenge = response.Response.NextChallenge;
                 foreach (var row in response.Response.Accounts.Row)
 
                 {
+
+
                     CardDetails cardDet = new CardDetails
                     {
                         AcctNo = row.AcctNo,
@@ -892,13 +893,12 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
                         Currency = row.Currency,
                         AvailBalance = row.AvailBalance,
                         Code = 200,
-                        Message = "Success"
+                        Message = "Success",
+                        CardReferenceNumber = response.Response.PersonId
                     };
                     cardDetails.Add(cardDet);
-
                 }
             }
-
 
             return cardDetails;
         }
@@ -1102,7 +1102,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             if (loge != null)
                 loge.Info($"SessionId={sessionId}, SessionKey={sessionKey}, NextChallenge={nextChallenge}, Password={nextPwd}");
 
-            var response = _fimiService.DebitPrepaidAccount(new  AcctDebitRq1 { Request = accreq });
+            var response = _fimiService.DebitPrepaidAccount(new AcctDebitRq1 { Request = accreq });
 
 
             loge.Info("Checking AcctDebitRq1() response errors");
@@ -1198,7 +1198,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
                 foreach (var row in response.Response.Accounts.Row)
 
-                   
+
 
                 {
                     Status cardStat = new Status

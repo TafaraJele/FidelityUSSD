@@ -23,7 +23,7 @@
 //    public class getCardListController : ApiController
 //    {
 //        [HttpPost]
-       
+
 //        public List<List> CardList([FromBody] CardList cardli)
 //        {
 //            //initialising Response
@@ -42,7 +42,7 @@
 
 //                // List<Status> returnedCardDetails = new List<Status>();
 //                List<List> returnedCardDetails = new List<List>();
-                                            
+
 
 //                //by passing certificates
 //                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
@@ -133,7 +133,7 @@
 
 //                                //start of foreach
 //                                foreach (string m in idList)
-//                                { 
+//                                {
 
 //                                    //GetPersonInfo personInfo = new GetPersonInfo();
 //                                    //personInfo.Id = int.Parse(m);
@@ -149,46 +149,46 @@
 //                                    //    fimilogger.Info("Calling Intergration TranzwareCompassPlusFIMI person success");
 
 
-//                                        //foreach (var car in cards)
-//                                        //{
-//                                            pan = Mask(m);
-//                                            //mbr = car.MBR;
+//                                    //foreach (var car in cards)
+//                                    //{
+//                                    pan = Mask(m);
+//                                    //mbr = car.MBR;
 
-//                                            fimilogger.Info("CardNumber "+pan);
-                                         
-//                                            //GetCardInfo cardInfo = new GetCardInfo
+//                                    fimilogger.Info("CardNumber " + pan);
 
-
-//                                            //cardInfo.PAN = pan;
-//                                            //cardInfo.MBR = mbr;
-
-//                                            //fimilogger.Info("Pan "+ pan);
+//                                    //GetCardInfo cardInfo = new GetCardInfo
 
 
-//                                            //fimilogger.Info("Calling Intergration TranzwareCompassPlusFIMI card");
-//                                            //var cardinfo = serviceValidated.GetCardStatus(sessionId, sessionKey, ref nextChallenge, cardInfo);
-//                                           // var cardinfo = serviceValidated.GetCardInfoList(sessionId, sessionKey, ref nextChallenge, cardInfo);
-//                                           // if (cardinfo.Count > 0)
-//                                           // {
-//                                                //foreach (var cu in cardinfo)
-//                                                //{
+//                                    //cardInfo.PAN = pan;
+//                                    //cardInfo.MBR = mbr;
 
-//                                                    List cardmas = new List
-//                                                    {
-//                                                        CardNumber = pan,
-//                                                        Code = 200,
-//                                                        Message = "Success"
-//                                                    };
-//                                                    returnedCardDetails.Add(cardmas);
-//                                               // }
-
-//                                                // returnedCardDetails.Add(cardinfo);
-//                                            //}
+//                                    //fimilogger.Info("Pan "+ pan);
 
 
+//                                    //fimilogger.Info("Calling Intergration TranzwareCompassPlusFIMI card");
+//                                    //var cardinfo = serviceValidated.GetCardStatus(sessionId, sessionKey, ref nextChallenge, cardInfo);
+//                                    // var cardinfo = serviceValidated.GetCardInfoList(sessionId, sessionKey, ref nextChallenge, cardInfo);
+//                                    // if (cardinfo.Count > 0)
+//                                    // {
+//                                    //foreach (var cu in cardinfo)
+//                                    //{
 
-//                                        //}
-//                                   // }
+//                                    List cardmas = new List
+//                                    {
+//                                        CardNumber = pan,
+//                                        Code = 200,
+//                                        Message = "Success"
+//                                    };
+//                                    returnedCardDetails.Add(cardmas);
+//                                    // }
+
+//                                    // returnedCardDetails.Add(cardinfo);
+//                                    //}
+
+
+
+//                                    //}
+//                                    // }
 //                                }
 //                            }
 //                        }
@@ -222,5 +222,5 @@
 //        }
 //    }
 
- 
+
 //}

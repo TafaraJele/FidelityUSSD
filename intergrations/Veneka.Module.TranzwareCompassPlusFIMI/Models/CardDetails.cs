@@ -15,6 +15,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Models
         public int Currency { get; internal set; }
         public int Code { get; set; }
         public string Message { get; set; }
+        public long CardReferenceNumber { get; set; }
 
     }
 }

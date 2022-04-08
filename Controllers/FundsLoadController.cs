@@ -38,10 +38,7 @@ namespace Indigo.Controllers
             try
             {
                 fimilogger.Info("************Funds load controller**********");
-                //by passing certificates
-                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-                ServicePointManager.ServerCertificateValidationCallback +=
-                    (sender, cert, chain, sslPolicyErrors) => { return true; };
+              
                 var settings = services.GetSettings();
 
                 var response = application.Fundsload(funds, settings);
