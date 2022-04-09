@@ -57074,7 +57074,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=25)]
         public int MaskBalances {
             get {
                 return this.maskBalancesField;
@@ -57087,18 +57087,21 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MaskBalancesSpecified {
-            get {
+        public bool MaskBalancesSpecified
+        {
+            get
+            {
                 return this.maskBalancesFieldSpecified;
             }
-            set {
+            set
+            {
                 this.maskBalancesFieldSpecified = value;
                 this.RaisePropertyChanged("MaskBalancesSpecified");
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=94)]
         public GetCardInfoRpAlternativeMessaging AlternativeMessaging {
             get {
                 return this.alternativeMessagingField;
@@ -57110,7 +57113,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 95)]
         public GetCardInfoRpBackPayments BackPayments {
             get {
                 return this.backPaymentsField;
@@ -57122,7 +57125,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
         public int CNSDisabled {
             get {
                 return this.cNSDisabledField;
@@ -57158,7 +57161,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=96)]
         public GetCardInfoRpMessagingProfile MessagingProfile {
             get {
                 return this.messagingProfileField;
@@ -57170,7 +57173,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=97)]
         public int EMVAppCurrency {
             get {
                 return this.eMVAppCurrencyField;
@@ -57194,7 +57197,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
         public System.DateTime ExpDate {
             get {
                 return this.expDateField;
@@ -57218,7 +57221,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=99)]
         public System.DateTime PrevExpDate {
             get {
                 return this.prevExpDateField;
@@ -57242,7 +57245,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=100)]
         public int ReissueVariant {
             get {
                 return this.reissueVariantField;
@@ -57266,7 +57269,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=101)]
         public GetCardInfoRpFoundCards FoundCards {
             get {
                 return this.foundCardsField;
@@ -57278,7 +57281,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
         public int FoundMBR {
             get {
                 return this.foundMBRField;
@@ -57302,7 +57305,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=19)]
         public string FoundPAN {
             get {
                 return this.foundPANField;
@@ -57314,7 +57317,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 102)]
         public int IB_BadPINTries {
             get {
                 return this.iB_BadPINTriesField;
@@ -57338,7 +57341,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 103)]
         public int IB_IsPIN {
             get {
                 return this.iB_IsPINField;
@@ -57362,7 +57365,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 104)]
         public System.DateTime IB_LastBuyBalance {
             get {
                 return this.iB_LastBuyBalanceField;
@@ -57386,7 +57389,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 105)]
         public System.DateTime IB_LastBuyMiniStmt {
             get {
                 return this.iB_LastBuyMiniStmtField;
@@ -57410,7 +57413,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 106)]
         public System.DateTime IB_LastResetTime {
             get {
                 return this.iB_LastResetTimeField;
@@ -57434,7 +57437,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=19)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 107)]
         public long IB_LastTranId {
             get {
                 return this.iB_LastTranIdField;
@@ -57482,7 +57485,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=21)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 108)]
         public int IPVV {
             get {
                 return this.iPVVField;
@@ -57506,7 +57509,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=22)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=21)]
         public string InstName {
             get {
                 return this.instNameField;
@@ -57518,7 +57521,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=23)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 109)]
         public int LastATC {
             get {
                 return this.lastATCField;
@@ -57542,7 +57545,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=24)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 110)]
         public System.DateTime LastATMUsed {
             get {
                 return this.lastATMUsedField;
@@ -57566,7 +57569,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=25)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=23)]
         public System.DateTime LastChangeStatusTime {
             get {
                 return this.lastChangeStatusTimeField;
@@ -57590,7 +57593,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=26)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 111)]
         public System.DateTime LastChangePrevStatusTime {
             get {
                 return this.lastChangePrevStatusTimeField;
@@ -57614,7 +57617,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=27)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 112)]
         public System.DateTime LastPOSUsed {
             get {
                 return this.lastPOSUsedField;
@@ -57638,7 +57641,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=28)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=24)]
         public System.DateTime LastRefreshTime {
             get {
                 return this.lastRefreshTimeField;
@@ -57662,7 +57665,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=29)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 114)]
         public System.DateTime LastPasswordChangeTime {
             get {
                 return this.lastPasswordChangeTimeField;
@@ -57686,7 +57689,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=30)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 115)]
         public long LastTranId {
             get {
                 return this.lastTranIdField;
@@ -57710,7 +57713,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=31)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 116)]
         public int OSC_Algo {
             get {
                 return this.oSC_AlgoField;
@@ -57734,7 +57737,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=32)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 117)]
         public decimal OfflineLimit {
             get {
                 return this.offlineLimitField;
@@ -57758,7 +57761,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=33)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 118)]
         public decimal OfflinePending {
             get {
                 return this.offlinePendingField;
@@ -57782,7 +57785,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=34)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=29)]
         public int PVV {
             get {
                 return this.pVVField;
@@ -57806,7 +57809,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=35)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 119)]
         public GetCardInfoRpPersonConfidential PersonConfidential {
             get {
                 return this.personConfidentialField;
@@ -57818,7 +57821,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=36)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=31)]
         public string PersonFIO {
             get {
                 return this.personFIOField;
@@ -57830,7 +57833,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=37)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=32)]
         public long PersonId {
             get {
                 return this.personIdField;
@@ -57841,20 +57844,23 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
             }
         }
         
-        /// <remarks/>
+        
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PersonIdSpecified {
-            get {
+        public bool PersonIdSpecified
+        {
+            get
+            {
                 return this.personIdFieldSpecified;
             }
-            set {
+            set
+            {
                 this.personIdFieldSpecified = value;
                 this.RaisePropertyChanged("PersonIdSpecified");
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=38)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=33)]
         public int PersonVIP {
             get {
                 return this.personVIPField;
@@ -57878,7 +57884,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=39)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 120)]
         public string PersonExtId {
             get {
                 return this.personExtIdField;
@@ -57890,7 +57896,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=40)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 121)]
         public GetCardInfoRpPersonalPayments PersonalPayments {
             get {
                 return this.personalPaymentsField;
@@ -57902,7 +57908,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=41)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=35)]
         public int RiskControlDisabled {
             get {
                 return this.riskControlDisabledField;
@@ -57926,7 +57932,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=42)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
         public int EMVOptionsCheckDisabled {
             get {
                 return this.eMVOptionsCheckDisabledField;
@@ -57950,7 +57956,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=43)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 122)]
         public int RiskLevel {
             get {
                 return this.riskLevelField;
@@ -57974,7 +57980,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=44)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=36)]
         public int Status {
             get {
                 return this.statusField;
@@ -57987,18 +57993,21 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool StatusSpecified {
-            get {
+        public bool StatusSpecified
+        {
+            get
+            {
                 return this.statusFieldSpecified;
             }
-            set {
+            set
+            {
                 this.statusFieldSpecified = value;
                 this.RaisePropertyChanged("StatusSpecified");
             }
         }
-        
+
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=45)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 123)]
         public int PrevStatus {
             get {
                 return this.prevStatusField;
@@ -58022,7 +58031,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=46)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
         public int ECStatus {
             get {
                 return this.eCStatusField;
@@ -58046,7 +58055,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=47)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=38)]
         public int Type {
             get {
                 return this.typeField;
@@ -58070,7 +58079,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=48)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
         public int Acct2CardAttachType {
             get {
                 return this.acct2CardAttachTypeField;
@@ -58094,7 +58103,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=49)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=40)]
         public GetCardInfoRpUserFields UserFields {
             get {
                 return this.userFieldsField;
@@ -58106,7 +58115,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=50)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 124)]
         public System.DateTime LastTranTime {
             get {
                 return this.lastTranTimeField;
@@ -58130,7 +58139,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=51)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 125)]
         public System.DateTime LastPVVChangeTime {
             get {
                 return this.lastPVVChangeTimeField;
@@ -58154,7 +58163,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=52)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 126)]
         public System.DateTime LastIPVVChangeTime {
             get {
                 return this.lastIPVVChangeTimeField;
@@ -58178,7 +58187,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=53)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 127)]
         public int TBExtraAuthLevel {
             get {
                 return this.tBExtraAuthLevelField;
@@ -58202,7 +58211,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=54)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 128)]
         public GetCardInfoRpTBVendors TBVendors {
             get {
                 return this.tBVendorsField;
@@ -58214,7 +58223,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=55)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 129)]
         public string TBTextLogin {
             get {
                 return this.tBTextLoginField;
@@ -58226,7 +58235,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=56)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 130)]
         public string TBNumericLogin {
             get {
                 return this.tBNumericLoginField;
@@ -58238,7 +58247,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=57)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 131)]
         public System.DateTime TBLastLogonTime {
             get {
                 return this.tBLastLogonTimeField;
@@ -58262,7 +58271,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=58)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 132)]
         public string TBLastCustLocation {
             get {
                 return this.tBLastCustLocationField;
@@ -58274,7 +58283,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=59)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 144)]
         public string TBSecretWord {
             get {
                 return this.tBSecretWordField;
@@ -58286,7 +58295,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=60)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 143)]
         public string AuthCustPAN {
             get {
                 return this.authCustPANField;
@@ -58298,7 +58307,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=61)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 133)]
         public int AuthCustMBR {
             get {
                 return this.authCustMBRField;
@@ -58322,7 +58331,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=62)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=27)]
         public string NameOnCard {
             get {
                 return this.nameOnCardField;
@@ -58334,7 +58343,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=63)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=26)]
         public int MaskPVV {
             get {
                 return this.maskPVVField;
@@ -58358,7 +58367,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=64)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=30)]
         public int PasswordFlag {
             get {
                 return this.passwordFlagField;
@@ -58382,7 +58391,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=65)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
         public string CardUID {
             get {
                 return this.cardUIDField;
@@ -58394,7 +58403,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=66)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
         public string Branch {
             get {
                 return this.branchField;
@@ -58406,7 +58415,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=67)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 135)]
         public GetCardInfoRpTBTransfers TBTransfers {
             get {
                 return this.tBTransfersField;
@@ -58418,7 +58427,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=68)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 136)]
         public string ParentPAN {
             get {
                 return this.parentPANField;
@@ -58430,7 +58439,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=69)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 137)]
         public int ParentMBR {
             get {
                 return this.parentMBRField;
@@ -58454,7 +58463,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=70)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 138)]
         public GetCardInfoRpTBRetailers TBRetailers {
             get {
                 return this.tBRetailersField;
@@ -58466,7 +58475,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=71)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=22)]
         public int IssueTechnology {
             get {
                 return this.issueTechnologyField;
@@ -58490,7 +58499,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=72)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 139)]
         public string ParentCardUID {
             get {
                 return this.parentCardUIDField;
@@ -58502,7 +58511,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=73)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 140)]
         public GetCardInfoRpTBCards TBCards {
             get {
                 return this.tBCardsField;
@@ -58514,7 +58523,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=74)]
+        [System.Xml.Serialization.XmlElementAttribute(Order= 141)]
         public string PlasticType {
             get {
                 return this.plasticTypeField;
@@ -58526,7 +58535,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=75)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
         public int ECNeedStaticAuth {
             get {
                 return this.eCNeedStaticAuthField;
@@ -58550,7 +58559,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=76)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
         public int ECNeedDynPwdAuth {
             get {
                 return this.eCNeedDynPwdAuthField;
@@ -58574,7 +58583,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=77)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
         public int ECNeedCAPAuth {
             get {
                 return this.eCNeedCAPAuthField;
@@ -58598,7 +58607,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=78)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
         public int ECNeedTokenAuth {
             get {
                 return this.eCNeedTokenAuthField;
@@ -58622,7 +58631,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=79)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
         public int ECUseCardSettingsAuth {
             get {
                 return this.eCUseCardSettingsAuthField;
@@ -69993,7 +70002,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.FIMI {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=48)]
         public int MaskBalances {
             get {
                 return this.maskBalancesField;

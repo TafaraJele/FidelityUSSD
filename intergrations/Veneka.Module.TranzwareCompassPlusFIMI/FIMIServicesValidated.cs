@@ -14,6 +14,7 @@ using NUnit.Framework.Interfaces;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using System.Linq;
+using System.Configuration;
 
 namespace Veneka.Module.TranzwareCompassPlusFIMI
 {
@@ -878,24 +879,28 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             else
             {
 
-
                 logga.Info("GetCardInfo() response valid");
                 nextChallenge = response.Response.NextChallenge;
                 foreach (var row in response.Response.Accounts.Row)
 
                 {
+                    logga.Info($"Person Id before true {response.Response.PersonId}");
+                    //response.Response.PersonIdSpecified = true;
+                    logga.Info($"Person Id {response.Response.PersonId}");
 
-
+                    var xmlResponse = ReadNIResponse(row.AccountUID);
+                    var accountUID = GetAccountUID(xmlResponse);
                     CardDetails cardDet = new CardDetails
                     {
                         AcctNo = row.AcctNo,
-                        Status = row.Status,
+                        Status = int.Parse(GetCardStatus(accountUID)),
                         Currency = row.Currency,
                         AvailBalance = row.AvailBalance,
                         Code = 200,
                         Message = "Success",
-                        CardReferenceNumber = response.Response.PersonId
+                        CardReferenceNumber = long.Parse(GetCardReferenceNumber(accountUID))
                     };
+
                     cardDetails.Add(cardDet);
                 }
             }
@@ -903,6 +908,51 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             return cardDetails;
         }
 
+        private string ReadNIResponse(string accountUID)
+        {
+            var xmlresponse = string.Empty;
+            string filePath = ConfigurationManager.AppSettings.Get("FilePath");
+            string path = System.IO.Path.Combine(filePath, $"{accountUID}.txt");
+            if (File.Exists(path))
+            {
+                StreamReader reader = new StreamReader(path);
+                 xmlresponse = reader.ReadToEnd();
+                reader.Close();  
+                File.Delete(path);
+            }
+           
+            return xmlresponse;
+
+        }
+        private string GetAccountUID(string xmlResponse)
+        {
+            var pos1 = xmlResponse.LastIndexOf("<m0:AccountUID>");
+
+            var pos2 = xmlResponse.LastIndexOf("</m0:AccountUID>");
+
+            var length = pos2 - pos1;
+
+            var value = xmlResponse.Substring(pos1, length);
+
+            char[] splitArray = new char[2] { '<', '>' };
+
+            var valueArray = value.Split(splitArray);
+
+            return valueArray[2];
+        }
+
+        private string GetCardReferenceNumber(string accountUID)
+        {
+            var accountUIDArray = accountUID.Split(';');
+
+            return accountUIDArray[1];
+        }
+        private string GetCardStatus(string accountUID)
+        {
+            var accountUIDArray = accountUID.Split(';');
+
+            return accountUIDArray[2];
+        }
 
         public List<CardDetails> GetCardInfoList(int sessionId, string sessionKey, ref string nextChallenge, GetCardInfo cardInfo)
         {
@@ -1704,7 +1754,10 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             cardInfo = response;
             return response.Response.Response;
         }
+       
 
         #endregion
     }
+
+    
 }

@@ -131,11 +131,11 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
                 }
             }
 
-            lo.Info("Certificate Issuer : " + client.ClientCredentials.ClientCertificate.Certificate.Issuer);
-            lo.Info("Certificate Subject :" + client.ClientCredentials.ClientCertificate.Certificate.Subject);
-            lo.Info("Certificate Thumb print" + client.ClientCredentials.ClientCertificate.Certificate.Thumbprint);
+            //lo.Info("Certificate Issuer : " + client.ClientCredentials.ClientCertificate.Certificate.Issuer);
+            //lo.Info("Certificate Subject :" + client.ClientCredentials.ClientCertificate.Certificate.Subject);
+            //lo.Info("Certificate Thumb print" + client.ClientCredentials.ClientCertificate.Certificate.Thumbprint);
 
-            IgnoreUntrustedSSL = true;
+            IgnoreUntrustedSSL = false;
         }
 
         public FIMIService(System.ServiceModel.Channels.CustomBinding bindings, System.ServiceModel.EndpointAddress endpointAddress,

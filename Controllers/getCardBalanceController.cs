@@ -64,6 +64,8 @@ namespace Indigo.Controllers
 
         }
 
+       
+
         private BalanceResponse UpdateBalanceResponse(BalanceResponse response, BasicResponse basicResponse)
         {
             response.IsRequestValid = basicResponse.IsRequestValid;

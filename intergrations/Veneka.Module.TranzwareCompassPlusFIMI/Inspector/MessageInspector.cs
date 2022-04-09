@@ -17,6 +17,8 @@ using System.Runtime.Serialization.Formatters;
 using System.Xml.Linq;
 using Veneka.Module.TranzwareCompassPlusFIMI.Utils;
 using Newtonsoft.Json.Linq;
+using System.Reflection;
+using System.Configuration;
 
 namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
 {
@@ -114,12 +116,18 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
                     {
                         xmlTextWriter.Formatting = Formatting.Indented;
                         message.WriteMessage(xmlTextWriter);
+                        
                     }
 
                     String myStr = stringWriter.ToString();
-
-
-
+                    var isCardInforRep = IsCardInfoResponse(myStr);
+                    if (isCardInforRep)
+                    {
+                        var newString = AppendDetailsToAccUID(myStr);
+                        var filename = GetAccountUID(myStr);
+                        WriteXmlResponseToFile(newString, filename);
+                    }                
+                    
                     if (msglog != null)
                         msglog.Info($"Response:{Environment.NewLine}{myStr.ToString()}");
 
@@ -132,7 +140,31 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
             if (faultEx != null)
                 throw faultEx;
         }
+        private bool IsCardInfoResponse(string xmlResponse)
+        {
+            var index = xmlResponse.IndexOf("<m1:GetCardInfoRp>");
+            if(index != -1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
+        }
+        private void WriteXmlResponseToFile(string xmlResponse, string filename)
+        {
+            string filePath = ConfigurationManager.AppSettings.Get("FilePath");
+            string path = System.IO.Path.Combine(filePath, $"{filename}.txt");
+           
+            StreamWriter writer = new StreamWriter(path);
+            writer.WriteLine(xmlResponse);
+            writer.Flush();
+            writer.Close();
+           
+        }
+       
         public object BeforeSendRequest(ref Message request, IClientChannel channel)
         {
             //if (_log.IsDebugEnabled)
@@ -222,5 +254,67 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
                 return (JObject)"Exception";
             }
         }
+        private string GetCardStatus(string xmlResponse)
+        {
+
+            var pos1 = xmlResponse.LastIndexOf("<m0:Status>");
+
+            var pos2 = xmlResponse.LastIndexOf("</m0:Status>");
+
+            var length = pos2 - pos1;
+
+            var value = xmlResponse.Substring(pos1, length);
+
+            char[] splitArray = new char[2] { '<', '>' };
+
+            var valueArray = value.Split(splitArray);
+
+            return valueArray[2];
+        }
+        private string AppendDetailsToAccUID(string xmlResponse)
+        {   
+            var status = GetCardStatus(xmlResponse);
+            var cardReferenceNumber = GetCardReferenceNumber(xmlResponse);
+            string accountUID = GetAccountUID(xmlResponse);
+            string appendedAccountUID = $"{accountUID};{cardReferenceNumber};{status}";
+            xmlResponse = xmlResponse.Replace(accountUID, appendedAccountUID);
+
+            return xmlResponse;
+        }
+        
+        private string GetAccountUID(string xmlResponse)
+        {
+            var pos1 = xmlResponse.LastIndexOf("<m0:AccountUID>");
+
+            var pos2 = xmlResponse.LastIndexOf("</m0:AccountUID>");
+
+            var length = pos2 - pos1;
+
+            var value = xmlResponse.Substring(pos1, length);
+
+            char[] splitArray = new char[2] { '<', '>' };
+
+            var valueArray = value.Split(splitArray);
+
+            return valueArray[2];
+        }
+
+        private string GetCardReferenceNumber(string xmlResponse)
+        {        
+            var pos1 = xmlResponse.IndexOf("<m0:PersonId>");
+
+            var pos2 = xmlResponse.IndexOf("</m0:PersonId>");
+
+            var length = pos2 - pos1;
+
+            var value = xmlResponse.Substring(pos1, length);
+
+            char[] splitArray = new char[2] { '<', '>' };
+
+            var valueArray = value.Split(splitArray);
+
+            return valueArray[2];
+        }
+        
     }
 }
