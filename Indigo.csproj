@@ -321,6 +321,8 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Controllers\DefundController.cs" />
+    <Compile Include="Controllers\FlexAccController.cs" />
+    <Compile Include="Controllers\FlexCustController.cs" />
     <Compile Include="Controllers\GetCardInfoController.cs" />
     <Compile Include="Controllers\getCardListController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
