@@ -15,6 +15,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 using System.Linq;
 using System.Configuration;
+using Veneka.Module.TranzwareCompassPlusFIMI.ResponseCodes;
 
 namespace Veneka.Module.TranzwareCompassPlusFIMI
 {
@@ -916,11 +917,11 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             if (File.Exists(path))
             {
                 StreamReader reader = new StreamReader(path);
-                 xmlresponse = reader.ReadToEnd();
-                reader.Close();  
+                xmlresponse = reader.ReadToEnd();
+                reader.Close();
                 File.Delete(path);
             }
-           
+
             return xmlresponse;
 
         }
@@ -1082,20 +1083,28 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             else
             {
 
-
-                loge.Info("Checking AcctCreditRq1() response valid");
-
-                result = new
+                loge.Info("Checking AcctDebitRq1() response valid");
+                if (response.Response.Response != 1)
                 {
+                    loge.Debug("Response code was not equal to 1 failed");
 
-                    // ApprovalCode = response.Response.ApprovalCode,
-                    //AvailBalance = response.Response.AvailBalance,
-                    Message = "Success",
-                    Code = 200
+                    result = new
+                    {
+                        Message = Response.GetResponse(response.Response.Response),
+                        Code = response.Response.Response
 
+                    };
+                }
+                else
+                {
+                    loge.Debug("Response code was not equal 1 success");
+                    result = new
+                    {
+                        Message = "Success",
+                        Code = 200
+                    };
 
-                };
-
+                }
 
             }
 
@@ -1127,8 +1136,8 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
                 // ApprovalCode = response.Response.ApprovalCode,
                 //AvailBalance = response.Response.AvailBalance,
-                Message = "",
-                Code = 0,
+                Message = "Failed",
+                Code = 99,
 
 
             };
@@ -1168,17 +1177,27 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
 
                 loge.Info("Checking AcctDebitRq1() response valid");
-
-                result = new
+                if (response.Response.Response != 1)
                 {
+                    loge.Debug("Response code was not equal to 1 failed");
 
-                    // ApprovalCode = response.Response.ApprovalCode,
-                    //AvailBalance = response.Response.AvailBalance,
-                    Message = "Success",
-                    Code = 200
+                    result = new
+                    {
+                        Message = Response.GetResponse(response.Response.Response),
+                        Code = response.Response.Response
 
+                    };
+                }
+                else
+                {
+                    loge.Debug("Response code was not equal 1 success");
+                    result = new
+                    {
+                        Message = "Success",
+                        Code = 200
+                    };
 
-                };
+                }
 
 
             }
@@ -1754,10 +1773,10 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             cardInfo = response;
             return response.Response.Response;
         }
-       
+
 
         #endregion
     }
 
-    
+
 }
