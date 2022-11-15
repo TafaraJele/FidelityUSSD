@@ -32,7 +32,7 @@ namespace Indigo.Utility
             settings.TimeOutMilliSeconds = int.Parse(ConfigurationManager.AppSettings["timeoutMilliSeconds"].ToString());
             settings.EndpointConfigurationName = ConfigurationManager.AppSettings["EndpointConfigurationName"].ToString();
             settings.IndigoAddress = ConfigurationManager.AppSettings["IndigoAddress"].ToString();
-
+            settings.CIFConnectionString = ConfigurationManager.ConnectionStrings.
             return settings;
         }
         /// <summary>

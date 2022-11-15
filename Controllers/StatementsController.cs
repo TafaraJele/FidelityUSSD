@@ -57,11 +57,12 @@ namespace Indigo.Controllers
             var settings = services.GetSettings();
 
             //get statement from FIMI by card number
-            response = application.GetStatement(request, cardnumber, settings, response);
+            response = application.GetCardStatement(request, cardnumber, settings, response);
 
             return response;
 
         }
+        
 
         private StatementResponse UpdateStatementResponse(StatementResponse response, BasicResponse basicResponse)
         {

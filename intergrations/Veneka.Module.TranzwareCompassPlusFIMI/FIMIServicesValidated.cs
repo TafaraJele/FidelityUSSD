@@ -529,10 +529,6 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
                 ToTimeSpecified = true,
                 NewerTran = 1,
                 NewerTranSpecified = true,
-
-
-
-
                 //CountSpecified = true,
                 //IssInstName = getTransInfo.IssInstName
 
@@ -579,12 +575,12 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
                     {
 
                         CardNumber = Mask(row.PAN),
-                        Currency = row.Currency,
+                        Currency = row.Currency.ToString(),
                         TranNumber = row.TranNumber,
                         Type = row.Type,
                         Amount = row.Amount,
-                        Fee = row.Fee,
-                        Time = row.Time,
+                        OrigAmount = row.Fee,
+                        OperDate = row.Time,
                         Code = 200,
                         Message = "Success"
 
@@ -599,6 +595,42 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
 
             return trans;
+        }
+
+        public GetCardStatementRp1 GetCardStatement(int sessionId, string sessionKey, ref string nextChallenge, getTransInfo getTransInfo)
+        {
+            // var logger = FIMILogger.GetFimiLoggerInstance();
+            var nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge)); 
+
+            var log = FIMILogger.GetFimiLoggerInstance();
+            log.Info("**********Calling GetCard Information**********");
+
+            var statementRequest = new GetCardStatementRq1()
+            {
+                Request = new GetCardStatementRq
+                {
+                    PAN = getTransInfo.PAN,                  
+                    MBR = getTransInfo.MBR,
+                    Clerk = this._clerk,
+                    Password = nextPwd,
+                    Product = "FIMI",
+                    Session = sessionId,
+                    Ver = 16.2M,
+                    //FromTime = getTransInfo.FromTime,
+                    //ToTime = getTransInfo.ToTime,
+                    //FromTimeSpecified = true,
+                   // ToTimeSpecified = true,
+                    MBRSpecified = true,
+                    SessionSpecified = true
+                }
+            };
+
+            if (log != null)
+                log.Info($"SessionId={sessionId}, SessionKey={sessionKey}, NextChallenge={nextChallenge}, Password={nextPwd}");
+
+            var statementResponse = _fimiService.GetCardStatement(statementRequest);
+
+            return statementResponse;
         }
 
         public List<Cards> GetPersonInfo(int id, string instName, int sessionId, string sessionKey, ref string nextChallenge, GetPersonInfo personInfo)

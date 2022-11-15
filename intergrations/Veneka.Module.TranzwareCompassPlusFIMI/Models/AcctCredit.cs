@@ -9,9 +9,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Models
     public class AcctCredit
     {
         public string Account { get; set; }
-
         public Decimal Amount { get; set; }
-
         public int IgnoreImpact { get; set; }
 
 

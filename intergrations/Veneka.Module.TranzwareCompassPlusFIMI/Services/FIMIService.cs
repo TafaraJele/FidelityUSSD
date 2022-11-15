@@ -799,7 +799,53 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
 
         
         }
+        public GetCardStatementRp1 GetCardStatement(GetCardStatementRq1 statementRequest)
+        {
 
-          #endregion
+            _log.Trace("Call To GetCardStatement()");
+
+            //Ignore untrusted SSL errror.
+            AddUntrustedSSL();
+            GetCardStatementRp1 response = null;
+
+            try
+            {
+                _log.Trace("Try Call To GetCardStatement()");
+                return  client.GetCardStatementRq(statementRequest);
+              
+            }
+            catch (FaultException<ResponseCodes.DeclineRp> fex)
+            {
+                _log.Warn(fex);
+                var messageFault = fex.CreateMessageFault();
+                var decline = messageFault.GetDetail<ResponseCodes.DeclineRp>();
+
+                response = new GetCardStatementRp1()
+                {
+                     Response = new GetCardStatementRp
+                     {
+                          Response = 0,
+                          Echo = fex.Message
+                     }
+                };
+            }
+            catch (CommunicationException commEx)
+            {
+                response = new GetCardStatementRp1()
+                {
+                    Response = new GetCardStatementRp
+                    {
+                        Response = 0,
+                        Echo = commEx.Message
+                    }
+                };
+                _log.Warn(commEx);
+            }
+
+            return response;
+
+
+        }
+        #endregion
     }
 }

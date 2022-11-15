@@ -8,12 +8,10 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Models
 {
     public class GetPersonInfo
     {
-
         public string identity { get; set; }
         public int identityType { get; set; }
         public int Id { get; set; }
         public string InstName { get; set; }
-
-        
+                
     }
 }

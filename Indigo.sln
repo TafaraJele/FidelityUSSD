@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Indigo.Integration.O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Module.OracleFlexcube", "..\..\FidelityIntegrations\Veneka.Module.OracleFlexcube\Veneka.Module.OracleFlexcube.csproj", "{A7326CBC-F79E-439B-94E8-C39E04B6B8D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veneka.Indigo.Infrastructure", "..\Veneka.Indigo.Infrastructure\Veneka.Indigo.Infrastructure.csproj", "{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,14 @@ Global
 		{A7326CBC-F79E-439B-94E8-C39E04B6B8D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A7326CBC-F79E-439B-94E8-C39E04B6B8D7}.Release|x64.ActiveCfg = Release|x64
 		{A7326CBC-F79E-439B-94E8-C39E04B6B8D7}.Release|x64.Build.0 = Release|x64
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Debug|x64.Build.0 = Debug|Any CPU
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Release|x64.ActiveCfg = Release|Any CPU
+		{23A8D7FC-94E9-47A4-A732-AD93CFFD5365}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

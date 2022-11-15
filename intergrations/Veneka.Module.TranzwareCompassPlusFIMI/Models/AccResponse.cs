@@ -8,11 +8,8 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Models
 {
     public class AccResponse
     {
-
         public string ApprovalCode { get; set; }
-
         public string AvailBalance { get; set; }
-
         public string LedgerBalance { get; set; }
 
     }
