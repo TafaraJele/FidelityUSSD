@@ -27,12 +27,13 @@ namespace Indigo.Utility
             settings.Password = ConfigurationManager.AppSettings["password"].ToString();
             settings.Address = ConfigurationManager.AppSettings["address"].ToString();
             settings.Path = ConfigurationManager.AppSettings["path"].ToString();
-            settings.InstName = ConfigurationManager.AppSettings["instName"].ToString();
+            settings.InstName = ConfigurationManager.AppSettings["instName"].ToString(); 
             settings.Port = int.Parse(ConfigurationManager.AppSettings["port"].ToString());
             settings.TimeOutMilliSeconds = int.Parse(ConfigurationManager.AppSettings["timeoutMilliSeconds"].ToString());
             settings.EndpointConfigurationName = ConfigurationManager.AppSettings["EndpointConfigurationName"].ToString();
             settings.IndigoAddress = ConfigurationManager.AppSettings["IndigoAddress"].ToString();
-            settings.CIFConnectionString = ConfigurationManager.ConnectionStrings.
+            settings.CIFConnectionString = ConfigurationManager.ConnectionStrings["CIFConnectionString"].ConnectionString;
+
             return settings;
         }
         /// <summary>
