@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using Veneka.Module.OracleFlexcube.UBSCustWebService;
-
+using Veneka.Module.TranzwareCompassPlusFIMI.Utils;
 
 namespace Veneka.Module.OracleFlexcube.UBS
 {
@@ -119,6 +119,16 @@ namespace Veneka.Module.OracleFlexcube.UBS
             var response = client.QueryCustomerIO (queryCustDetailsRequest);
             _log.Trace(m => m("Response Received From QueryCustAccIO"));
             return response;
+        }
+        public CREATECUSTOMER_FSFS_RES CreateCustomerFS(CREATECUSTOMER_FSFS_REQ createCustomerRequest)
+        {
+            FIMILogger fimilogger = FIMILogger.GetFimiLoggerInstance();
+            fimilogger.Debug("Calling WebMethod CreateCustomerIO");
+            AddUntrustedSSL();
+            fimilogger.Debug("Calling create customer in Flexcube " + client.Endpoint.Address.Uri.AbsoluteUri);
+            CREATECUSTOMER_FSFS_RES result = client.CreateCustomerFS(createCustomerRequest);
+            fimilogger.Debug("Response Received From CreateCustIO");
+            return result;
         }
         #endregion
     }

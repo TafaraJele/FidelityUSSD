@@ -9,6 +9,7 @@ using Veneka.Module.OracleFlexcube.Utils;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
 using System.Security.Cryptography.X509Certificates;
+using Veneka.Module.TranzwareCompassPlusFIMI.Utils;
 
 namespace Veneka.Module.OracleFlexcube.UBS
 {
@@ -162,6 +163,16 @@ namespace Veneka.Module.OracleFlexcube.UBS
             _log.Trace(m => m("Response Received From ModifyCustAccFS"));
 
             return response;
+        }
+        public CREATECUSTACC_FSFS_RES CreateCustomerAccFS(CREATECUSTACC_FSFS_REQ createCustAccRequest)
+        {
+            FIMILogger fimilogger = FIMILogger.GetFimiLoggerInstance();
+            fimilogger.Debug("Calling WebMethod ModifyCustAccFS");
+            AddUntrustedSSL();
+            fimilogger.Debug("Calling create customer account on endpoint " + client.Endpoint.Address.Uri.AbsoluteUri);
+            CREATECUSTACC_FSFS_RES result = client.CreateCustAccFS(createCustAccRequest);
+            fimilogger.Debug("Response Received From ModifyCustAccFS");
+            return result;
         }
         #endregion
     }

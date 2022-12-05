@@ -11,6 +11,7 @@ using Veneka.Module.IntegrationDataControl.DAL;
 using System.Security.Cryptography.X509Certificates;
 using System.Net;
 using System.Net.Security;
+using Veneka.Module.TranzwareCompassPlusFIMI.Utils;
 
 namespace Veneka.Module.OracleFlexcube
 {
@@ -67,8 +68,8 @@ namespace Veneka.Module.OracleFlexcube
                                 : base(protocol, address, port, path, timeoutMilliSeconds,
                                         authentication, username, password, connectionString, logger)
         {
-            _accService = new UBSAccService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _accService = new UBSAccService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, logger);
         }
@@ -79,8 +80,8 @@ namespace Veneka.Module.OracleFlexcube
                                 : base(protocol, address, port, path, timeoutMilliSeconds,
                                         authentication, username, password, nonce, connectionString, logger)
         {
-            _accService = new UBSAccService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _accService = new UBSAccService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, nonce, logger);
         }
@@ -91,8 +92,8 @@ namespace Veneka.Module.OracleFlexcube
                                : base(protocol, address, port, path, timeoutMilliSeconds,
                                        authentication, username, password, defaultDataDAL, validationDAL, logger)
         {
-            _accService = new UBSAccService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _accService = new UBSAccService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, logger);
         }
@@ -103,8 +104,8 @@ namespace Veneka.Module.OracleFlexcube
                                 : base(protocol, address, port, path, timeoutMilliSeconds,
                                         authentication, username, password, nonce, defaultDataDAL, validationDAL, logger)
         {
-            _accService = new UBSAccService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _accService = new UBSAccService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, nonce, logger);
         }
@@ -384,6 +385,14 @@ namespace Veneka.Module.OracleFlexcube
             _log.Trace(m => m("ModifyCustomerAccount() Done"));
 
             return validResponse;
+        }
+        public CREATECUSTACC_FSFS_RES CreateCustomerAccFS(CREATECUSTACC_FSFS_REQ createCustAccRequest)
+        {
+            FIMILogger fimilogger = FIMILogger.GetFimiLoggerInstance();
+            fimilogger.Debug("Calling WebMethod CreateCustAccFS");
+            CREATECUSTACC_FSFS_RES result = _accService.CreateCustomerAccFS(createCustAccRequest);
+            fimilogger.Debug("Response Received From CreateCutomerAccFS");
+            return result;
         }
         #endregion
 

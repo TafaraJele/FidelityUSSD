@@ -9,6 +9,7 @@ using Veneka.Module.IntegrationDataControl.DAL;
 using Veneka.Module.OracleFlexcube.UBS;
 using Veneka.Module.OracleFlexcube.UBSCustWebService;
 using Veneka.Module.OracleFlexcube.Utils;
+using Veneka.Module.TranzwareCompassPlusFIMI.Utils;
 
 namespace Veneka.Module.OracleFlexcube
 {
@@ -62,8 +63,8 @@ namespace Veneka.Module.OracleFlexcube
                                 : base(protocol, address, port, path, timeoutMilliSeconds,
                                         authentication, username, password, connectionString, logger)
         {
-            _custService = new UBSCustService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _custService = new UBSCustService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, logger);
         }
@@ -74,8 +75,8 @@ namespace Veneka.Module.OracleFlexcube
                                 : base(protocol, address, port, path, timeoutMilliSeconds,
                                         authentication, username, password, nonce, connectionString, logger)
         {
-            _custService = new UBSCustService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _custService = new UBSCustService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, nonce, logger);
         }
@@ -86,8 +87,8 @@ namespace Veneka.Module.OracleFlexcube
                                : base(protocol, address, port, path, timeoutMilliSeconds,
                                        authentication, username, password, defaultDataDAL, validationDAL, logger)
         {
-            _custService = new UBSCustService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _custService = new UBSCustService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, logger);
         }
@@ -98,8 +99,8 @@ namespace Veneka.Module.OracleFlexcube
                                 : base(protocol, address, port, path, timeoutMilliSeconds,
                                         authentication, username, password, nonce, defaultDataDAL, validationDAL, logger)
         {
-            _custService = new UBSCustService(General.BuildBindings(protocol, timeoutMilliSeconds),
-                                            General.BuildEndpointAddress(protocol, address, port, path),
+            _custService = new UBSCustService(Utils.General.BuildBindings(protocol, timeoutMilliSeconds),
+                                            Utils.General.BuildEndpointAddress(protocol, address, port, path),
                                             authentication == Authentication.BASIC ? true : false,
                                             username, password, nonce, logger);
         }
@@ -197,6 +198,13 @@ namespace Veneka.Module.OracleFlexcube
             _log.Trace(m => m(" QueryCustomerDetails() Done"));
 
             return validResponse;
+        }
+        public CREATECUSTOMER_FSFS_RES CreateCustomer(CREATECUSTOMER_FSFS_REQ request)
+        {
+            FIMILogger fimiLoggerInstance = FIMILogger.GetFimiLoggerInstance();
+            AddUntrustedSSL();
+            fimiLoggerInstance.Debug("Call To CreateCustomerDetails()");
+            return _custService.CreateCustomerFS(request);
         }
         #endregion
         public void AddUntrustedSSL()

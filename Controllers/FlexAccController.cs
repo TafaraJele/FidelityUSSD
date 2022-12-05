@@ -15,16 +15,16 @@ namespace Indigo.Controllers
         /// </summary>
         /// <param name="customer"></param>
         /// <returns></returns>
-        //[HttpPost]
+        [HttpPost]
 
-        //public FlexCustomerAccResp CreateFlexAccount([FromBody] FlexiCustomer customer)
-        //{
-        //    var fimilogger = FIMILogger.GetFimiLoggerInstance();
-        //    fimilogger.Debug("Create flex customer account");
-        //    Application application = new Application();
+        public FlexCustomerAccResp CreateFlexAccount([FromBody] FlexiCustomer customer)
+        {
+            var fimilogger = FIMILogger.GetFimiLoggerInstance();
+            fimilogger.Debug("Create flex customer account");
+            Application application = new Application();
 
-        //    return application.CreateCustomer(customer); ;
+            return application.CreateCustomer(customer); ;
 
-        //}
-    }
+            }
+        }
 }

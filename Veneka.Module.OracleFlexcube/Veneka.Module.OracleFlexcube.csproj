@@ -438,6 +438,12 @@
     <WCFMetadataStorage Include="Service References\UBSCustWebService\" />
     <WCFMetadataStorage Include="Service References\UBSRTWebService\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Veneka.Module.TranzwareCompassPlusFIMI\Veneka.Module.TranzwareCompassPlusFIMI.csproj">
+      <Project>{A6A322B1-4916-40DB-8D02-D598F9A2B21D}</Project>
+      <Name>Veneka.Module.TranzwareCompassPlusFIMI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
