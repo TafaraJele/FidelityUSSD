@@ -1,0 +1,2826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TWO 5.2.6.3 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi_types.xsd" targetNamespace="http://schemas.compassplus.com/two/1.0/fimi.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://schemas.compassplus.com/two/1.0/fimi_types.xsd" schemaLocation="fimi_types.xsd"/>
+	<xs:element name="AcctCreditRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AcctCreditRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AcctCreditRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AcctCreditRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AcctDebitRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AcctDebitRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AcctDebitRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AcctDebitRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddCardVendorRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AddCardVendorRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddCardVendorRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AddCardVendorRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddEMVScriptRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AddEMVScriptRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddEMVScriptRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AddEMVScriptRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddPersonConfidentialInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AddPersonConfidentialInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddPersonConfidentialInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AddPersonConfidentialInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddRateRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AddRateRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddRateRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AddRateRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddTBPaymentRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AddTBPaymentRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddTBPaymentRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AddTBPaymentRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddTBRetailerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AddTBRetailerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddTBRetailerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AddTBRetailerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddTBTransferRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AddTBTransferRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AddTBTransferRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AddTBTransferRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AdjustToMCRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AdjustToMCRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AdjustToMCRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AdjustToMCRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AdjustToVISARp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AdjustToVISARp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AdjustToVISARq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AdjustToVISARq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AmExStoplistRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AmExStoplistRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AmExStoplistRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AmExStoplistRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ATMCommandRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ATMCommandRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ATMCommandRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ATMCommandRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BalanceInquiryRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BalanceInquiryRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BalanceInquiryRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BalanceInquiryRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BeginTransactionRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BeginTransactionRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BeginTransactionRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BeginTransactionRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetFormFieldsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BMSGetFormFieldsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetFormFieldsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BMSGetFormFieldsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetFormsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BMSGetFormsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetFormsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BMSGetFormsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetMessageFieldsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BMSGetMessageFieldsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetMessageFieldsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BMSGetMessageFieldsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetMessagesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BMSGetMessagesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSGetMessagesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BMSGetMessagesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSReadMessagesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BMSReadMessagesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSReadMessagesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BMSReadMessagesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSSendMessageRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:BMSSendMessageRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BMSSendMessageRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:BMSSendMessageRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CardRiskControlRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CardRiskControlRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CardRiskControlRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CardRiskControlRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangeAcctBalancesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ChangeAcctBalancesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangeAcctBalancesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ChangeAcctBalancesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangeAlphaNumericPasswordRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ChangeAlphaNumericPasswordRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangeAlphaNumericPasswordRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ChangeAlphaNumericPasswordRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangeECStatusRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ChangeECStatusRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangeECStatusRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ChangeECStatusRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangePasswordRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ChangePasswordRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChangePasswordRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ChangePasswordRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChargebackReversalToMCRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ChargebackReversalToMCRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChargebackReversalToMCRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ChargebackReversalToMCRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChargebackToMCRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ChargebackToMCRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChargebackToMCRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ChargebackToMCRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CheckPVV_PINOffsetRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CheckPVV_PINOffsetRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CheckPVV_PINOffsetRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CheckPVV_PINOffsetRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CNSCardConfigRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CNSCardConfigRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CNSCardConfigRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CNSCardConfigRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CommitRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CommitRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CommitRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CommitRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfigureCMSProfileRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ConfigureCMSProfileRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfigureCMSProfileRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ConfigureCMSProfileRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfirmCopyRequestToVISARp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ConfirmCopyRequestToVISARp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfirmCopyRequestToVISARq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ConfirmCopyRequestToVISARq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CopyCardLimitCountersRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CopyCardLimitCountersRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CopyCardLimitCountersRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CopyCardLimitCountersRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateAccountRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CreateAccountRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateAccountRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CreateAccountRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateCardRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CreateCardRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateCardRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CreateCardRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateIssuerObjectsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CreateIssuerObjectsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateIssuerObjectsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CreateIssuerObjectsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreatePersonRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CreatePersonRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreatePersonRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CreatePersonRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateTBCustomerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CreateTBCustomerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateTBCustomerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CreateTBCustomerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateVCardRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CreateVCardRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CreateVCardRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CreateVCardRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CryptoFunctionRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:CryptoFunctionRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CryptoFunctionRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:CryptoFunctionRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeclineRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeclineRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelCardVendorRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DelCardVendorRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelCardVendorRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DelCardVendorRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteEMVScriptRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteEMVScriptRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteEMVScriptRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteEMVScriptRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteOperatorSessionsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteOperatorSessionsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteOperatorSessionsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteOperatorSessionsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteRateRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteRateRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteRateRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteRateRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteReportRequestRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteReportRequestRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteReportRequestRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteReportRequestRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteTBRetailerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteTBRetailerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteTBRetailerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteTBRetailerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelPersonConfidentialInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DelPersonConfidentialInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelPersonConfidentialInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DelPersonConfidentialInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelTBPaymentRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DelTBPaymentRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelTBPaymentRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DelTBPaymentRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelTBTransferRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DelTBTransferRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DelTBTransferRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DelTBTransferRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DiscoverStoplistRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DiscoverStoplistRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DiscoverStoplistRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DiscoverStoplistRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ExecuteReportRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ExecuteReportRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ExecuteReportRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ExecuteReportRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FeeToVISARp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:FeeToVISARp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FeeToVISARq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:FeeToVISARq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FileHeaderRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:FileHeaderRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FileHeaderRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:FileHeaderRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GenerateDynamicPasswordRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GenerateDynamicPasswordRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GenerateDynamicPasswordRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GenerateDynamicPasswordRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcct2CardLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetAcct2CardLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcct2CardLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetAcct2CardLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctGroupLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetAcctGroupLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctGroupLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetAcctGroupLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetAcctInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetAcctInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetAcctLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetAcctLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctStatementRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetAcctStatementRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetAcctStatementRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetAcctStatementRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMActivityRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMActivityRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMActivityRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMActivityRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMAdminTransRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMAdminTransRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMAdminTransRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMAdminTransRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMEventsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMEventsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMEventsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMEventsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMFitnessRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMFitnessRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMFitnessRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMFitnessRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMHardwareRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMHardwareRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMHardwareRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMHardwareRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMHoppersRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMHoppersRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMHoppersRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMHoppersRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMMediaRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMMediaRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMMediaRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMMediaRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMSensorsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMSensorsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMSensorsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMSensorsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMStatusRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetATMStatusRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetATMStatusRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetATMStatusRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetBackOfficeInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetBackOfficeInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetBackOfficeInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetBackOfficeInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCardInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCardInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCardLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCardLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardProfileLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCardProfileLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardProfileLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCardProfileLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardStatementRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCardStatementRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCardStatementRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCardStatementRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCMSArchiveRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCMSArchiveRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCMSArchiveRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCMSArchiveRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCMSBufferRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCMSBufferRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCMSBufferRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCMSBufferRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCMSCommandsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCMSCommandsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCMSCommandsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCMSCommandsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCorrespAcctInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCorrespAcctInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCorrespAcctInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCorrespAcctInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCVVRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetCVVRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetCVVRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetCVVRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetDDCAuditJournalRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetDDCAuditJournalRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetDDCAuditJournalRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetDDCAuditJournalRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetEMVScriptsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetEMVScriptsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetEMVScriptsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetEMVScriptsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMIClerkAddressesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetFIMIClerkAddressesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMIClerkAddressesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetFIMIClerkAddressesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMIClerkPropertiesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetFIMIClerkPropertiesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMIClerkPropertiesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetFIMIClerkPropertiesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMIClerksRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetFIMIClerksRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMIClerksRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetFIMIClerksRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMITransRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetFIMITransRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetFIMITransRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetFIMITransRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetIAConfigurationRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetIAConfigurationRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetIAConfigurationRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetIAConfigurationRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetIssuerHistoryDetailsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetIssuerHistoryDetailsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetIssuerHistoryDetailsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetIssuerHistoryDetailsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetIssuerHistoryRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetIssuerHistoryRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetIssuerHistoryRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetIssuerHistoryRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetNDCAuditJournalRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetNDCAuditJournalRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetNDCAuditJournalRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetNDCAuditJournalRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPersonsHierarchyRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetPersonsHierarchyRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPersonsHierarchyRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetPersonsHierarchyRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPersonInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetPersonInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPersonInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetPersonInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPrefixInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetPrefixInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPrefixInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetPrefixInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPVV_PINOffsetRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetPVV_PINOffsetRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetPVV_PINOffsetRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetPVV_PINOffsetRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRateGroupsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetRateGroupsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRateGroupsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetRateGroupsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRatesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetRatesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRatesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetRatesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetReportListRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetReportListRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetReportListRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetReportListRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetReportRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetReportRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetReportRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetReportRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetReportsRequestsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetReportsRequestsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetReportsRequestsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetReportsRequestsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRepositoryKeyRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetRepositoryKeyRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRepositoryKeyRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetRepositoryKeyRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRetailerListRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetRetailerListRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetRetailerListRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetRetailerListRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTBCustHistoryRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetTBCustHistoryRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTBCustHistoryRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetTBCustHistoryRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTerminalAdditionalFieldsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetTerminalAdditionalFieldsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTerminalAdditionalFieldsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetTerminalAdditionalFieldsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTermListRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetTermListRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTermListRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetTermListRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTLADirRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetTLADirRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTLADirRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetTLADirRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTranIdRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetTranIdRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTranIdRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetTranIdRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTransInfoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetTransInfoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetTransInfoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetTransInfoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetUnitEventsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetUnitEventsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetUnitEventsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetUnitEventsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetUnitStateRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetUnitStateRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetUnitStateRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetUnitStateRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetVCProductsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetVCProductsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetVCProductsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetVCProductsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetWorkingKeyRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetWorkingKeyRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetWorkingKeyRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetWorkingKeyRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="InitSessionRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:InitSessionRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="InitSessionRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:InitSessionRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalChargebackReversalRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:LocalChargebackReversalRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalChargebackReversalRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:LocalChargebackReversalRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalChargebackRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:LocalChargebackRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalChargebackRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:LocalChargebackRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalStoplistRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:LocalStoplistRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalStoplistRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:LocalStoplistRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogoffRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:LogoffRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogoffRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:LogoffRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogonRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:LogonRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LogonRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:LogonRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MCGlobalStoplistRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:MCGlobalStoplistRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MCGlobalStoplistRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:MCGlobalStoplistRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MCStoplistRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:MCStoplistRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MCStoplistRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:MCStoplistRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ModifyCorrespAcctRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ModifyCorrespAcctRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ModifyCorrespAcctRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ModifyCorrespAcctRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ModifyRateRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ModifyRateRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ModifyRateRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ModifyRateRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="POSCommandRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:POSCommandRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="POSCommandRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:POSCommandRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="POSRequestRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:POSRequestRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="POSRequestRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:POSRequestRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="POSStateRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:POSStateRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="POSStateRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:POSStateRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PutEventRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:PutEventRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PutEventRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:PutEventRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RepresentToMCRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:RepresentToMCRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RepresentToMCRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:RepresentToMCRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RepresentToVISARp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:RepresentToVISARp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RepresentToVISARq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:RepresentToVISARq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Reset_IB_BadPINTriesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:Reset_IB_BadPINTriesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Reset_IB_BadPINTriesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:Reset_IB_BadPINTriesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Reset_IB_PINRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:Reset_IB_PINRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Reset_IB_PINRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:Reset_IB_PINRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetAcct2CardLimitsCounterRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetAcct2CardLimitsCounterRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetAcct2CardLimitsCounterRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetAcct2CardLimitsCounterRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetAcctLimitsCounterRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetAcctLimitsCounterRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetAcctLimitsCounterRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetAcctLimitsCounterRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetAlphaNumericPasswordRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetAlphaNumericPasswordRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetAlphaNumericPasswordRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetAlphaNumericPasswordRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetBadDynAuthPwdTriesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetBadDynAuthPwdTriesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetBadDynAuthPwdTriesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetBadDynAuthPwdTriesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetBadPINTriesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetBadPINTriesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetBadPINTriesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetBadPINTriesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetCard2AcctLinkRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetCard2AcctLinkRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetCard2AcctLinkRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetCard2AcctLinkRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetCardEMVATCRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetCardEMVATCRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetCardEMVATCRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetCardEMVATCRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetCardLimitsCounterRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ResetCardLimitsCounterRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResetCardLimitsCounterRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ResetCardLimitsCounterRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReverseTransactionRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:ReverseTransactionRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReverseTransactionRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:ReverseTransactionRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RollBackRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:RollBackRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RollBackRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:RollBackRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAccountOverdraftRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetAccountOverdraftRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAccountOverdraftRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetAccountOverdraftRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAccountPersonRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetAccountPersonRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAccountPersonRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetAccountPersonRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAccountUserFieldsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetAccountUserFieldsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAccountUserFieldsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetAccountUserFieldsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcct2CardLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetAcct2CardLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcct2CardLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetAcct2CardLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcct2CardStatusRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetAcct2CardStatusRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcct2CardStatusRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetAcct2CardStatusRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcctLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetAcctLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcctLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetAcctLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcctStatusRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetAcctStatusRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetAcctStatusRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetAcctStatusRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCard2AcctDescrRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCard2AcctDescrRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCard2AcctDescrRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCard2AcctDescrRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardExpirationRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardExpirationRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardExpirationRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardExpirationRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardPersonRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardPersonRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardPersonRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardPersonRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardProfileLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardProfileLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardProfileLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardProfileLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardProfileRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardProfileRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardProfileRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardProfileRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardPVVRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardPVVRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardPVVRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardPVVRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardStatusRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardStatusRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardStatusRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardStatusRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardUserFieldsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetCardUserFieldsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetCardUserFieldsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetCardUserFieldsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetDynamicPVV_PINOffsetRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetDynamicPVV_PINOffsetRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetDynamicPVV_PINOffsetRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetDynamicPVV_PINOffsetRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetEMVCardParamsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetEMVCardParamsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetEMVCardParamsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetEMVCardParamsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetEMVScriptSeqNoRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetEMVScriptSeqNoRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetEMVScriptSeqNoRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetEMVScriptSeqNoRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetExtraAuthLevelRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetExtraAuthLevelRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetExtraAuthLevelRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetExtraAuthLevelRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetFIMIClerkPropertiesRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetFIMIClerkPropertiesRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetFIMIClerkPropertiesRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetFIMIClerkPropertiesRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetIAConfigurationRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetIAConfigurationRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetIAConfigurationRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetIAConfigurationRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetNeedChangePasswordRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetNeedChangePasswordRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetNeedChangePasswordRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetNeedChangePasswordRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetPersonUserFieldsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetPersonUserFieldsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetPersonUserFieldsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetPersonUserFieldsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetReissuedCardVariantRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetReissuedCardVariantRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetReissuedCardVariantRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetReissuedCardVariantRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetTerminalAdditionalFieldsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetTerminalAdditionalFieldsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetTerminalAdditionalFieldsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetTerminalAdditionalFieldsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetTmpAcctLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetTmpAcctLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetTmpAcctLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetTmpAcctLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetTmpCardLimitsRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:SetTmpCardLimitsRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SetTmpCardLimitsRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:SetTmpCardLimitsRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TerminalRiskControlRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:TerminalRiskControlRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TerminalRiskControlRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:TerminalRiskControlRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TextToVISARp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:TextToVISARp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TextToVISARq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:TextToVISARq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UnitCommandRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:UnitCommandRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UnitCommandRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:UnitCommandRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateCard2AcctLinkRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:UpdateCard2AcctLinkRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateCard2AcctLinkRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:UpdateCard2AcctLinkRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateEMVScriptRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:UpdateEMVScriptRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateEMVScriptRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:UpdateEMVScriptRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdatePersonRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:UpdatePersonRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdatePersonRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:UpdatePersonRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateRetailerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:UpdateRetailerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateRetailerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:UpdateRetailerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateTerminalRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:UpdateTerminalRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UpdateTerminalRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:UpdateTerminalRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UserDefinedRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:UserDefinedRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UserDefinedRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:UserDefinedRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VISAStoplistRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:VISAStoplistRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VISAStoplistRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:VISAStoplistRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetExcludedPINListRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:GetExcludedPINListRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetExcludedPINListRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:GetExcludedPINListRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AttachCardToTBCustomerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AttachCardToTBCustomerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AttachCardToTBCustomerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AttachCardToTBCustomerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DetachCardFromTBCustomerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DetachCardFromTBCustomerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DetachCardFromTBCustomerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DetachCardFromTBCustomerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AttachForeignCardToTBCustomerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:AttachForeignCardToTBCustomerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AttachForeignCardToTBCustomerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:AttachForeignCardToTBCustomerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DetachForeignCardFromTBCustomerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DetachForeignCardFromTBCustomerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DetachForeignCardFromTBCustomerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DetachForeignCardFromTBCustomerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+   <xs:element name="GetCardAutopaymentsRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:GetCardAutopaymentsRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="GetCardAutopaymentsRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:GetCardAutopaymentsRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+  <xs:element name="AttachAutopaymentToCardRp">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Response" type="fimi:AttachAutopaymentToCardRp" nillable="false"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AttachAutopaymentToCardRq">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Request" type="fimi:AttachAutopaymentToCardRq" nillable="false"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetachAutopaymentFromCardRp">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Response" type="fimi:DetachAutopaymentFromCardRp" nillable="false"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetachAutopaymentFromCardRq">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="Request" type="fimi:DetachAutopaymentFromCardRq" nillable="false"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+   <xs:element name="EditCardAutopaymentRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:EditCardAutopaymentRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="EditCardAutopaymentRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:EditCardAutopaymentRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+  <xs:element name="StandAloneReversalRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:StandAloneReversalRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="StandAloneReversalRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:StandAloneReversalRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+  <xs:element name="DeleteCardRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteCardRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteCardRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteCardRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+  <xs:element name="DeleteTBCustomerRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteTBCustomerRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteTBCustomerRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteTBCustomerRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+  <xs:element name="DeleteAccountRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeleteAccountRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeleteAccountRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeleteAccountRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+  <xs:element name="DeletePersonRp">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Response" type="fimi:DeletePersonRp" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DeletePersonRq">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Request" type="fimi:DeletePersonRq" nillable="false"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+   <xs:element name="AddCMSAbonentRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:AddCMSAbonentRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="AddCMSAbonentRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:AddCMSAbonentRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="RemoveCMSAbonentRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:RemoveCMSAbonentRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="RemoveCMSAbonentRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:RemoveCMSAbonentRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="ChangeCMSAbonentRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:ChangeCMSAbonentRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="ChangeCMSAbonentRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:ChangeCMSAbonentRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="SetCard3DSecureAuthenticationRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:SetCard3DSecureAuthenticationRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>   
+   <xs:element name="SetCard3DSecureAuthenticationRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:SetCard3DSecureAuthenticationRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+      <xs:element name="GetAvatarRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:GetAvatarRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="GetAvatarRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:GetAvatarRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+    <xs:element name="SetAvatarRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:SetAvatarRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="SetAvatarRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:SetAvatarRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+    <xs:element name="ChangePersonConfidentialInfoRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:ChangePersonConfidentialInfoRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="ChangePersonConfidentialInfoRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:ChangePersonConfidentialInfoRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+    <xs:element name="GetIssuerFeesForOwnTermRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:GetIssuerFeesForOwnTermRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="GetIssuerFeesForOwnTermRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:GetIssuerFeesForOwnTermRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+    <xs:element name="SetIssuerFeesForOwnTermRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:SetIssuerFeesForOwnTermRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="SetIssuerFeesForOwnTermRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:SetIssuerFeesForOwnTermRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+    <xs:element name="GetIssuerFeesForExternalTermRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:GetIssuerFeesForExternalTermRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="GetIssuerFeesForExternalTermRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:GetIssuerFeesForExternalTermRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+    <xs:element name="SetIssuerFeesForExternalTermRp">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Response" type="fimi:SetIssuerFeesForExternalTermRp" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="SetIssuerFeesForExternalTermRq">
+      <xs:complexType>
+         <xs:all>
+            <xs:element name="Request" type="fimi:SetIssuerFeesForExternalTermRq" nillable="false"/>
+         </xs:all>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

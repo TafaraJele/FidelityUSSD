@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Configuration;
-using System.Web.Http.Cors;
-using Veneka.Module.TranzwareCompassPlusFIMI;
 using System.IO;
-using static Veneka.Module.TranzwareCompassPlusFIMI.ServicesValidated;
-using Veneka.Module.TranzwareCompassPlusFIMI.FIMI;
-using System.Configuration;
 
 namespace Indigo.Settings
 {

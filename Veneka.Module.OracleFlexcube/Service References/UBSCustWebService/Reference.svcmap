@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="58c3dfb9-b313-4512-8284-45aa3f33910e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\Users\rishon.pious\OneDrive - Veneka\Documents\Veneka\Customer\Fidelity\XSD FOR CUSTOMER SERVICE\FCUBSCustomerService_v1_1.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FCUBSCustomerService_v1.xsd" MetadataType="Schema" ID="cc3796f9-772d-4b8f-8bda-6b7e55d5f2e5" SourceId="1" SourceUrl="file:///C:/Users/rishon.pious/OneDrive - Veneka/Documents/Veneka/Customer/Fidelity/XSD FOR CUSTOMER SERVICE/FCUBSCustomerService_v1.xsd" />
+    <MetadataFile FileName="FCUBSCustomerService.wsdl" MetadataType="Wsdl" ID="5889a851-02ec-4b54-976f-e65efe77859d" SourceId="1" SourceUrl="file:///C:/Users/rishon.pious/OneDrive - Veneka/Documents/Veneka/Customer/Fidelity/XSD FOR CUSTOMER SERVICE/FCUBSCustomerService_v1_1.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns="http://schemas.compassplus.com/two/1.0/fimi_userdefined.xsd" targetNamespace="http://schemas.compassplus.com/two/1.0/fimi_userdefined.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:complexType name="UserDataType" />
+  <xs:complexType name="ResultType" />
+</xs:schema>

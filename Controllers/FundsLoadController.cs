@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Net;
 using System.Web.Http;
-using Indigo.CardReq;
 using HttpPostAttribute = System.Web.Http.HttpPostAttribute;
-using Veneka.Module.TranzwareCompassPlusFIMI;
-using System.IO;
-using static Veneka.Module.TranzwareCompassPlusFIMI.ServicesValidated;
-using System.Linq;
-using System.Text.RegularExpressions;
-using Newtonsoft.Json.Linq;
-using System.Configuration;
-using Veneka.Module.TranzwareCompassPlusFIMI.Models;
 using Indigo.Utility;
 using Veneka.Indigo.Abstractions.Models;
 using Veneka.Indigo.Core;

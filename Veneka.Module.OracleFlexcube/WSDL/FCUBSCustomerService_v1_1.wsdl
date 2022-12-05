@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--File FCUBSCustomerService_v1.1.wsdl, application FCUBSCustomerService_v1.1--><definitions name="FCUBSCustomerService" targetNamespace="http://types.ws.gw.fcubs.ofss.com" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://types.ws.gw.fcubs.ofss.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <documentation>
+    <appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="FCUBSCustomerServiceSEIBinding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </appinfo>
+  </documentation>
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://fcubs.ofss.com/service/FCUBSCustomerService" schemaLocation="FCUBSCustomerService_v1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="AmountBlocksAuthorizeFS">
+    <part element="ns1:AMOUNTBLOCKSAUTHORIZE_FSFS_REQ" name="RequestMsg" xmlns:ns1="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksAuthorizeFSResponse">
+    <part element="ns2:AMOUNTBLOCKSAUTHORIZE_FSFS_RES" name="ResponseMsg" xmlns:ns2="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksAuthorizeIO">
+    <part element="ns3:AMOUNTBLOCKSAUTHORIZE_IOPK_REQ" name="RequestMsg" xmlns:ns3="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksAuthorizeIOResponse">
+    <part element="ns4:AMOUNTBLOCKSAUTHORIZE_IOPK_RES" name="ResponseMsg" xmlns:ns4="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksCloseFS">
+    <part element="ns5:AMOUNTBLOCKSCLOSE_FSFS_REQ" name="RequestMsg" xmlns:ns5="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksCloseFSResponse">
+    <part element="ns6:AMOUNTBLOCKSCLOSE_FSFS_RES" name="ResponseMsg" xmlns:ns6="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksCloseIO">
+    <part element="ns7:AMOUNTBLOCKSCLOSE_IOPK_REQ" name="RequestMsg" xmlns:ns7="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksCloseIOResponse">
+    <part element="ns8:AMOUNTBLOCKSCLOSE_IOPK_RES" name="ResponseMsg" xmlns:ns8="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksDeleteFS">
+    <part element="ns9:AMOUNTBLOCKSDELETE_FSFS_REQ" name="RequestMsg" xmlns:ns9="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksDeleteFSResponse">
+    <part element="ns10:AMOUNTBLOCKSDELETE_FSFS_RES" name="ResponseMsg" xmlns:ns10="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksDeleteIO">
+    <part element="ns11:AMOUNTBLOCKSDELETE_IOPK_REQ" name="RequestMsg" xmlns:ns11="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksDeleteIOResponse">
+    <part element="ns12:AMOUNTBLOCKSDELETE_IOPK_RES" name="ResponseMsg" xmlns:ns12="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksModifyFS">
+    <part element="ns13:AMOUNTBLOCKSMODIFY_FSFS_REQ" name="RequestMsg" xmlns:ns13="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksModifyFSResponse">
+    <part element="ns14:AMOUNTBLOCKSMODIFY_FSFS_RES" name="ResponseMsg" xmlns:ns14="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksModifyIO">
+    <part element="ns15:AMOUNTBLOCKSMODIFY_IOPK_REQ" name="RequestMsg" xmlns:ns15="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksModifyIOResponse">
+    <part element="ns16:AMOUNTBLOCKSMODIFY_IOPK_RES" name="ResponseMsg" xmlns:ns16="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksNewFS">
+    <part element="ns17:AMOUNTBLOCKSNEW_FSFS_REQ" name="RequestMsg" xmlns:ns17="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksNewFSResponse">
+    <part element="ns18:AMOUNTBLOCKSNEW_FSFS_RES" name="ResponseMsg" xmlns:ns18="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksNewIO">
+    <part element="ns19:AMOUNTBLOCKSNEW_IOPK_REQ" name="RequestMsg" xmlns:ns19="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksNewIOResponse">
+    <part element="ns20:AMOUNTBLOCKSNEW_IOPK_RES" name="ResponseMsg" xmlns:ns20="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksQueryIO">
+    <part element="ns21:AMOUNTBLOCKSQUERY_IOFS_REQ" name="RequestMsg" xmlns:ns21="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksQueryIOResponse">
+    <part element="ns22:AMOUNTBLOCKSQUERY_IOFS_RES" name="ResponseMsg" xmlns:ns22="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksReopenFS">
+    <part element="ns23:AMOUNTBLOCKSREOPEN_FSFS_REQ" name="RequestMsg" xmlns:ns23="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksReopenFSResponse">
+    <part element="ns24:AMOUNTBLOCKSREOPEN_FSFS_RES" name="ResponseMsg" xmlns:ns24="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksReopenIO">
+    <part element="ns25:AMOUNTBLOCKSREOPEN_IOPK_REQ" name="RequestMsg" xmlns:ns25="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AmountBlocksReopenIOResponse">
+    <part element="ns26:AMOUNTBLOCKSREOPEN_IOPK_RES" name="ResponseMsg" xmlns:ns26="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AuthorizeCustomerFS">
+    <part element="ns27:AUTHORIZECUSTOMER_FSFS_REQ" name="RequestMsg" xmlns:ns27="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AuthorizeCustomerFSResponse">
+    <part element="ns28:AUTHORIZECUSTOMER_FSFS_RES" name="ResponseMsg" xmlns:ns28="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AuthorizeCustomerIO">
+    <part element="ns29:AUTHORIZECUSTOMER_IOPK_REQ" name="RequestMsg" xmlns:ns29="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="AuthorizeCustomerIOResponse">
+    <part element="ns30:AUTHORIZECUSTOMER_IOPK_RES" name="ResponseMsg" xmlns:ns30="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CloseCustomerFS">
+    <part element="ns31:CLOSECUSTOMER_FSFS_REQ" name="RequestMsg" xmlns:ns31="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CloseCustomerFSResponse">
+    <part element="ns32:CLOSECUSTOMER_FSFS_RES" name="ResponseMsg" xmlns:ns32="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CloseCustomerIO">
+    <part element="ns33:CLOSECUSTOMER_IOPK_REQ" name="RequestMsg" xmlns:ns33="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CloseCustomerIOResponse">
+    <part element="ns34:CLOSECUSTOMER_IOPK_RES" name="ResponseMsg" xmlns:ns34="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateAccountStructureFS">
+    <part element="ns35:CREATEACCOUNTSTRUCTURE_FSFS_REQ" name="RequestMsg" xmlns:ns35="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateAccountStructureFSResponse">
+    <part element="ns36:CREATEACCOUNTSTRUCTURE_FSFS_RES" name="ResponseMsg" xmlns:ns36="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateAccountStructureIO">
+    <part element="ns37:CREATEACCOUNTSTRUCTURE_IOPK_REQ" name="RequestMsg" xmlns:ns37="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateAccountStructureIOResponse">
+    <part element="ns38:CREATEACCOUNTSTRUCTURE_IOPK_RES" name="ResponseMsg" xmlns:ns38="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateCustomerFS">
+    <part element="ns39:CREATECUSTOMER_FSFS_REQ" name="RequestMsg" xmlns:ns39="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateCustomerFSResponse">
+    <part element="ns40:CREATECUSTOMER_FSFS_RES" name="ResponseMsg" xmlns:ns40="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateCustomerIO">
+    <part element="ns41:CREATECUSTOMER_IOPK_REQ" name="RequestMsg" xmlns:ns41="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateCustomerIOResponse">
+    <part element="ns42:CREATECUSTOMER_IOPK_RES" name="ResponseMsg" xmlns:ns42="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="DeleteCustomerFS">
+    <part element="ns43:DELETECUSTOMER_FSFS_REQ" name="RequestMsg" xmlns:ns43="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="DeleteCustomerFSResponse">
+    <part element="ns44:DELETECUSTOMER_FSFS_RES" name="ResponseMsg" xmlns:ns44="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="DeleteCustomerIO">
+    <part element="ns45:DELETECUSTOMER_IOPK_REQ" name="RequestMsg" xmlns:ns45="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="DeleteCustomerIOResponse">
+    <part element="ns46:DELETECUSTOMER_IOPK_RES" name="ResponseMsg" xmlns:ns46="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyAccountStructureFS">
+    <part element="ns47:MODIFYACCOUNTSTRUCTURE_FSFS_REQ" name="RequestMsg" xmlns:ns47="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyAccountStructureFSResponse">
+    <part element="ns48:MODIFYACCOUNTSTRUCTURE_FSFS_RES" name="ResponseMsg" xmlns:ns48="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyAccountStructureIO">
+    <part element="ns49:MODIFYACCOUNTSTRUCTURE_IOPK_REQ" name="RequestMsg" xmlns:ns49="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyAccountStructureIOResponse">
+    <part element="ns50:MODIFYACCOUNTSTRUCTURE_IOPK_RES" name="ResponseMsg" xmlns:ns50="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyCustomerFS">
+    <part element="ns51:MODIFYCUSTOMER_FSFS_REQ" name="RequestMsg" xmlns:ns51="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyCustomerFSResponse">
+    <part element="ns52:MODIFYCUSTOMER_FSFS_RES" name="ResponseMsg" xmlns:ns52="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyCustomerIO">
+    <part element="ns53:MODIFYCUSTOMER_IOPK_REQ" name="RequestMsg" xmlns:ns53="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ModifyCustomerIOResponse">
+    <part element="ns54:MODIFYCUSTOMER_IOPK_RES" name="ResponseMsg" xmlns:ns54="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="QueryAccountStructureIO">
+    <part element="ns55:QUERYACCOUNTSTRUCTURE_IOFS_REQ" name="RequestMsg" xmlns:ns55="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="QueryAccountStructureIOResponse">
+    <part element="ns56:QUERYACCOUNTSTRUCTURE_IOFS_RES" name="ResponseMsg" xmlns:ns56="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="QueryCustomerIO">
+    <part element="ns57:QUERYCUSTOMER_IOFS_REQ" name="RequestMsg" xmlns:ns57="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="QueryCustomerIOResponse">
+    <part element="ns58:QUERYCUSTOMER_IOFS_RES" name="ResponseMsg" xmlns:ns58="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ReopenCustomerFS">
+    <part element="ns59:REOPENCUSTOMER_FSFS_REQ" name="RequestMsg" xmlns:ns59="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ReopenCustomerFSResponse">
+    <part element="ns60:REOPENCUSTOMER_FSFS_RES" name="ResponseMsg" xmlns:ns60="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ReopenCustomerIO">
+    <part element="ns61:REOPENCUSTOMER_IOPK_REQ" name="RequestMsg" xmlns:ns61="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="ReopenCustomerIOResponse">
+    <part element="ns62:REOPENCUSTOMER_IOPK_RES" name="ResponseMsg" xmlns:ns62="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateImageFS">
+    <part element="ns63:CREATEIMAGE_FSFS_REQ" name="RequestMsg" xmlns:ns63="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="CreateImageFSResponse">
+    <part element="ns64:CREATEIMAGE_FSFS_RES" name="ResponseMsg" xmlns:ns64="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="QueryImageIO">
+    <part element="ns65:QUERYIMAGE_IOFS_REQ" name="RequestMsg" xmlns:ns65="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <message name="QueryImageIOResponse">
+    <part element="ns66:QUERYIMAGE_IOFS_RES" name="ResponseMsg" xmlns:ns66="http://fcubs.ofss.com/service/FCUBSCustomerService"/>
+  </message>
+  <portType name="FCUBSCustomerServiceSEI">
+    <operation name="AmountBlocksAuthorizeFS">
+      <input message="tns:AmountBlocksAuthorizeFS"/>
+      <output message="tns:AmountBlocksAuthorizeFSResponse"/>
+    </operation>
+    <operation name="AmountBlocksAuthorizeIO">
+      <input message="tns:AmountBlocksAuthorizeIO"/>
+      <output message="tns:AmountBlocksAuthorizeIOResponse"/>
+    </operation>
+    <operation name="AmountBlocksCloseFS">
+      <input message="tns:AmountBlocksCloseFS"/>
+      <output message="tns:AmountBlocksCloseFSResponse"/>
+    </operation>
+    <operation name="AmountBlocksCloseIO">
+      <input message="tns:AmountBlocksCloseIO"/>
+      <output message="tns:AmountBlocksCloseIOResponse"/>
+    </operation>
+    <operation name="AmountBlocksDeleteFS">
+      <input message="tns:AmountBlocksDeleteFS"/>
+      <output message="tns:AmountBlocksDeleteFSResponse"/>
+    </operation>
+    <operation name="AmountBlocksDeleteIO">
+      <input message="tns:AmountBlocksDeleteIO"/>
+      <output message="tns:AmountBlocksDeleteIOResponse"/>
+    </operation>
+    <operation name="AmountBlocksModifyFS">
+      <input message="tns:AmountBlocksModifyFS"/>
+      <output message="tns:AmountBlocksModifyFSResponse"/>
+    </operation>
+    <operation name="AmountBlocksModifyIO">
+      <input message="tns:AmountBlocksModifyIO"/>
+      <output message="tns:AmountBlocksModifyIOResponse"/>
+    </operation>
+    <operation name="AmountBlocksNewFS">
+      <input message="tns:AmountBlocksNewFS"/>
+      <output message="tns:AmountBlocksNewFSResponse"/>
+    </operation>
+    <operation name="AmountBlocksNewIO">
+      <input message="tns:AmountBlocksNewIO"/>
+      <output message="tns:AmountBlocksNewIOResponse"/>
+    </operation>
+    <operation name="AmountBlocksQueryIO">
+      <input message="tns:AmountBlocksQueryIO"/>
+      <output message="tns:AmountBlocksQueryIOResponse"/>
+    </operation>
+    <operation name="AmountBlocksReopenFS">
+      <input message="tns:AmountBlocksReopenFS"/>
+      <output message="tns:AmountBlocksReopenFSResponse"/>
+    </operation>
+    <operation name="AmountBlocksReopenIO">
+      <input message="tns:AmountBlocksReopenIO"/>
+      <output message="tns:AmountBlocksReopenIOResponse"/>
+    </operation>
+    <operation name="AuthorizeCustomerFS">
+      <input message="tns:AuthorizeCustomerFS"/>
+      <output message="tns:AuthorizeCustomerFSResponse"/>
+    </operation>
+    <operation name="AuthorizeCustomerIO">
+      <input message="tns:AuthorizeCustomerIO"/>
+      <output message="tns:AuthorizeCustomerIOResponse"/>
+    </operation>
+    <operation name="CloseCustomerFS">
+      <input message="tns:CloseCustomerFS"/>
+      <output message="tns:CloseCustomerFSResponse"/>
+    </operation>
+    <operation name="CloseCustomerIO">
+      <input message="tns:CloseCustomerIO"/>
+      <output message="tns:CloseCustomerIOResponse"/>
+    </operation>
+    <operation name="CreateAccountStructureFS">
+      <input message="tns:CreateAccountStructureFS"/>
+      <output message="tns:CreateAccountStructureFSResponse"/>
+    </operation>
+    <operation name="CreateAccountStructureIO">
+      <input message="tns:CreateAccountStructureIO"/>
+      <output message="tns:CreateAccountStructureIOResponse"/>
+    </operation>
+    <operation name="CreateCustomerFS">
+      <input message="tns:CreateCustomerFS"/>
+      <output message="tns:CreateCustomerFSResponse"/>
+    </operation>
+    <operation name="CreateCustomerIO">
+      <input message="tns:CreateCustomerIO"/>
+      <output message="tns:CreateCustomerIOResponse"/>
+    </operation>
+    <operation name="DeleteCustomerFS">
+      <input message="tns:DeleteCustomerFS"/>
+      <output message="tns:DeleteCustomerFSResponse"/>
+    </operation>
+    <operation name="DeleteCustomerIO">
+      <input message="tns:DeleteCustomerIO"/>
+      <output message="tns:DeleteCustomerIOResponse"/>
+    </operation>
+    <operation name="ModifyAccountStructureFS">
+      <input message="tns:ModifyAccountStructureFS"/>
+      <output message="tns:ModifyAccountStructureFSResponse"/>
+    </operation>
+    <operation name="ModifyAccountStructureIO">
+      <input message="tns:ModifyAccountStructureIO"/>
+      <output message="tns:ModifyAccountStructureIOResponse"/>
+    </operation>
+    <operation name="ModifyCustomerFS">
+      <input message="tns:ModifyCustomerFS"/>
+      <output message="tns:ModifyCustomerFSResponse"/>
+    </operation>
+    <operation name="ModifyCustomerIO">
+      <input message="tns:ModifyCustomerIO"/>
+      <output message="tns:ModifyCustomerIOResponse"/>
+    </operation>
+    <operation name="QueryAccountStructureIO">
+      <input message="tns:QueryAccountStructureIO"/>
+      <output message="tns:QueryAccountStructureIOResponse"/>
+    </operation>
+    <operation name="QueryCustomerIO">
+      <input message="tns:QueryCustomerIO"/>
+      <output message="tns:QueryCustomerIOResponse"/>
+    </operation>
+    <operation name="ReopenCustomerFS">
+      <input message="tns:ReopenCustomerFS"/>
+      <output message="tns:ReopenCustomerFSResponse"/>
+    </operation>
+    <operation name="ReopenCustomerIO">
+      <input message="tns:ReopenCustomerIO"/>
+      <output message="tns:ReopenCustomerIOResponse"/>
+    </operation>
+    <operation name="CreateImageFS">
+      <input message="tns:CreateImageFS"/>
+      <output message="tns:CreateImageFSResponse"/>
+    </operation>
+    <operation name="QueryImageIO">
+      <input message="tns:QueryImageIO"/>
+      <output message="tns:QueryImageIOResponse"/>
+    </operation>
+  </portType>
+  <binding name="FCUBSCustomerServiceSEIBinding" type="tns:FCUBSCustomerServiceSEI">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AmountBlocksAuthorizeFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksAuthorizeIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksCloseFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksCloseIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksDeleteFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksDeleteIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksModifyFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksModifyIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksNewFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksNewIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksQueryIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksReopenFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AmountBlocksReopenIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AuthorizeCustomerFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AuthorizeCustomerIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CloseCustomerFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CloseCustomerIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateAccountStructureFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateAccountStructureIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateCustomerFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateCustomerIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="DeleteCustomerFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="DeleteCustomerIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ModifyAccountStructureFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ModifyAccountStructureIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ModifyCustomerFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ModifyCustomerIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="QueryAccountStructureIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="QueryCustomerIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ReopenCustomerFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ReopenCustomerIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateImageFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="QueryImageIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="FCUBSCustomerService">
+    <port binding="tns:FCUBSCustomerServiceSEIBinding" name="FCUBSCustomerServiceSEI">
+      <soap:address location="https://10.179.100.243:7061/FCUBSCustomerService_v1.1"/>
+    </port>
+  </service>
+</definitions>

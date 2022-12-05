@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6c169adf-3cae-49d4-822f-40a55f1d385d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\Migration\C Root\_work\Office\GT CIV\Veneka.Module.TranzwareCompassPlusFIMI_tls1.2\Veneka.Module.TranzwareCompassPlusFIMI\WSDL\fimi.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="fimi.wsdl" MetadataType="Wsdl" ID="46da8b86-e692-4898-b66f-ee3f12e490cf" SourceId="1" SourceUrl="file:///C:/Migration/C Root/_work/Office/GT CIV/Veneka.Module.TranzwareCompassPlusFIMI_tls1.2/Veneka.Module.TranzwareCompassPlusFIMI/WSDL/fimi.wsdl" />
+    <MetadataFile FileName="fimi_userdefined.xsd" MetadataType="Schema" ID="2d6dde41-bce7-4ebe-8cf1-deedda12da06" SourceId="1" SourceUrl="file:///C:/Migration/C Root/_work/Office/GT CIV/Veneka.Module.TranzwareCompassPlusFIMI_tls1.2/Veneka.Module.TranzwareCompassPlusFIMI/WSDL/fimi_userdefined.xsd" />
+    <MetadataFile FileName="fimi.xsd" MetadataType="Schema" ID="199ebf21-da3f-4a01-acd3-12aa8de26f3c" SourceId="1" SourceUrl="file:///C:/Migration/C Root/_work/Office/GT CIV/Veneka.Module.TranzwareCompassPlusFIMI_tls1.2/Veneka.Module.TranzwareCompassPlusFIMI/WSDL/fimi.xsd" />
+    <MetadataFile FileName="fimi_types.xsd" MetadataType="Schema" ID="77950d34-1b37-4b89-bab6-c38283917e69" SourceId="1" SourceUrl="file:///C:/Migration/C Root/_work/Office/GT CIV/Veneka.Module.TranzwareCompassPlusFIMI_tls1.2/Veneka.Module.TranzwareCompassPlusFIMI/WSDL/fimi_types.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

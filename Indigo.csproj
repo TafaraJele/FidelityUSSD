@@ -1514,10 +1514,6 @@
       <Project>{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}</Project>
       <Name>Veneka.Indigo.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="intergrations\Veneka.Module.TranzwareCompassPlusFIMI\Veneka.Module.TranzwareCompassPlusFIMI.csproj">
-      <Project>{a6a322b1-4916-40db-8d02-d598f9a2b21d}</Project>
-      <Name>Veneka.Module.TranzwareCompassPlusFIMI</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

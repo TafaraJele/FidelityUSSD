@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7326CBC-F79E-439B-94E8-C39E04B6B8D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Veneka.Module.OracleFlexcube</RootNamespace>
+    <AssemblyName>Veneka.Module.OracleFlexcube</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>refs\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>refs\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net1213, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Log4Net1213.3.3.1\lib\net40\Common.Logging.Log4Net1213.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Veneka.Module.IntegrationDataControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>refs\Veneka.Module.IntegrationDataControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountServicesValidated.cs" />
+    <Compile Include="CustomerServiceValidated.cs" />
+    <Compile Include="Inspector\LogClientBehaviour.cs" />
+    <Compile Include="Inspector\MessageInspector.cs" />
+    <Compile Include="MelcomRTServicesValidated.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RTServicesValidated.cs" />
+    <Compile Include="Service References\UBSAccWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UBSCustWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UBSRTWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesValidated.cs" />
+    <Compile Include="UBS\UBSCustService.cs" />
+    <Compile Include="UBS\UBSRTService.cs" />
+    <Compile Include="UBS\UBSAccService.cs" />
+    <Compile Include="UBS\UBSService.cs" />
+    <Compile Include="Utils\General.cs" />
+    <Compile Include="Utils\SecurityHeader.cs" />
+    <Compile Include="Utils\UsernameToken.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Service References\UBSAccWebService\FCUBSAccService1.wsdl" />
+    <None Include="Service References\UBSAccWebService\FCUBSAccService11.wsdl" />
+    <None Include="Service References\UBSAccWebService\FCUBSAccService_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UBSAccWebService\FCUBSAccService_v11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.AUTHORIZEACCLASSTFR_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.AUTHORIZEACCLASSTFR_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.AUTHORIZECUSTACC_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.AUTHORIZECUSTACC_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKAUTHORISE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKAUTHORISE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKDELETE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKDELETE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKMODIFY_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKMODIFY_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKNEW_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKNEW_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKBOOKQUERY_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CHECKDETAILSQUERY_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CLOSECUSTACC_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CLOSECUSTACC_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CREATEACCLASSTFR_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CREATEACCLASSTFR_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CREATECUSTACC_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CREATECUSTACC_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CREATETDSIM_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.CREATETDSIM_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.DELETEACCLASSTFR_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.DELETEACCLASSTFR_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.DELETECUSTACC_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.DELETECUSTACC_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.MODIFYACCLASSTFR_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.MODIFYACCLASSTFR_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.MODIFYCUSTACC_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.MODIFYCUSTACC_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.QUERYACCBAL_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.QUERYACCLASSTFR_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.QUERYCUSTACC_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.QUERYGENADVICE_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.REOPENCUSTACC_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.REOPENCUSTACC_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSAUTHORIZE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSAUTHORIZE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSDELETE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSDELETE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSMODIFY_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSMODIFY_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSNEW_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSNEW_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSAccWebService\Veneka.Module.OracleFlexcube.UBSAccWebService.STOPPAYMENTSQUERY_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\FCUBSCustomerService.wsdl" />
+    <None Include="Service References\UBSCustWebService\FCUBSCustomerService_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSAUTHORIZE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSAUTHORIZE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSCLOSE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSCLOSE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSDELETE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSDELETE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSMODIFY_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSMODIFY_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSNEW_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSNEW_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSQUERY_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSREOPEN_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AMOUNTBLOCKSREOPEN_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AUTHORIZECUSTOMER_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.AUTHORIZECUSTOMER_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.CLOSECUSTOMER_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.CLOSECUSTOMER_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.CREATEACCOUNTSTRUCTURE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.CREATEACCOUNTSTRUCTURE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.CREATECUSTOMER_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.CREATECUSTOMER_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.CREATEIMAGE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.DELETECUSTOMER_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.DELETECUSTOMER_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.MODIFYACCOUNTSTRUCTURE_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.MODIFYACCOUNTSTRUCTURE_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.MODIFYCUSTOMER_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.MODIFYCUSTOMER_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.QUERYACCOUNTSTRUCTURE_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.QUERYCUSTOMER_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.QUERYIMAGE_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.REOPENCUSTOMER_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSCustWebService\Veneka.Module.OracleFlexcube.UBSCustWebService.REOPENCUSTOMER_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\FCUBSRTService1.wsdl" />
+    <None Include="Service References\UBSRTWebService\FCUBSRTServiceV1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.AUTHORIZETRANSACTION_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.AUTHORIZETRANSACTION_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.CREATETRANSACTION_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.CREATETRANSACTION_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.QUERYRTPRODUCT_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.QUERYTRANSACTION_IOFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.REVERSETRANSACTION_FSFS_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UBSRTWebService\Veneka.Module.OracleFlexcube.UBSRTWebService.REVERSETRANSACTION_IOPK_RES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="WSDL\FCUBSAccService_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL\FCUBSAccService_v1.wsdl" />
+    <None Include="WSDL\FCUBSCustomerService_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL\FCUBSCustomerService_v1_1.wsdl" />
+    <None Include="WSDL\FCUBSRTService.wsdl" />
+    <None Include="Service References\UBSRTWebService\configuration91.svcinfo" />
+    <None Include="Service References\UBSRTWebService\configuration.svcinfo" />
+    <None Include="Service References\UBSRTWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UBSCustWebService\configuration91.svcinfo" />
+    <None Include="Service References\UBSCustWebService\configuration.svcinfo" />
+    <None Include="Service References\UBSCustWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="WSDL\FCUBSRTService_xsd.xml" />
+    <None Include="Service References\UBSAccWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UBSAccWebService\configuration.svcinfo" />
+    <None Include="Service References\UBSAccWebService\configuration91.svcinfo" />
+    <None Include="app.config" />
+    <None Include="WSDL\FCUBSAccService.wsdl" />
+    <Content Include="WSDL\FCUBSAccServiceXsd.xml" />
+    <None Include="WSDL\FCUBSRTServiceV1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL\FCUBSRTService_V1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\UBSAccWebService\" />
+    <WCFMetadataStorage Include="Service References\UBSCustWebService\" />
+    <WCFMetadataStorage Include="Service References\UBSRTWebService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="FCUBSRTService" targetNamespace="http://types.ws.gw.fcubs.ofss.com" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://types.ws.gw.fcubs.ofss.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <documentation>
+    <appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="FCUBSRTServiceSEIBinding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </appinfo>
+  </documentation>
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://fcubs.ofss.com/service/FCUBSRTService" schemaLocation="FCUBSRTServiceV1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="AuthorizeTransactionFS">
+    <part element="ns1:AUTHORIZETRANSACTION_FSFS_REQ" name="RequestMsg" xmlns:ns1="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="AuthorizeTransactionFSResponse">
+    <part element="ns2:AUTHORIZETRANSACTION_FSFS_RES" name="ResponseMsg" xmlns:ns2="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="AuthorizeTransactionIO">
+    <part element="ns3:AUTHORIZETRANSACTION_IOPK_REQ" name="RequestMsg" xmlns:ns3="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="AuthorizeTransactionIOResponse">
+    <part element="ns4:AUTHORIZETRANSACTION_IOPK_RES" name="ResponseMsg" xmlns:ns4="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="CreateTransactionFS">
+    <part element="ns5:CREATETRANSACTION_FSFS_REQ" name="RequestMsg" xmlns:ns5="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="CreateTransactionFSResponse">
+    <part element="ns6:CREATETRANSACTION_FSFS_RES" name="ResponseMsg" xmlns:ns6="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="CreateTransactionIO">
+    <part element="ns7:CREATETRANSACTION_IOPK_REQ" name="RequestMsg" xmlns:ns7="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="CreateTransactionIOResponse">
+    <part element="ns8:CREATETRANSACTION_IOPK_RES" name="ResponseMsg" xmlns:ns8="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="QueryTransactionIO">
+    <part element="ns9:QUERYTRANSACTION_IOFS_REQ" name="RequestMsg" xmlns:ns9="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="QueryTransactionIOResponse">
+    <part element="ns10:QUERYTRANSACTION_IOFS_RES" name="ResponseMsg" xmlns:ns10="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="ReverseTransactionFS">
+    <part element="ns11:REVERSETRANSACTION_FSFS_REQ" name="RequestMsg" xmlns:ns11="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="ReverseTransactionFSResponse">
+    <part element="ns12:REVERSETRANSACTION_FSFS_RES" name="ResponseMsg" xmlns:ns12="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="ReverseTransactionIO">
+    <part element="ns13:REVERSETRANSACTION_IOPK_REQ" name="RequestMsg" xmlns:ns13="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="ReverseTransactionIOResponse">
+    <part element="ns14:REVERSETRANSACTION_IOPK_RES" name="ResponseMsg" xmlns:ns14="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="QueryRTProductIO">
+    <part element="ns15:QUERYRTPRODUCT_IOFS_REQ" name="RequestMsg" xmlns:ns15="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <message name="QueryRTProductIOResponse">
+    <part element="ns16:QUERYRTPRODUCT_IOFS_RES" name="ResponseMsg" xmlns:ns16="http://fcubs.ofss.com/service/FCUBSRTService"/>
+  </message>
+  <portType name="FCUBSRTServiceSEI">
+    <operation name="AuthorizeTransactionFS">
+      <input message="tns:AuthorizeTransactionFS"/>
+      <output message="tns:AuthorizeTransactionFSResponse"/>
+    </operation>
+    <operation name="AuthorizeTransactionIO">
+      <input message="tns:AuthorizeTransactionIO"/>
+      <output message="tns:AuthorizeTransactionIOResponse"/>
+    </operation>
+    <operation name="CreateTransactionFS">
+      <input message="tns:CreateTransactionFS"/>
+      <output message="tns:CreateTransactionFSResponse"/>
+    </operation>
+    <operation name="CreateTransactionIO">
+      <input message="tns:CreateTransactionIO"/>
+      <output message="tns:CreateTransactionIOResponse"/>
+    </operation>
+    <operation name="QueryTransactionIO">
+      <input message="tns:QueryTransactionIO"/>
+      <output message="tns:QueryTransactionIOResponse"/>
+    </operation>
+    <operation name="ReverseTransactionFS">
+      <input message="tns:ReverseTransactionFS"/>
+      <output message="tns:ReverseTransactionFSResponse"/>
+    </operation>
+    <operation name="ReverseTransactionIO">
+      <input message="tns:ReverseTransactionIO"/>
+      <output message="tns:ReverseTransactionIOResponse"/>
+    </operation>
+    <operation name="QueryRTProductIO">
+      <input message="tns:QueryRTProductIO"/>
+      <output message="tns:QueryRTProductIOResponse"/>
+    </operation>
+  </portType>
+  <binding name="FCUBSRTServiceSEIBinding" type="tns:FCUBSRTServiceSEI">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AuthorizeTransactionFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AuthorizeTransactionIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateTransactionFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateTransactionIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="QueryTransactionIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ReverseTransactionFS">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ReverseTransactionIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="QueryRTProductIO">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="FCUBSRTService">
+    <port binding="tns:FCUBSRTServiceSEIBinding" name="FCUBSRTServiceSEI">
+      <soap:address location="https://10.179.100.243:7061/FCUBSRTServiceV1"/>
+    </port>
+  </service>
+</definitions>

@@ -1,19 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿
 using NLog;
-using System;
+
 
 namespace Indigo.Utility
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class FIMILogger : ILogger
     {
 
         private static FIMILogger fimiLogger;
 
         private static Logger logger;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public static FIMILogger GetFimiLoggerInstance()
         {
             if (fimiLogger == null)
@@ -30,7 +33,11 @@ namespace Indigo.Utility
             return FIMILogger.logger;
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="arg"></param>
         public void Debug(string message, string arg = null)
         {
             if (arg == null)
@@ -38,7 +45,11 @@ namespace Indigo.Utility
             else
                 GetLogger("FIMILoggerRules").Debug(message);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="arg"></param>
         public void Error(string message, string arg = null)
         {
             if (arg == null)
@@ -46,6 +57,11 @@ namespace Indigo.Utility
             else
                 GetLogger("FIMILoggerRules").Error(message);
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="arg"></param>
 
         public void Info(string message, string arg = null)
         {
@@ -54,7 +70,11 @@ namespace Indigo.Utility
             else
                 GetLogger("FIMILoggerRules").Info(message);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="arg"></param>
         public void Warning(string message, string arg = null)
         {
             if (arg == null)

@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:tns="http://fcubs.ofss.com/service/FCUBSRTService" elementFormDefault="qualified" targetNamespace="http://fcubs.ofss.com/service/FCUBSRTService" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element ibmSchExtn:docRoot="true" name="AUTHORIZETRANSACTION_FSFS_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details" type="tns:Retail-Teller-Type-Full" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="AUTHORIZETRANSACTION_FSFS_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details" type="tns:Retail-Teller-Type-Full" />
+              <xsd:element minOccurs="0" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="AUTHORIZETRANSACTION_IOPK_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details-IO" type="tns:Retail-Teller-Type-PK" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="AUTHORIZETRANSACTION_IOPK_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Transaction-Details-PK" type="tns:Retail-Teller-Type-PK" />
+              <xsd:element minOccurs="0" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="CREATETRANSACTION_FSFS_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details" type="tns:Retail-Teller-Type-Full" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="CREATETRANSACTION_FSFS_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details" type="tns:Retail-Teller-Type-Full" />
+              <xsd:element minOccurs="0" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="CREATETRANSACTION_IOPK_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details-IO" type="tns:Retail-Teller-Type-IO" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="CREATETRANSACTION_IOPK_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Transaction-Details-PK" type="tns:Retail-Teller-Type-PK" />
+              <xsd:element minOccurs="0" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="QUERYRTPRODUCT_IOFS_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="RT-Product-IO" type="tns:Dedrtprm-PK-Type" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="QUERYRTPRODUCT_IOFS_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="RT-Product-IO" type="tns:Dedrtprm-PK-Type" />
+              <xsd:element minOccurs="0" name="RT-Product-Full" type="tns:Dedrtprm-Full-Type" />
+              <xsd:element minOccurs="0" maxOccurs="unbounded" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" maxOccurs="unbounded" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="QUERYTRANSACTION_IOFS_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details-IO" type="tns:Retail-Teller-Type-PK" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="QUERYTRANSACTION_IOFS_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details" type="tns:Retail-Teller-Type-Full" />
+              <xsd:element minOccurs="0" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="REVERSETRANSACTION_FSFS_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details" type="tns:Retail-Teller-Type-Full" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="REVERSETRANSACTION_FSFS_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details" type="tns:Retail-Teller-Type-Full" />
+              <xsd:element minOccurs="0" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="REVERSETRANSACTION_IOPK_REQ">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Transaction-Details-IO" type="tns:Retail-Teller-Type-PK" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="REVERSETRANSACTION_IOPK_RES">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FCUBS_HEADER" type="tns:FCUBS_HEADERType" />
+        <xsd:element name="FCUBS_BODY">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="Transaction-Details-PK" type="tns:Retail-Teller-Type-PK" />
+              <xsd:element minOccurs="0" name="FCUBS_ERROR_RESP" type="tns:ERRORType" />
+              <xsd:element minOccurs="0" name="FCUBS_WARNING_RESP" type="tns:WARNINGType" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="MISAMENDDetails">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="CONTREF" type="xsd:string" />
+      <xsd:element name="RTYPE" type="xsd:string" />
+      <xsd:element name="RCODE" type="xsd:string" />
+      <xsd:element name="SPD" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FCUBS_NotifHeaderType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="SOURCE" type="xsd:string" />
+      <xsd:element name="MSGID" type="xsd:string" />
+      <xsd:element name="NOTIF_REF_NO" type="xsd:string" />
+      <xsd:element name="BRANCH" type="xsd:string" />
+      <xsd:element name="NOTIF_CODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DESTINATION" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MISCHANGELOGDetails">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="BRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MIS" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="TXNDT" type="xsd:string" />
+      <xsd:element name="OLDMIS" type="xsd:string" />
+      <xsd:element name="NEWMIS" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DenomDetailsType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="CDCCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CDDENOM" type="xsd:string" />
+      <xsd:element minOccurs="0" name="VALUE" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="UNITS" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="INOUTIND" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DENMVAL" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FCUBS_HEADERType">
+    <xsd:sequence>
+      <xsd:element name="SOURCE" type="xsd:string" />
+      <xsd:element name="UBSCOMP" type="tns:UBSCOMPType" />
+      <xsd:element name="MSGID" type="xsd:string" />
+      <xsd:element name="CORRELID" type="xsd:string" />
+      <xsd:element name="USERID" type="xsd:string" />
+      <xsd:element name="BRANCH" type="xsd:string" />
+      <xsd:element name="MODULEID" type="xsd:string" />
+      <xsd:element name="SERVICE" nillable="true" type="xsd:string" />
+      <xsd:element name="OPERATION" nillable="true" type="xsd:string" />
+      <xsd:element name="SOURCE_OPERATION" type="xsd:string" />
+      <xsd:element name="SOURCE_USERID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DESTINATION" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MULTITRIPID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNCTIONID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ACTION" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MSGSTAT" type="tns:MsgStatType" />
+      <xsd:element minOccurs="0" name="ADDL">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="PARAM">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="NAME" type="xsd:string" />
+                  <xsd:element name="VALUE" type="xsd:string" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MISDETAILSType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="BRANCH" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REL_REF" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REL_ACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISHD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOLCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="REFRTTYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFXRT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CALCMETH" type="xsd:integer" />
+      <xsd:element minOccurs="0" name="MISGRPTXN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTSPRD" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="FUNDMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISGRPCOMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LINKGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RTFLAG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PROCFLG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS1LBL1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS2LBL2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS3LBL3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS4LBL4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS5LBL5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS6LBL6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS7LBL7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS8LBL8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS9LBL9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS10LBL10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS1LBL1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS2LBL2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS3LBL3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS4LBL4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS5LBL5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS6LBL6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS7LBL7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS8LBL8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS9LBL9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS10LBL10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS1LBL1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS2LBL2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS3LBL3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS4LBL4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS5LBL5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS6LBL6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS7LBL7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS8LBL8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS9LBL9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS10LBL10" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MISDETAILSRESType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="RTFLAG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOLCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PROCFLG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="REFRTTYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CALCMETH" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTSPRD" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="RELACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RELREF" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISGRPTXN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISHD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISGRPCOMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="UNTYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS10" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="WARNINGDETAILSType">
+    <xsd:sequence>
+      <xsd:element name="WCODE" type="xsd:string" />
+      <xsd:element name="WDESC" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MISBALTRANLOGDetails">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="BRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MIS" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="TXNDT" type="xsd:string" />
+      <xsd:element name="OLDMIS" type="xsd:string" />
+      <xsd:element name="NEWMIS" type="xsd:string" />
+      <xsd:element name="PERIOD" type="xsd:string" />
+      <xsd:element name="FINYR" type="xsd:string" />
+      <xsd:element name="GLCODE" type="xsd:string" />
+      <xsd:element name="CCY" type="xsd:string" />
+      <xsd:element name="AMT" type="xsd:decimal" />
+      <xsd:element name="EXRATE" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CUSTMISType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MISGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LINKGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUSTMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS10" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="WARNINGType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="WARNING" type="tns:WARNINGDETAILSType" />
+    </xsd:sequence>
+    <xsd:attribute name="tmp" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType name="UDFDETAILSType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="FUNCTIONID" type="xsd:string" />
+      <xsd:element name="FIELD_NAME" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DATATYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FIELD_VALUE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="VAL_TYPE" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MISRefineRateDetails">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="UNITREF" type="xsd:string" />
+      <xsd:element name="BKDATE" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="EFFDT" type="xsd:anySimpleType" />
+      <xsd:element name="REFRT" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MsgDetsType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="TYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OPERCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="INSTRCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNCD" type="xsd:string" />
+      <xsd:element name="VDATECR" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="ORDCUST1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ORDCUST2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ORDCUST3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ORDCUST4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ORDCUST5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RECEIVER" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PAYDET1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PAYDET2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PAYDET3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PAYDET4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SRI1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SRI2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SRI3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SRI4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SRI5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SRI6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHGDET" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REGREP1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REGREP2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REGREP3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ECONT1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ECONT2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ECONT3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ECONT4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ECONT5" type="xsd:string" />
+      <xsd:element name="VDATEDR" type="xsd:anySimpleType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MckDetsType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="SRNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PAYBRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHQNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="STAT" type="xsd:string" />
+      <xsd:element name="EXPDT" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="BENFNAME" type="xsd:string" />
+      <xsd:element minOccurs="0" name="BENFADDR1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="BENFADDR2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="BENFADDR3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="BENFADDR4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CRNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ISB" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLSTYPE1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLSTYPE2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLSTYPE3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLSTYPE4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLSTYPE5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OTHERDETLSTYPE6" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ERRORDETAILSType">
+    <xsd:sequence>
+      <xsd:element name="ECODE" type="xsd:string" />
+      <xsd:element name="EDESC" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ChgdetsType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="CHGCOMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="WAIVER" type="xsd:string" />
+      <xsd:element name="CHGAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGCCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISHEAD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNCODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="NETTINGIND" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHGGL" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LCYCHG" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="XRATE" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCYCHG" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCYXRATE" type="xsd:decimal" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ERRORType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="ERROR" type="tns:ERRORDETAILSType" />
+    </xsd:sequence>
+    <xsd:attribute name="tmp" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType name="MISDETAILSREQType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="RTFLAG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOLCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PROCFLG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTTYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CALCMETH" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTSPRD" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="RELACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RELREF" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISGRPTXN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MISGRPCOMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="UNTYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CUST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FUNDMIS10" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TCDenmType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="TCDESC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TCCOUNT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="SYSCOUNT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="SNO" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="STARTNO" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="ENDNO" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCIDDENM" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="INOUTIND" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TCCCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ISSCODE" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MIMAINTACCType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MISGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RTFLAG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LINKGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOLCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REFRTSPRD" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="REFRTTYPE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CALCMETH" type="xsd:integer" />
+      <xsd:element minOccurs="0" name="TXNMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS6" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS7" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS8" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS9" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COMPMIS10" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COSTCOD5" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Retail-Teller-Type-Full">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="XREF" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FCCREF" type="xsd:string" />
+      <xsd:element name="PRD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ESN" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="EVNTCD" type="xsd:string" />
+      <xsd:element name="BRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODULE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNBRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNCCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TXNTRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETBRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETCCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="OFFSETTRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="XRATE" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="LCYAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TXNDATE" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="VALDATE" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="RELCUST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REMACCOUNT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REMBANK" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REMBRANCH" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ROUTINGNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ENDPOINT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SERIALNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ROUTECODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DRINSTCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CRINSTCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TCYCHGAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCYCHGAMT1" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCYCHGAMT2" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCYCHGAMT3" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCYCHGAMT4" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TCYTOTCHGAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="REPREASON" type="xsd:string" />
+      <xsd:element minOccurs="0" name="NARRATIVE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TRACKREVERSE" type="tns:YesNoType" />
+      <xsd:element minOccurs="0" name="LCYXRATE" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="MAKERID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MAKERSTAMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHECKERID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHECKERSTAMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODNO" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="RECSTAT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="AUTHSTAT" type="tns:AuthStatType" />
+      <xsd:element minOccurs="0" name="SCODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LCYCHGAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGACYXRATE" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGLCYXRATE" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="LCYCHGAMT1" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGACYXRATE1" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGLCYXRATE1" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="LCYCHGAMT2" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGACYXRATE2" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGLCYXRATE2" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="LCYCHGAMT3" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGACYXRATE3" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGLCYXRATE3" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="LCYCHGAMT4" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGACYXRATE4" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHGLCYXRATE4" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="DRACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FTPRBLM" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TIMERECV" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="THEIRCHGS" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRCHGS1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRCHGS2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRCHGS3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRCHGS4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRACC1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRACC2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRACC3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="THEIRACC4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="BATCHNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CALCHG" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNDRCR" type="tns:DrCrType" />
+      <xsd:element minOccurs="0" name="BOOKDATE" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="CLGBNK" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETLCYAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TRANCOUNT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FT" type="tns:YesNoType" />
+      <xsd:element minOccurs="0" name="UTLBNF1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="UTLBNF2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="UTLBNF3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="UTLBNF4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ULTBNF5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="AWI1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="AWI2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="AWI3" type="xsd:string" />
+      <xsd:element minOccurs="0" name="AWI4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="AWI5" type="xsd:string" />
+      <xsd:element minOccurs="0" name="COUNTRY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LCYTOTCHGAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="DENMCCY1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DENMAMT1" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="DENMCCY2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DENMAMT2" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="ACCTITLE1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ACCTITLE2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ACTAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="CHRACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TOTIL" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CCYCODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="AMOUNT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Charge-Details" type="tns:ChgdetsType" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Denomination-Details" type="tns:DenomDetailsType" />
+      <xsd:element minOccurs="0" name="Cheque-Details" type="tns:MckDetsType" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Mis-Details" type="tns:MISDETAILSType" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Udf-Details" type="tns:UDFDETAILSType" />
+      <xsd:element minOccurs="0" name="Message-Details" type="tns:MsgDetsType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Retail-Teller-Type-PK">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="XREF" type="xsd:string" />
+      <xsd:element minOccurs="0" name="FCCREF" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Retail-Teller-Type-IO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="XREF" type="xsd:string" />
+      <xsd:element name="PRD" type="xsd:string" />
+      <xsd:element name="BRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNBRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNCCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TXNAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TXNTRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETBRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETACC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETCCY" type="xsd:string" />
+      <xsd:element minOccurs="0" name="OFFSETAMT" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="OFFSETTRN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="XRATE" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="TXNDATE" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="VALDATE" type="xsd:anySimpleType" />
+      <xsd:element minOccurs="0" name="REMACCOUNT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REMBANK" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REMBRANCH" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ROUTINGNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ENDPOINT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SERIALNO" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ROUTECODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="DRINSTCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CRINSTCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="REPREASON" type="xsd:string" />
+      <xsd:element minOccurs="0" name="NARRATIVE" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Charge-Details" type="tns:ChgdetsType" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Denomination-Details" type="tns:DenomDetailsType" />
+      <xsd:element minOccurs="0" name="Cheque-Details" type="tns:MckDetsType" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Mis-Details" type="tns:MISDETAILSType" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Udf-Details" type="tns:UDFDETAILSType" />
+      <xsd:element minOccurs="0" name="Message-Details" type="tns:MsgDetsType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Reopen-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Delete-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Full-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Field-Details">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="FLDNUM" type="xsd:decimal" />
+            <xsd:element minOccurs="0" name="FLDNAME" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="tmp" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Reverse-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Reverse-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Create-IO-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MISGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOLCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD5" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Default-Mis-Codes">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="MISTYP" type="xsd:string" />
+            <xsd:element minOccurs="0" name="MISCLS" type="xsd:string" />
+            <xsd:element minOccurs="0" name="MISCD" type="xsd:string" />
+            <xsd:element minOccurs="0" name="KYID" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Rollover-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Delete-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Authorize-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Liquidate-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Modify-IO-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MISGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOLCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD5" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Default-Mis-Codes">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="MISTYP" type="xsd:string" />
+            <xsd:element minOccurs="0" name="MISCLS" type="xsd:string" />
+            <xsd:element minOccurs="0" name="MISCD" type="xsd:string" />
+            <xsd:element minOccurs="0" name="KYID" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Query-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Reopen-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Modify-IO-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Field-Details">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="FLDNUM" type="xsd:decimal" />
+            <xsd:element minOccurs="0" name="FLDNAME" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Rollover-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Close-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Confirm-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Create-IO-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Field-Details">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="FLDNUM" type="xsd:decimal" />
+            <xsd:element minOccurs="0" name="FLDNAME" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Authorize-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Full-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MISGRP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOLCD" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD1" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD2" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD4" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CSTCD5" type="xsd:string" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="Default-Mis-Codes">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="MISCLS" type="xsd:string" />
+            <xsd:element minOccurs="0" name="MISCD" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Liquidate-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Close-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProductUDF-Query-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="ProdMisDetails-Confirm-IO-Type">
+    <xsd:sequence />
+  </xsd:complexType>
+  <xsd:complexType name="Dedrtprm-PK-ACR-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="PRODUCT_CODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODNO" type="xsd:integer" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Dedrtprm-PK-Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="PRODUCT_CODE" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Dedrtprm-Full-Type">
+    <xsd:sequence>
+      <xsd:element name="PRODUCT_CODE" type="xsd:string" />
+      <xsd:element name="PRODUCT_DESCRIPTION" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PRODUCT_SLOGAN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PRODUCT_REMARKS" type="xsd:string" />
+      <xsd:element name="PRODUCT_START_DATE" type="xsd:date" />
+      <xsd:element minOccurs="0" name="PRODUCT_END_DATE" type="xsd:date" />
+      <xsd:element name="PRODUCT_GROUP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="WAREHOUSE_CODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PART_OF_PRODUCT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODULE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOL_CODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LEGS" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="BRANCHES_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CURRENCIES_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CATEGORIES_LIST" type="xsd:string" />
+      <xsd:element name="NORMAL_RATE_VARIANCE" type="xsd:decimal" />
+      <xsd:element name="MAX_RATE_VARIANCE" type="xsd:decimal" />
+      <xsd:element name="PRODUCT_TYPE" type="xsd:string" />
+      <xsd:element name="RATE_CODE_PREFERRED" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RATE_TYPE_PREFERRED" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RTH_CLASS" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ASSET_CAT_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LOCATION_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="GEN_MT103P" type="xsd:string" />
+      <xsd:element minOccurs="0" name="INCLUDE_TDS_CALC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="INSTR_PROD_ALLOW" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PROTFOLIO_PROD_ALLOW" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MAKERID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MAKERDTSTAMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHECKERID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHECKERDTSTAMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODNO" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="AUTHSTAT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RECSTAT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ONCEAUTH" type="xsd:string" />
+      <xsd:element name="RT-Product-Preference">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PROD_CODE" type="xsd:string" />
+            <xsd:element minOccurs="0" name="RD_PAY" type="xsd:string" />
+            <xsd:element minOccurs="0" name="CASH_CL_POSTING_ALWD" type="xsd:string" />
+            <xsd:element minOccurs="0" name="TRACK_RECEIVABLE" type="xsd:string" />
+            <xsd:element minOccurs="0" name="TXN_LIMIT" type="xsd:decimal" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="ProductUDF" type="tns:ProductUDF-Full-Type" />
+      <xsd:element minOccurs="0" name="ProductMISDetails" type="tns:ProdMisDetails-Full-Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Dedrtprm-IO-Type">
+    <xsd:sequence>
+      <xsd:element name="PRODUCT_CODE" type="xsd:string" />
+      <xsd:element name="PRODUCT_DESCRIPTION" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PRODUCT_SLOGAN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PRODUCT_REMARKS" type="xsd:string" />
+      <xsd:element name="PRODUCT_START_DATE" type="xsd:date" />
+      <xsd:element minOccurs="0" name="PRODUCT_END_DATE" type="xsd:date" />
+      <xsd:element name="PRODUCT_GROUP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="WAREHOUSE_CODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PART_OF_PRODUCT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODULE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="POOL_CODE" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LEGS" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="BRANCHES_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CURRENCIES_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CATEGORIES_LIST" type="xsd:string" />
+      <xsd:element name="NORMAL_RATE_VARIANCE" type="xsd:decimal" />
+      <xsd:element name="MAX_RATE_VARIANCE" type="xsd:decimal" />
+      <xsd:element name="PRODUCT_TYPE" type="xsd:string" />
+      <xsd:element name="RATE_CODE_PREFERRED" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RATE_TYPE_PREFERRED" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RTH_CLASS" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ASSET_CAT_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="LOCATION_LIST" type="xsd:string" />
+      <xsd:element minOccurs="0" name="GEN_MT103P" type="xsd:string" />
+      <xsd:element minOccurs="0" name="INCLUDE_TDS_CALC" type="xsd:string" />
+      <xsd:element minOccurs="0" name="INSTR_PROD_ALLOW" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PROTFOLIO_PROD_ALLOW" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MAKERID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MAKERDTSTAMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHECKERID" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CHECKERDTSTAMP" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODNO" type="xsd:decimal" />
+      <xsd:element minOccurs="0" name="AUTHSTAT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RECSTAT" type="xsd:string" />
+      <xsd:element minOccurs="0" name="ONCEAUTH" type="xsd:string" />
+      <xsd:element name="RT-Product-Preference">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PROD_CODE" type="xsd:string" />
+            <xsd:element minOccurs="0" name="RD_PAY" type="xsd:string" />
+            <xsd:element minOccurs="0" name="CASH_CL_POSTING_ALWD" type="xsd:string" />
+            <xsd:element minOccurs="0" name="TRACK_RECEIVABLE" type="xsd:string" />
+            <xsd:element minOccurs="0" name="TXN_LIMIT" type="xsd:decimal" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="ProductUDF" type="tns:ProductUDF-Create-IO-Type" />
+      <xsd:element minOccurs="0" name="ProductMISDetails" type="tns:ProdMisDetails-Create-IO-Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Dedrtprm-Modify-IO-Type">
+    <xsd:sequence>
+      <xsd:element name="PRODUCT_CODE" type="xsd:string" />
+      <xsd:element name="PRODUCT_DESCRIPTION" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PRODUCT_SLOGAN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PRODUCT_REMARKS" type="xsd:string" />
+      <xsd:element name="PRODUCT_START_DATE" type="xsd:date" />
+      <xsd:element minOccurs="0" name="PRODUCT_END_DATE" type="xsd:date" />
+      <xsd:element name="PRODUCT_GROUP" type="xsd:string" />
+      <xsd:element name="NORMAL_RATE_VARIANCE" type="xsd:decimal" />
+      <xsd:element name="MAX_RATE_VARIANCE" type="xsd:decimal" />
+      <xsd:element name="RATE_CODE_PREFERRED" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RATE_TYPE_PREFERRED" type="xsd:string" />
+      <xsd:element minOccurs="0" name="MODNO" type="xsd:integer" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="ProductUDF" type="tns:ProductUDF-Modify-IO-Type" />
+      <xsd:element minOccurs="0" name="ProductMISDetails" type="tns:ProdMisDetails-Modify-IO-Type" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="UBSCOMPType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="FCUBS" />
+      <xsd:enumeration value="FCIS" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MsgStatType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SUCCESS" />
+      <xsd:enumeration value="WARNING" />
+      <xsd:enumeration value="FAILURE" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="YesNoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Y" />
+      <xsd:enumeration value="N" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="AuthStatType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="A" />
+      <xsd:enumeration value="U" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DrCrType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="D" />
+      <xsd:enumeration value="C" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

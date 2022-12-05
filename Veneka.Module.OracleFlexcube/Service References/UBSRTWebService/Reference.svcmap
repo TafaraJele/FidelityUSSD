@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cfa36d77-937d-4bc0-953b-9970f7efc0dc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\msworkspace\TFS\Modules\Veneka.Module\Veneka.Module.OracleFlexcube\WSDL\FCUBSRTService_V1.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FCUBSRTServiceV1.xsd" MetadataType="Schema" ID="d632c4fb-2dec-427a-8b0c-4ff3fd3b5600" SourceId="1" SourceUrl="file:///C:/msworkspace/TFS/Modules/Veneka.Module/Veneka.Module.OracleFlexcube/WSDL/FCUBSRTServiceV1.xsd" />
+    <MetadataFile FileName="FCUBSRTService1.wsdl" MetadataType="Wsdl" ID="8736c448-357d-4b74-8899-c7274d9eeb5c" SourceId="1" SourceUrl="file:///C:/msworkspace/TFS/Modules/Veneka.Module/Veneka.Module.OracleFlexcube/WSDL/FCUBSRTService_V1.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
