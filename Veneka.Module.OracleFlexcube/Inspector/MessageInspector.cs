@@ -8,6 +8,7 @@ using System.ServiceModel.Channels;
 using Common.Logging;
 using System.Net;
 using Veneka.Module.OracleFlexcube.Utils;
+using Veneka.Module.TranzwareCompassPlusFIMI.Utils;
 
 namespace Veneka.Module.OracleFlexcube.Inspector
 {
@@ -48,8 +49,13 @@ namespace Veneka.Module.OracleFlexcube.Inspector
 
         public void AfterReceiveReply(ref Message reply, object correlationState)
         {
+            _log.Warn("AFTER_RECEIVE_REPLY");
+
+            FIMILogger loggers = FIMILogger.GetFimiLoggerInstance();
             if (_log.IsDebugEnabled)
                 _log.DebugFormat("Response:\t{0}", reply.ToString());
+
+            loggers.Debug($"Response:\t {reply.ToString()}");
         }
 
         public object BeforeSendRequest(ref Message request, IClientChannel channel)
@@ -98,7 +104,8 @@ namespace Veneka.Module.OracleFlexcube.Inspector
                 _log.DebugFormat("Request:\t{0}", request.ToString().Replace(_password, string.Empty.PadLeft(_password.Length, '*')));
 
             //_log.DebugFormat("Request:\t{0}", request.ToString());
-
+            FIMILogger loggers = FIMILogger.GetFimiLoggerInstance();
+            loggers.Debug($"Request:\t {request.ToString()}");
             return null;
         }
 

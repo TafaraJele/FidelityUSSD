@@ -16,6 +16,7 @@ using Veneka.Module.TranzwareCompassPlusFIMI.ResponseCodes;
 using System.Runtime.Serialization.Formatters;
 using System.Xml.Linq;
 using System.Configuration;
+using Veneka.Module.TranzwareCompassPlusFIMI.Utils;
 
 namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
 {
@@ -37,9 +38,9 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
             _useBasicAuth = useBasicAuth;
             _username = username;
             _password = password;
-            _log = LogManager.GetLogger(logger); 
+            _log = LogManager.GetLogger(logger);
         }
-        
+
         #endregion
 
         #region IClientMessageInspector Members
@@ -47,20 +48,21 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
         public void AfterReceiveReply(ref Message reply, object correlationState)
         {
             _log.Warn("AFTER_RECEIVE_REPLY");
-
+            FIMILogger loggers = FIMILogger.GetFimiLoggerInstance();
             FaultException<ResponseCodes.DeclineRp> faultEx = null;
-
+            MessageBuffer buffer;
+            Message message;
             if (reply.IsFault)
             {
                 _log.Warn("AFTER_RECEIVE_REPLY IS MARKED AS FAULT");
-
-                MessageBuffer buffer = reply.CreateBufferedCopy(Int32.MaxValue);
-                Message message = buffer.CreateMessage();
+                loggers.Debug("AFTER_RECEIVE_REPLY IS MARKED AS FAULT");
+                 buffer = reply.CreateBufferedCopy(Int32.MaxValue);
+                 message = buffer.CreateMessage();
                 //Assign a copy to the ref received
                 reply = new FIMIMessage(buffer.CreateMessage());
 
                 //    //http://stackoverflow.com/questions/16800275/how-to-extract-faultcode-from-a-wcf-message-in-afterreceivereply
-                
+
                 //    //// Create a copy of the original reply to allow default WCF processing
                 //    //MessageBuffer buffer = reply.CreateBufferedCopy(Int32.MaxValue);
                 //    //Message copy = buffer.CreateMessage();  // Create a copy to work with
@@ -92,49 +94,51 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
             //    var fault = serializer.Deserialize(stream);
 
             //}
-            
 
-            if (_log.IsDebugEnabled)
+
+            //if (_log.IsDebugEnabled)
+            //{
+             buffer = reply.CreateBufferedCopy(Int32.MaxValue);
+             message = buffer.CreateMessage();
+            //Assign a copy to the ref received
+            reply = new FIMIMessage(buffer.CreateMessage());
+
+            //request = buffer.CreateMessage();         
+
+            using (StringWriter stringWriter = new StringWriter())
             {
-                MessageBuffer buffer = reply.CreateBufferedCopy(Int32.MaxValue);
-                Message message = buffer.CreateMessage();
-                //Assign a copy to the ref received
-                reply = new FIMIMessage(buffer.CreateMessage());
-
-                //request = buffer.CreateMessage();         
-
-                using (StringWriter stringWriter = new StringWriter())
+                using (XmlTextWriter xmlTextWriter = new XmlTextWriter(stringWriter))
                 {
-                    using (XmlTextWriter xmlTextWriter = new XmlTextWriter(stringWriter))
-                    {
-                        xmlTextWriter.Formatting = Formatting.Indented;
-                        message.WriteMessage(xmlTextWriter);
-                    }
-
-                    String myStr = stringWriter.ToString();
-                    var isCardInforRep = IsCardInfoResponse(myStr);
-                    if (isCardInforRep)
-                    {
-                        var newString = AppendDetailsToAccUID(myStr);
-                        var filename = GetAccountUID(myStr);
-                        WriteXmlResponseToFile(newString, filename);
-                    }
-                    if (_log.IsDebugEnabled)
-                        _log.DebugFormat("Response:{0}{1}", Environment.NewLine, myStr.ToString());
-
-                    //System.IO.File.WriteAllText(@"C:\veneka\emp\response.txt", myStr.ToString());
+                    xmlTextWriter.Formatting = Formatting.Indented;
+                    message.WriteMessage(xmlTextWriter);
                 }
+
+                String myStr = stringWriter.ToString();
+                var isCardInforRep = IsCardInfoResponse(myStr);
+                if (isCardInforRep)
+                {
+                    var newString = AppendDetailsToAccUID(myStr);
+                    var filename = GetAccountUID(myStr);
+                    WriteXmlResponseToFile(newString, filename);
+                }
+                if (_log.IsDebugEnabled)
+                    _log.DebugFormat("Response:{0}{1}", Environment.NewLine, myStr.ToString());
+                loggers.Debug($"Response:\t {myStr.ToString()}");
+
+                //System.IO.File.WriteAllText(@"C:\veneka\emp\response.txt", myStr.ToString());
             }
+            //}
 
             if (faultEx != null)
                 throw faultEx;
         }
 
         public object BeforeSendRequest(ref Message request, IClientChannel channel)
-        {            
+        {
+            FIMILogger loggers = FIMILogger.GetFimiLoggerInstance();
             if (_log.IsDebugEnabled)
                 _log.DebugFormat("Basic Authentication:{0}", _useBasicAuth);
-
+          
             //Basic auth mean we need to set username and password.
             if (_useBasicAuth)
             {
@@ -158,7 +162,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
                     httpRequestProperty.Headers[HttpRequestHeader.Authorization] = header.ToString();
                     request.Properties.Add(HttpRequestMessageProperty.Name, httpRequestProperty);
                 }
-            }  
+            }
 
             //http://pvlerick.github.io/2009/03/messagetostring-returning-stream/
             if (_log.IsDebugEnabled)
@@ -181,10 +185,10 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
 
                     if (_log.IsDebugEnabled)
                         _log.DebugFormat("Request:{0}{1}", Environment.NewLine, myStr);
-
+                    loggers.Debug($"Request:\t{myStr}");
                     //System.IO.File.WriteAllText(@"C:\veneka\emp\request.txt", myStr);
                 }
-            }        
+            }
 
             return null;
         }
@@ -250,7 +254,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
         {
             string filePath = @"C:\Config\IndigoPrepaidUAT\NIResponse";
             try
-            {               
+            {
                 string path = System.IO.Path.Combine(filePath, $"{filename}.txt");
 
                 StreamWriter writer = new StreamWriter(path);
@@ -258,10 +262,10 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
                 writer.Flush();
                 writer.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _log.Debug($"Failed to write NI xml response to location {filePath} with exception {ex.Message} ");
-            }            
+            }
 
         }
 

@@ -44,8 +44,8 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             while (enumerator.MoveNext())
             {
                 X509Certificate2 x509 = enumerator.Current;
-                //if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
-                if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
+                if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
+                //if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
                 {
                     client.ClientCredentials.ClientCertificate.SetCertificate(x509.SubjectName.Name, store.Location, StoreName.My);
                 }
@@ -81,8 +81,8 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             while (enumerator2.MoveNext())
             {
                 X509Certificate2 x509 = enumerator2.Current;
-                //if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
-                if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
+                if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
+                //if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
                 {
                     client.ClientCredentials.ClientCertificate.SetCertificate(x509.SubjectName.Name, store.Location, StoreName.My);
                 }
@@ -101,8 +101,8 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             while (enumerator.MoveNext())
             {
                 X509Certificate2 x509 = enumerator.Current;
-                //if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
-                if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
+                if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
+                //if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
                 {
                     client.ClientCredentials.ClientCertificate.SetCertificate(x509.SubjectName.Name, store.Location, StoreName.My);
                 }
