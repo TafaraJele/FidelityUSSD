@@ -165,8 +165,8 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
             }
 
             //http://pvlerick.github.io/2009/03/messagetostring-returning-stream/
-            if (_log.IsDebugEnabled)
-            {
+            //if (_log.IsDebugEnabled)
+            //{
                 MessageBuffer buffer = request.CreateBufferedCopy(Int32.MaxValue);
                 Message message = buffer.CreateMessage();
                 //Assign a copy to the ref received
@@ -183,14 +183,22 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
 
                     String myStr = stringWriter.ToString();
 
-                    if (_log.IsDebugEnabled)
-                        _log.DebugFormat("Request:{0}{1}", Environment.NewLine, myStr);
+                    //if (_log.IsDebugEnabled)
+                    //    _log.DebugFormat("Request:{0}{1}", Environment.NewLine, myStr);
                     loggers.Debug($"Request:\t{myStr}");
                     //System.IO.File.WriteAllText(@"C:\veneka\emp\request.txt", myStr);
                 }
-            }
+            //}
 
             return null;
+        }
+        private string GetCardStatus(string xmlResponse)
+        {
+            int pos1 = xmlResponse.LastIndexOf("<m0:Status>");
+            int length = xmlResponse.LastIndexOf("</m0:Status>") - pos1;
+            string value = xmlResponse.Substring(pos1, length);
+            char[] splitArray = new char[2] { '<', '>' };
+            return value.Split(splitArray)[2];
         }
 
         private string GetCardUID(string xmlResponse)
@@ -212,10 +220,11 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
         }
         private string AppendDetailsToAccUID(string xmlResponse)
         {
+            string status = GetCardStatus(xmlResponse);
             var cardUID = GetCardUID(xmlResponse).Trim();
-            //var cardReferenceNumber = GetCardReferenceNumber(xmlResponse);
+            var cardReferenceNumber = GetCardReferenceNumber(xmlResponse);
             string accountUID = GetAccountUID(xmlResponse).Trim();
-            string appendedAccountUID = $"{accountUID};{cardUID}";
+            string appendedAccountUID = $"{accountUID};{cardReferenceNumber};{status}";
             xmlResponse = xmlResponse.Replace(accountUID, appendedAccountUID);
 
             return xmlResponse;
@@ -252,11 +261,16 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Inspector
         }
         private void WriteXmlResponseToFile(string xmlResponse, string filename)
         {
-            string filePath = @"C:\Config\IndigoPrepaidUAT\NIResponse";
+            //string filePath = @"C:\Config\IndigoPrepaidUAT\NIResponse";
+            string filePath = ConfigurationManager.AppSettings.Get("NIResponsePath");
+             filePath = $@"{filePath}";
             try
             {
                 string path = System.IO.Path.Combine(filePath, $"{filename}.txt");
-
+                while(File.Exists(path))
+                {
+                    File.Delete(path);
+                }
                 StreamWriter writer = new StreamWriter(path);
                 writer.WriteLine(xmlResponse);
                 writer.Flush();

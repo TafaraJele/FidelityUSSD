@@ -1,6 +1,7 @@
 ﻿using Common.Logging;
 using Newtonsoft.Json;
 using System;
+using System.Configuration;
 using System.Net;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
@@ -19,12 +20,14 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
         #region Readonly Fields
 
         private readonly fimiClient client;
+        public string Thumbprint { get; set; }
 
         #endregion
 
         #region Contructors
         public FIMIService(BasicHttpBinding bindings, EndpointAddress endpointAddress, bool? userBasicAuth, string username, string password, string logger)
         {
+            Thumbprint = ConfigurationManager.AppSettings.Get("Thumbprint");
             client = new fimiClient(bindings, endpointAddress);
             FIMILogger log = FIMILogger.GetFimiLoggerInstance();
             if (string.IsNullOrWhiteSpace(logger))
@@ -44,8 +47,9 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             while (enumerator.MoveNext())
             {
                 X509Certificate2 x509 = enumerator.Current;
-                if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
+                //if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
                 //if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
+                if (x509.Thumbprint == ConfigurationManager.AppSettings.Get("Thumbprint"))
                 {
                     client.ClientCredentials.ClientCertificate.SetCertificate(x509.SubjectName.Name, store.Location, StoreName.My);
                 }
@@ -58,6 +62,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
 
         public FIMIService(CustomBinding bindings, EndpointAddress endpointAddress, bool? userBasicAuth, string username, string password, string logger)
         {
+            Thumbprint = ConfigurationManager.AppSettings.Get("Thumbprint");
             client = new fimiClient(bindings, endpointAddress);
             FIMILogger lo = FIMILogger.GetFimiLoggerInstance();
             if (string.IsNullOrWhiteSpace(logger))
@@ -81,8 +86,9 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             while (enumerator2.MoveNext())
             {
                 X509Certificate2 x509 = enumerator2.Current;
-                if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
+                //if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
                 //if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
+                if (x509.Thumbprint == ConfigurationManager.AppSettings.Get("Thumbprint"))
                 {
                     client.ClientCredentials.ClientCertificate.SetCertificate(x509.SubjectName.Name, store.Location, StoreName.My);
                 }
@@ -94,6 +100,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             : this(bindings, endpointAddress, userBasicAuth, username, password, null)
         {
             FIMILogger loggers = FIMILogger.GetFimiLoggerInstance();
+            Thumbprint = ConfigurationManager.AppSettings.Get("Thumbprint");
             ServicePointManager.ServerCertificateValidationCallback = (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) => true;
             X509Store store = new X509Store("My", StoreLocation.LocalMachine);
             store.Open(OpenFlags.OpenExistingOnly);
@@ -101,8 +108,9 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI.Services
             while (enumerator.MoveNext())
             {
                 X509Certificate2 x509 = enumerator.Current;
-                if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
+                //if (x509.Thumbprint == "16454F0B70C07171FB271CC2A9F859A191C74828")
                 //if (x509.Thumbprint == "86A52D26EA1FC3CA06557EAE1C13C4874BAF54EB")
+                if (x509.Thumbprint == ConfigurationManager.AppSettings.Get("Thumbprint"))
                 {
                     client.ClientCredentials.ClientCertificate.SetCertificate(x509.SubjectName.Name, store.Location, StoreName.My);
                 }

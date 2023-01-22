@@ -181,7 +181,7 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
             }
             else
             {
-                log.Info("Logon() response is null or false");
+                log.Info("Logon() response is valid");
                 validResponse = true;
             }
             nextChallenge = response.Response.NextChallenge;
@@ -770,21 +770,29 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
                 GetCardInfoRpAccountsRow[] row2 = response.Response.Accounts.Row;
                 foreach (GetCardInfoRpAccountsRow row in row2)
                 {
-                    logga.Info($"Person Id before true {response.Response.PersonId}");
-                    logga.Info($"Person Id {response.Response.PersonId}");
-                    string xmlResponse = ReadNIResponse(row.AccountUID);
-                    string accountUID = GetAccountUID(xmlResponse);
-                    CardDetails cardDet = new CardDetails
+                    if (row.AcctNo.Contains("GoG"))
+                    {     
+                        logga.Info($"Account is a GoG Account");
+
+                        string xmlResponse = ReadNIResponse(row.AccountUID);
+                        string accountUID = GetAccountUID(xmlResponse);
+                        CardDetails cardDet = new CardDetails
+                        {
+                            AcctNo = row.AcctNo,
+                            Status = int.Parse(GetCardStatus(accountUID)),
+                            Currency = row.Currency,
+                            AvailBalance = row.AvailBalance,
+                            Code = 200,
+                            Message = "Success",
+                            CardReferenceNumber = long.Parse(GetCardReferenceNumber(accountUID))
+                        };
+                        cardDetails.Add(cardDet);
+                    }
+                    else
                     {
-                        AcctNo = row.AcctNo,
-                        Status = int.Parse(GetCardStatus(accountUID)),
-                        Currency = row.Currency,
-                        AvailBalance = row.AvailBalance,
-                        Code = 200,
-                        Message = "Success",
-                        CardReferenceNumber = long.Parse(GetCardReferenceNumber(accountUID))
-                    };
-                    cardDetails.Add(cardDet);
+                        logga.Info($"Account Number does not contain GoG prefix and is not a GoG account number {row.AcctNo}");
+                    }
+                    
                 }
             }
             return cardDetails;
@@ -972,7 +980,9 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
         private string ReadNIResponse(string accountUID)
         {
             var xmlresponse = string.Empty;
-            string filePath = @"C:\Config\IndigoPrepaidUAT\NIResponse";
+            //string filePath = @"C:\Config\IndigoPrepaidUAT\NIResponse";
+            string filePath = ConfigurationManager.AppSettings.Get("NIResponsePath");
+            filePath = $@"{filePath}";
             try
             {
                 string path = System.IO.Path.Combine(filePath, $"{accountUID}.txt");
@@ -1043,8 +1053,10 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
                     SessionSpecified = true
                 }
             };
-            log?.Info($"SessionId={sessionId}, SessionKey={sessionKey}, NextChallenge={nextChallenge}, Password={nextPwd}");
-            return _fimiService.GetCardStatement(statementRequest);
+            log.Info($"SessionId={sessionId}, SessionKey={sessionKey}, NextChallenge={nextChallenge}, Password={nextPwd}");
+            var response = _fimiService.GetCardStatement(statementRequest);
+
+            return response;
         }
 
         #endregion
