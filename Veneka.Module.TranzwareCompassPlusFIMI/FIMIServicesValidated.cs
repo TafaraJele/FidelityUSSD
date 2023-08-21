@@ -1035,7 +1035,8 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
         }
         public GetCardStatementRp1 GetCardStatement(int sessionId, string sessionKey, ref string nextChallenge, string pan, int mbr)
         {
-            string nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge));
+            //string nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge));
+            string nextPwd = "jdfdfhkdasdhb";
             FIMILogger log = FIMILogger.GetFimiLoggerInstance();
             log.Info("**********Calling GetCard Information**********");
             GetCardStatementRq1 statementRequest = new GetCardStatementRq1

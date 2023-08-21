@@ -34,6 +34,9 @@ namespace Indigo.Controllers
             fimilogger.Info("***********Get statement controller method*************");
             var response = new StatementResponse();
             var basicResponse = new BasicResponse();
+            //get application settings
+            var settings = services.GetSettings();
+            response = application.GetCardStatement(request, "4890332376859510", settings, response);
             //validate statement request
             basicResponse = application.ValidateAccountCard(request);
 
@@ -53,8 +56,7 @@ namespace Indigo.Controllers
             {
                 return response;
             }
-            //get application settings
-            var settings = services.GetSettings();
+           
 
             //get statement from FIMI by card number
             response = application.GetCardStatement(request, cardnumber, settings, response);
