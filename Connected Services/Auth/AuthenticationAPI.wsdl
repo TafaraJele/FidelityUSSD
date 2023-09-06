@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://schemas.veneka.com/Indigo/ServicesAuthentication" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AuthenticationAPI" targetNamespace="http://schemas.veneka.com/Indigo/ServicesAuthentication" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://schemas.veneka.com/Indigo/ServicesAuthentication" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="AuthenticationAPI" targetNamespace="http://schemas.veneka.com/Indigo/ServicesAuthentication" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsp:Policy wsu:Id="WSHttpBinding_IAuthentication_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -28,9 +28,11 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://schemas.veneka.com/Indigo/ServicesAuthentication/Imports">
-      <xsd:import schemaLocation="https://localhost:505/AuthenticationAPI.svc?xsd=xsd0" namespace="http://schemas.veneka.com/Indigo/ServicesAuthentication" />
-      <xsd:import schemaLocation="https://localhost:505/AuthenticationAPI.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="https://localhost:505/AuthenticationAPI.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesAuthentication.API.DataContracts" />
+      <xsd:import schemaLocation="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd0" namespace="http://schemas.veneka.com/Indigo/ServicesAuthentication" />
+      <xsd:import schemaLocation="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesAuthentication.API.DataContracts" />
+      <xsd:import schemaLocation="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.Common.Models" />
+      <xsd:import schemaLocation="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IAuthentication_Login_InputMessage">
@@ -98,9 +100,9 @@
   </wsdl:binding>
   <wsdl:service name="AuthenticationAPI">
     <wsdl:port name="WSHttpBinding_IAuthentication" binding="tns:WSHttpBinding_IAuthentication">
-      <soap12:address location="https://localhost:505/AuthenticationAPI.svc" />
+      <soap12:address location="https://52.157.107.105:505/AuthenticationAPI.svc" />
       <wsa10:EndpointReference>
-        <wsa10:Address>https://localhost:505/AuthenticationAPI.svc</wsa10:Address>
+        <wsa10:Address>https://52.157.107.105:505/AuthenticationAPI.svc</wsa10:Address>
       </wsa10:EndpointReference>
     </wsdl:port>
   </wsdl:service>

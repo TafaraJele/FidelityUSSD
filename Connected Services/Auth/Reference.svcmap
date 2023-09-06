@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="955dea0b-ec4a-4b6d-bfd5-8e7f581f9b2f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="955dea0b-ec4a-4b6d-bfd5-8e7f581f9b2f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://localhost:505/AuthenticationAPI.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://52.157.107.105:505/AuthenticationAPI.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AuthenticationAPI.xsd" MetadataType="Schema" ID="48229024-8e35-41fb-95c8-dac692f29940" SourceId="1" SourceUrl="https://localhost:505/AuthenticationAPI.svc?xsd=xsd2" />
-    <MetadataFile FileName="AuthenticationAPI1.wsdl" MetadataType="Wsdl" ID="5dee07e9-9b68-4d67-8cff-bac61c31e117" SourceId="1" SourceUrl="https://localhost:505/AuthenticationAPI.svc?wsdl" />
-    <MetadataFile FileName="AuthenticationAPI1.xsd" MetadataType="Schema" ID="b2aa609c-d8ed-4560-8d90-639e15ba3126" SourceId="1" SourceUrl="https://localhost:505/AuthenticationAPI.svc?xsd=xsd0" />
-    <MetadataFile FileName="AuthenticationAPI2.xsd" MetadataType="Schema" ID="15b99481-94db-48f1-9851-f21259e4d9d6" SourceId="1" SourceUrl="https://localhost:505/AuthenticationAPI.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthenticationAPI.wsdl" MetadataType="Wsdl" ID="5c3a980b-59ef-4577-b0a7-9f30c7b3c8ef" SourceId="1" SourceUrl="https://52.157.107.105:505/AuthenticationAPI.svc?wsdl" />
+    <MetadataFile FileName="AuthenticationAPI3.xsd" MetadataType="Schema" ID="13b87248-947a-4fe0-8531-be9669133fc9" SourceId="1" SourceUrl="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd4" />
+    <MetadataFile FileName="AuthenticationAPI31.xsd" MetadataType="Schema" ID="10dec9a4-7e3d-493f-aa11-67ff801444b9" SourceId="1" SourceUrl="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd3" />
+    <MetadataFile FileName="AuthenticationAPI32.xsd" MetadataType="Schema" ID="3aaceae5-90e0-48c5-a305-fb56dee709da" SourceId="1" SourceUrl="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd2" />
+    <MetadataFile FileName="AuthenticationAPI33.xsd" MetadataType="Schema" ID="dc6024c9-51c2-4ba5-98c1-e7cd09e1b5df" SourceId="1" SourceUrl="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthenticationAPI34.xsd" MetadataType="Schema" ID="b23af456-4889-4253-ae88-f1e903e03ba4" SourceId="1" SourceUrl="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

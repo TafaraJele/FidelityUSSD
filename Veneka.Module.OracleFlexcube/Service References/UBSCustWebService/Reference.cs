@@ -182,7 +182,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -228,7 +228,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -499,7 +499,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://fcubs.ofss.com/service/FCUBSCustomerService")]
     public enum UBSCOMPType {
@@ -512,7 +512,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://fcubs.ofss.com/service/FCUBSCustomerService")]
     public enum MsgStatType {
@@ -528,7 +528,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -574,7 +574,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -802,7 +802,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -876,7 +876,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -908,7 +908,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -940,7 +940,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1140,7 +1140,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1186,7 +1186,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1218,7 +1218,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1250,7 +1250,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1282,7 +1282,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1342,7 +1342,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1388,7 +1388,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1462,7 +1462,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1508,7 +1508,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1582,7 +1582,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1628,7 +1628,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2052,7 +2052,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2098,7 +2098,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2382,7 +2382,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2764,7 +2764,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2838,7 +2838,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3038,7 +3038,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3056,7 +3056,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3074,7 +3074,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4604,7 +4604,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5098,7 +5098,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5242,7 +5242,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5736,7 +5736,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5992,7 +5992,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6220,7 +6220,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6294,7 +6294,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6382,7 +6382,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6428,7 +6428,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6502,7 +6502,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6534,7 +6534,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6580,7 +6580,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6626,7 +6626,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6714,7 +6714,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6746,7 +6746,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6778,7 +6778,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6824,7 +6824,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6856,7 +6856,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6930,7 +6930,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7186,7 +7186,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7232,7 +7232,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7306,7 +7306,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7352,7 +7352,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7426,7 +7426,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7472,7 +7472,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7896,7 +7896,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7942,7 +7942,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8226,7 +8226,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8328,7 +8328,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8346,7 +8346,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8364,7 +8364,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8396,7 +8396,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8428,7 +8428,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9916,7 +9916,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10410,7 +10410,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10568,7 +10568,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11076,7 +11076,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11346,7 +11346,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11518,7 +11518,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11606,7 +11606,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11694,7 +11694,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11740,7 +11740,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11814,7 +11814,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11846,7 +11846,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11892,7 +11892,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11966,7 +11966,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11998,7 +11998,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12072,7 +12072,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12104,7 +12104,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12290,7 +12290,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12420,7 +12420,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12466,7 +12466,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12498,7 +12498,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12530,7 +12530,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12604,7 +12604,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12860,7 +12860,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12906,7 +12906,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -12980,7 +12980,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13040,7 +13040,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13114,7 +13114,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13160,7 +13160,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13584,7 +13584,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13630,7 +13630,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -13928,7 +13928,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14058,7 +14058,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14132,7 +14132,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14360,7 +14360,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14406,7 +14406,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14452,7 +14452,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -14470,7 +14470,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16113,7 +16113,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16607,7 +16607,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -16765,7 +16765,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17273,7 +17273,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17543,7 +17543,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17757,7 +17757,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17845,7 +17845,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17933,7 +17933,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -17979,7 +17979,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18053,7 +18053,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18085,7 +18085,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18131,7 +18131,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18205,7 +18205,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18251,7 +18251,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18437,7 +18437,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18525,7 +18525,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18571,7 +18571,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18617,7 +18617,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18663,7 +18663,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18961,7 +18961,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18993,7 +18993,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19291,7 +19291,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19323,7 +19323,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19369,7 +19369,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19382,9 +19382,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -19425,7 +19425,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -19438,7 +19438,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -19493,7 +19493,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19539,7 +19539,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19571,7 +19571,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19617,7 +19617,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19630,9 +19630,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -19673,7 +19673,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -19686,7 +19686,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -19741,7 +19741,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19787,7 +19787,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19819,7 +19819,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19865,7 +19865,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -19878,9 +19878,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -19921,7 +19921,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -19934,7 +19934,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -19989,7 +19989,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20035,7 +20035,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20067,7 +20067,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20113,7 +20113,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20126,9 +20126,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -20169,7 +20169,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -20182,7 +20182,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -20237,7 +20237,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20283,7 +20283,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20315,7 +20315,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20361,7 +20361,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20370,9 +20370,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-Full", Order=0)]
@@ -20389,7 +20389,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -20402,7 +20402,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -20457,7 +20457,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20503,7 +20503,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20535,7 +20535,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20581,7 +20581,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20590,9 +20590,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksPKType amountBlocksPKField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -20609,7 +20609,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -20622,7 +20622,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -20677,7 +20677,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20723,7 +20723,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20755,7 +20755,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20801,7 +20801,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20814,9 +20814,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -20857,7 +20857,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -20870,7 +20870,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -20925,7 +20925,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -20971,7 +20971,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21003,7 +21003,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21049,7 +21049,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21062,9 +21062,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -21105,7 +21105,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -21118,7 +21118,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -21173,7 +21173,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21219,7 +21219,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21251,7 +21251,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21297,7 +21297,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21310,9 +21310,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -21353,7 +21353,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -21366,7 +21366,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -21421,7 +21421,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21467,7 +21467,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21499,7 +21499,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21545,7 +21545,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21558,9 +21558,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -21601,7 +21601,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -21614,7 +21614,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -21669,7 +21669,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21715,7 +21715,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21747,7 +21747,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21793,7 +21793,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21806,9 +21806,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -21849,7 +21849,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -21862,7 +21862,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -21917,7 +21917,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21963,7 +21963,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -21995,7 +21995,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22041,7 +22041,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22054,9 +22054,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -22097,7 +22097,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -22110,7 +22110,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -22165,7 +22165,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22211,7 +22211,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22243,7 +22243,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22289,7 +22289,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22302,9 +22302,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private AmountBlocksFullType amountBlocksFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Amount-Blocks-PK", Order=0)]
@@ -22345,7 +22345,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -22358,7 +22358,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=4)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -22413,7 +22413,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22459,7 +22459,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22491,7 +22491,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22537,7 +22537,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22546,9 +22546,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerFullType customerFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-Full", Order=0)]
@@ -22565,7 +22565,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -22578,7 +22578,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -22633,7 +22633,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22679,7 +22679,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22711,7 +22711,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22757,7 +22757,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22768,9 +22768,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerAuthorizeIOType customerIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-PK", Order=0)]
@@ -22799,7 +22799,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -22812,7 +22812,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -22867,7 +22867,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22913,7 +22913,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22945,7 +22945,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -22991,7 +22991,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23000,9 +23000,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerFullType customerFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-Full", Order=0)]
@@ -23019,7 +23019,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -23032,7 +23032,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -23087,7 +23087,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23133,7 +23133,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23165,7 +23165,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23211,7 +23211,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23222,9 +23222,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerCloseIOType customerIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-PK", Order=0)]
@@ -23253,7 +23253,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -23266,7 +23266,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -23321,7 +23321,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23367,7 +23367,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23399,7 +23399,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23445,7 +23445,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23454,9 +23454,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private StructureFullType structFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Struct-Full", Order=0)]
@@ -23473,7 +23473,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -23486,7 +23486,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -23541,7 +23541,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23587,7 +23587,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23619,7 +23619,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23665,7 +23665,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23676,9 +23676,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private StructureCreateIOType structIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Struct-PK", Order=0)]
@@ -23707,7 +23707,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -23720,7 +23720,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -23775,7 +23775,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23821,7 +23821,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23853,7 +23853,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23899,7 +23899,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -23908,9 +23908,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerFullType customerFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-Full", Order=0)]
@@ -23927,7 +23927,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -23940,7 +23940,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -23995,7 +23995,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24041,7 +24041,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24073,7 +24073,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24119,7 +24119,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24130,9 +24130,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerCreateIOType customerIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-PK", Order=0)]
@@ -24161,7 +24161,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -24174,7 +24174,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -24229,7 +24229,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24275,7 +24275,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24307,7 +24307,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24353,7 +24353,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24362,9 +24362,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerFullType customerFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-Full", Order=0)]
@@ -24381,7 +24381,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -24394,7 +24394,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -24449,7 +24449,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24495,7 +24495,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24527,7 +24527,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24573,7 +24573,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24584,9 +24584,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerDeleteIOType customerIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-PK", Order=0)]
@@ -24615,7 +24615,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -24628,7 +24628,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -24683,7 +24683,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24729,7 +24729,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24761,7 +24761,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24807,7 +24807,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24816,9 +24816,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private StructureFullType structFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Struct-Full", Order=0)]
@@ -24835,7 +24835,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -24848,7 +24848,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -24903,7 +24903,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24949,7 +24949,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -24981,7 +24981,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25027,7 +25027,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25038,9 +25038,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private StructureModifyIOType structIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Struct-PK", Order=0)]
@@ -25069,7 +25069,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -25082,7 +25082,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -25137,7 +25137,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25183,7 +25183,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25215,7 +25215,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25261,7 +25261,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25270,9 +25270,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerFullType customerFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-Full", Order=0)]
@@ -25289,7 +25289,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -25302,7 +25302,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -25357,7 +25357,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25403,7 +25403,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25435,7 +25435,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25481,7 +25481,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25492,9 +25492,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerModifyIOType customerIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-PK", Order=0)]
@@ -25523,7 +25523,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -25536,7 +25536,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -25591,7 +25591,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25637,7 +25637,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25669,7 +25669,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25715,7 +25715,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25726,9 +25726,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private StructureFullType structFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Struct-IO", Order=0)]
@@ -25757,7 +25757,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -25770,7 +25770,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -25825,7 +25825,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25871,7 +25871,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25903,7 +25903,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25949,7 +25949,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -25960,9 +25960,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerFullType customerFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-IO", Order=0)]
@@ -25991,7 +25991,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -26004,7 +26004,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -26059,7 +26059,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26105,7 +26105,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26137,7 +26137,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26183,7 +26183,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26192,9 +26192,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerFullType customerFullField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-Full", Order=0)]
@@ -26211,7 +26211,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -26224,7 +26224,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -26279,7 +26279,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26325,7 +26325,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26357,7 +26357,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26403,7 +26403,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26414,9 +26414,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private CustomerReopenIOType customerIOField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Customer-PK", Order=0)]
@@ -26445,7 +26445,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -26458,7 +26458,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -26513,7 +26513,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26559,7 +26559,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26591,7 +26591,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26637,7 +26637,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26648,9 +26648,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private SvdcifsgFullType sifsigdetailsField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Sifsigdetails-PK", Order=0)]
@@ -26679,7 +26679,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -26692,7 +26692,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }
@@ -26747,7 +26747,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26793,7 +26793,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26825,7 +26825,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26871,7 +26871,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -26882,9 +26882,9 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         
         private SvdcifsgFullType sifsigdetailsField;
         
-        private ERRORDETAILSType[] fCUBS_ERROR_RESPField;
+        private ERRORDETAILSType[][] fCUBS_ERROR_RESPField;
         
-        private WARNINGDETAILSType[] fCUBS_WARNING_RESPField;
+        private WARNINGDETAILSType[][] fCUBS_WARNING_RESPField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("Sifsigdetails-PK", Order=0)]
@@ -26913,7 +26913,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=2)]
         [System.Xml.Serialization.XmlArrayItemAttribute("ERROR", typeof(ERRORDETAILSType), IsNullable=false)]
-        public ERRORDETAILSType[] FCUBS_ERROR_RESP {
+        public ERRORDETAILSType[][] FCUBS_ERROR_RESP {
             get {
                 return this.fCUBS_ERROR_RESPField;
             }
@@ -26926,7 +26926,7 @@ namespace Veneka.Module.OracleFlexcube.UBSCustWebService {
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
         [System.Xml.Serialization.XmlArrayItemAttribute("WARNING", typeof(WARNINGDETAILSType), IsNullable=false)]
-        public WARNINGDETAILSType[] FCUBS_WARNING_RESP {
+        public WARNINGDETAILSType[][] FCUBS_WARNING_RESP {
             get {
                 return this.fCUBS_WARNING_RESPField;
             }

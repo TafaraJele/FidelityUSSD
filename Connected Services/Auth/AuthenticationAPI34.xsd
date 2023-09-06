@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.veneka.com/Indigo/ServicesAuthentication" elementFormDefault="qualified" targetNamespace="http://schemas.veneka.com/Indigo/ServicesAuthentication" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="https://localhost:505/AuthenticationAPI.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesAuthentication.API.DataContracts" />
+  <xs:import schemaLocation="https://52.157.107.105:505/AuthenticationAPI.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.ServicesAuthentication.API.DataContracts" />
   <xs:element name="Login">
     <xs:complexType>
       <xs:sequence>

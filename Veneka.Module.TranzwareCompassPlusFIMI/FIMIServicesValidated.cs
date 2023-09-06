@@ -583,7 +583,61 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
             return response;
         }
+        public bool SetCardStatus(int sessionId, string sessionKey, ref string nextChallenge, CardBlockRequest cardInfo)
 
+        {
+            //string nextPwd = "";
+            var fimilogger = FIMILogger.GetFimiLoggerInstance();
+
+            var nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge));
+            bool validResponse = false;
+
+            SetCardStatusRq setCardStatusRq1 = new SetCardStatusRq
+            {
+                Clerk = this._clerk,
+                Password = nextPwd,
+                Ver = 13.6M,
+                SessionSpecified = true,
+                Session = sessionId,
+                Status = cardInfo.cardStatus,
+                PAN = cardInfo.PAN,
+            };
+
+            fimilogger.Info("Cardblock parameters " + setCardStatusRq1);
+
+            //Load Defaults for the header
+            // _defaultVal.LoadDefaults(INTEGRATION_NAME, setCardStatusRq1);
+
+            // if (_log.IsDebugEnabled)
+            //   _log.DebugFormat("SessionId={0}, SessionKey={1}, NextChallenge={2}, Password={3}", sessionId, sessionKey, nextChallenge, nextPwd);
+
+            fimilogger.Info($"SessionId={sessionId}, SessionKey={sessionKey}, NextChallenge={nextChallenge}, Password={nextPwd}");
+            var response = _fimiService.SetCardStatus(new SetCardStatusRq1 { Request = setCardStatusRq1 });
+
+            //_log.Trace(m => m("Checking SetCardStatusRq() response errors"));
+
+            fimilogger.Info("Checking SetCardStatusRq() response errors");
+
+            if (response == null || response.Response == null)
+            {
+                //_log.Trace(m => m("SetCardStatusRq() response is null"));
+                fimilogger.Info("SetCardStatusRq() response is null");
+
+
+                validResponse = false;
+            }
+            else
+            {
+                //  _log.Trace(m => m("SetCardStatusRq() response valid"));
+                fimilogger.Info("SetCardStatusRq() response is valid - CardBlock");
+                validResponse = true;
+
+            }
+
+            nextChallenge = response.Response.NextChallenge;
+
+            return validResponse;
+        }
         public JObject CreditPrepaidAccount(int sessionId, string sessionKey, ref string nextChallenge, AcctCredit accountInfo)
         {
             string nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge));
@@ -1025,10 +1079,95 @@ namespace Veneka.Module.TranzwareCompassPlusFIMI
 
             return valueArray[2];
         }
-        private string GetCardStatus(string accountUID)
+        public string GetCardStatus(string accountUID)
         {
             return accountUID.Split(';')[2];
         }
+        public List<Status> GetCardStatus(int sessionId, string sessionKey, ref string nextChallenge, GetCardInfo cardInfo)
+        {
+            var nextPwd = TripleDes.Encrypt(sessionKey, Utility.StringToHex(nextChallenge));
+            var lo = FIMILogger.GetFimiLoggerInstance();
+            lo.Info("**********Calling GetCardStatus Information**********");
+
+
+            string AccountStatus = "";
+            string AccountUID = "";
+            string AcctNo = "";
+            int Status = 0;
+
+
+            List<Status> cardDetails = new List<Status>();
+
+
+            GetCardInfoRq CardInfo = new GetCardInfoRq()
+            {
+                Ver = 13.6M,
+                Clerk = this._clerk,
+                Password = nextPwd,
+                SessionSpecified = true,
+                Session = sessionId,
+                PAN = cardInfo.PAN,
+
+            };
+
+            //_defaultVal.LoadDefaults(INTEGRATION_NAME, GetCardInforeq);
+
+            if (lo != null)
+                lo.Info($"SessionId={sessionId}, SessionKey={sessionKey}, NextChallenge={nextChallenge}, Password={nextPwd}");
+
+            var response = _fimiService.GetPrepaidCardInfo(new GetCardInfoRq1 { Request = CardInfo });
+
+
+
+            lo.Info("Checking GetCardInfo() response errors");
+            if (response == null || response.Response == null)
+            {
+                lo.Info("GetCardInfo() response is null or false");
+
+            }
+            else
+            {
+
+                lo.Info("GetCardInfo() response is valid");
+
+                nextChallenge = response.Response.NextChallenge;
+
+                //foreach (var row in response.Response.Accounts.Row)
+
+
+                foreach (var row in response.Response.Accounts.Row)
+
+                {
+                    var xmlResponse = ReadNIResponse(row.AccountUID);
+                    var accountUID = GetAccountUID(xmlResponse);
+
+                    Status cardStat = new Status
+                    {
+                        AcctNo = row.AcctNo,
+
+
+                        status = int.Parse(GetCardStatus(accountUID)),
+
+                        Code = 200,
+
+                        Message = "Success",
+
+
+                    };
+
+
+                    cardDetails.Add(cardStat);
+
+                }
+            }
+
+
+
+
+            return cardDetails;
+        }
+
+
         private string GetCardReferenceNumber(string accountUID)
         {
             return accountUID.Split(';')[1];

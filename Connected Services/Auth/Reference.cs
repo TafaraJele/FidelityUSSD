@@ -38,6 +38,9 @@ namespace Indigo.Auth {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ResponseMessageField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Indigo.Auth.GroupsRolesResult[] UserRolesField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -109,6 +112,19 @@ namespace Indigo.Auth {
                 if ((object.ReferenceEquals(this.ResponseMessageField, value) != true)) {
                     this.ResponseMessageField = value;
                     this.RaisePropertyChanged("ResponseMessage");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Indigo.Auth.GroupsRolesResult[] UserRoles {
+            get {
+                return this.UserRolesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserRolesField, value) != true)) {
+                    this.UserRolesField = value;
+                    this.RaisePropertyChanged("UserRoles");
                 }
             }
         }
@@ -247,6 +263,132 @@ namespace Indigo.Auth {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GroupsRolesResult", Namespace="http://schemas.datacontract.org/2004/07/Veneka.Indigo.Common.Models", IsReference=true)]
+    [System.SerializableAttribute()]
+    public partial class GroupsRolesResult : Indigo.Auth.ComplexObject {
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string issuer_codeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string issuer_nameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int user_group_idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string user_group_nameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string user_roleField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string issuer_code {
+            get {
+                return this.issuer_codeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.issuer_codeField, value) != true)) {
+                    this.issuer_codeField = value;
+                    this.RaisePropertyChanged("issuer_code");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string issuer_name {
+            get {
+                return this.issuer_nameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.issuer_nameField, value) != true)) {
+                    this.issuer_nameField = value;
+                    this.RaisePropertyChanged("issuer_name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int user_group_id {
+            get {
+                return this.user_group_idField;
+            }
+            set {
+                if ((this.user_group_idField.Equals(value) != true)) {
+                    this.user_group_idField = value;
+                    this.RaisePropertyChanged("user_group_id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string user_group_name {
+            get {
+                return this.user_group_nameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.user_group_nameField, value) != true)) {
+                    this.user_group_nameField = value;
+                    this.RaisePropertyChanged("user_group_name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string user_role {
+            get {
+                return this.user_roleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.user_roleField, value) != true)) {
+                    this.user_roleField = value;
+                    this.RaisePropertyChanged("user_role");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="StructuralObject", Namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses", IsReference=true)]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Indigo.Auth.ComplexObject))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Indigo.Auth.GroupsRolesResult))]
+    public partial class StructuralObject : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ComplexObject", Namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses", IsReference=true)]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Indigo.Auth.GroupsRolesResult))]
+    public partial class ComplexObject : Indigo.Auth.StructuralObject {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]

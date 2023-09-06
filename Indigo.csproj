@@ -345,14 +345,20 @@
     <Content Include="Connected Services\Auth\Indigo.Auth.AuthenticationResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\Auth\AuthenticationAPI.xsd">
+    <None Include="Connected Services\Auth\AuthenticationAPI.wsdl" />
+    <None Include="Connected Services\Auth\AuthenticationAPI3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Auth\AuthenticationAPI1.wsdl" />
-    <None Include="Connected Services\Auth\AuthenticationAPI1.xsd">
+    <None Include="Connected Services\Auth\AuthenticationAPI31.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Auth\AuthenticationAPI2.xsd">
+    <None Include="Connected Services\Auth\AuthenticationAPI32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Auth\AuthenticationAPI33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Auth\AuthenticationAPI34.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\Auth\configuration91.svcinfo" />
@@ -1513,6 +1519,10 @@
     <ProjectReference Include="..\Veneka.Indigo.Core\Veneka.Indigo.Core.csproj">
       <Project>{8EAA6EE5-4449-4C8C-9892-A91C33376BBA}</Project>
       <Name>Veneka.Indigo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Veneka.Module.TranzwareCompassPlusFIMI\Veneka.Module.TranzwareCompassPlusFIMI.csproj">
+      <Project>{A6A322B1-4916-40DB-8D02-D598F9A2B21D}</Project>
+      <Name>Veneka.Module.TranzwareCompassPlusFIMI</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

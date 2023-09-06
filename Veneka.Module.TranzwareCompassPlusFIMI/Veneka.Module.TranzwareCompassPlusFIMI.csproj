@@ -85,6 +85,7 @@
     <Compile Include="FIMIServicesValidated.cs" />
     <Compile Include="Models\AccResponse.cs" />
     <Compile Include="Models\AcctCredit.cs" />
+    <Compile Include="Models\CardBlockRequest.cs" />
     <Compile Include="Models\CardDetails.cs" />
     <Compile Include="Models\Cards.cs" />
     <Compile Include="Models\GetCardInfo.cs" />
