@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--********************************************************************************************-->
-<!--*************************************** FIMI 16.23    **************************************-->
-<!--*************************************** TWO 5.3.43.1 ***************************************-->
+<!--*************************************** FIMI 16.25    **************************************-->
+<!--*************************************** TWO 5.3.45.1 ***************************************-->
 <!--********************************************************************************************-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:st="http://schemas.compassplus.com/two/1.0/fimi_types.xsd"
@@ -137,6 +137,16 @@
            <xs:enumeration value="1"/> <!--Do not try again-->
            <xs:enumeration value="2"/> <!--Cannot approve at this time, try again later-->
            <xs:enumeration value="3"/> <!--New account information available-->
+           <xs:enumeration value="4"/> <!--Token requirements not fulfilled for this token type-->
+           <xs:enumeration value="5"/> <!--Payment Cancellation-->
+           <xs:enumeration value="6"/> <!--Merchant does not qualify for product code-->
+           <xs:enumeration value="7"/> <!--Retry after 1 hour-->
+           <xs:enumeration value="8"/> <!--Retry after 24 hours-->
+           <xs:enumeration value="9"/> <!--Retry after 2 days-->
+           <xs:enumeration value="10"/> <!--Retry after 4 days-->
+           <xs:enumeration value="11"/> <!--Retry after 6 days-->
+           <xs:enumeration value="12"/> <!--Retry after 8 days-->
+           <xs:enumeration value="13"/> <!--Retry after 10 days-->
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="tDetailedAuthResponceCode">
@@ -428,7 +438,25 @@
            <xs:enumeration value="3"/> <!--Vitual card-->
         </xs:restriction>
     </xs:simpleType>
-
+    <xs:simpleType name="tCardAlphaNumericPasswordVersion">
+        <xs:annotation>
+           <xs:documentation>Alpha numeric password version for card or TB customer</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+           <xs:totalDigits value="1"/>
+           <xs:enumeration value="1"/> <!--SHA-1-->
+           <xs:enumeration value="2"/> <!--SHA-256-->
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tCardAlphaNumericPassword">
+        <xs:annotation>
+           <xs:documentation>Alpha numeric password for card or TB customer</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+           <xs:maxLength value="64"/>
+          <xs:pattern value="[A-Fa-f\d]*"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:simpleType name="tRemoveMissingFlag">
         <xs:annotation>
            <xs:documentation>Remove missing element flag</xs:documentation>
@@ -928,6 +956,14 @@
            <xs:maxLength value="90"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="tBranchName">
+        <xs:annotation>
+           <xs:documentation>Name of branch</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+           <xs:maxLength value="240"/>
+        </xs:restriction>
+    </xs:simpleType>
 <!--Device-->
     <xs:simpleType name="tDeviceId">
         <xs:annotation>
@@ -1012,9 +1048,9 @@
         <xs:restriction base="xs:int">
            <xs:enumeration value="1"/> <!--VISA ADS-->
            <xs:enumeration value="2"/> <!--MC Transfer Hub-->
-           <xs:enumeration value="3"/> <!--NSPK FPS C2C-->
-           <xs:enumeration value="4"/> <!--NSPK FPS С2B-->
-           <xs:enumeration value="5"/> <!--NSPK FPS С2G-->
+           <xs:enumeration value="3"/> <!--NCPS FPS C2C-->
+           <xs:enumeration value="4"/> <!--NCPS FPS С2B-->
+           <xs:enumeration value="5"/> <!--NCPS FPS С2G-->
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="tAliasType">
@@ -1117,6 +1153,8 @@
            <xs:enumeration value="4"/> <!--Outgoing FPS C2C-->
            <xs:enumeration value="5"/> <!--Outgoing FPS C2B-->
            <xs:enumeration value="6"/> <!--Outgoing QP pull request FPS C2B-->
+           <xs:enumeration value="7"/> <!--Outgoing FPS C2C International-->
+           <xs:enumeration value="8"/> <!--Outgoing FPS B2B-->
         </xs:restriction>
     </xs:simpleType>
 <!--Customer Messaging Service-->
@@ -1183,6 +1221,7 @@
            <xs:enumeration value="CRD_CARDUSERFIELDS"/>
            <xs:enumeration value="CRD_TOKENLIMIT"/>
            <xs:enumeration value="CRD_ARRESTS"/>
+           <xs:enumeration value="CRD_TOKEN"/>
         </xs:restriction>
     </xs:simpleType>
 <!--Rate-->
@@ -1434,7 +1473,7 @@
     </xs:simpleType>
     <xs:simpleType name="tRetailerZIP">
        <xs:annotation>
-          <xs:documentation>Address name</xs:documentation>
+          <xs:documentation>Postal code</xs:documentation>
        </xs:annotation>
         <xs:restriction base="xs:string">
            <xs:maxLength value="30"/>
@@ -1442,10 +1481,26 @@
     </xs:simpleType>
     <xs:simpleType name="tRetailerPhoneNumber">
        <xs:annotation>
-          <xs:documentation>Address name</xs:documentation>
+          <xs:documentation>Phone number</xs:documentation>
        </xs:annotation>
         <xs:restriction base="xs:string">
            <xs:maxLength value="30"/>
+       </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tRetailerServicePhoneNumber">
+       <xs:annotation>
+          <xs:documentation>Customer service phone number</xs:documentation>
+       </xs:annotation>
+        <xs:restriction base="xs:string">
+           <xs:maxLength value="16"/>
+       </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tRetailerURL">
+       <xs:annotation>
+          <xs:documentation>URL</xs:documentation>
+       </xs:annotation>
+        <xs:restriction base="xs:string">
+           <xs:maxLength value="255"/>
        </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="tATMWithdrawalHoldId">
@@ -1515,7 +1570,8 @@
         </xs:annotation>
         <xs:restriction base="xs:int">
            <xs:enumeration value="1"/> <!--EMVCo QR-->
-           <xs:enumeration value="3"/> <!--NSPK FPS-->
+           <xs:enumeration value="3"/> <!--NCPS FPS C2B(Individual)-->
+           <xs:enumeration value="4"/> <!--NCPS FPS B2B(Bussines)-->
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="tQRImageSize">
@@ -1694,6 +1750,7 @@
                                 <xs:enumeration value="Account/Number"/>   <!--Account number-->
                                 <xs:enumeration value="Account/Category"/> <!--Account category-->
                                 <xs:enumeration value="PAM"/>              <!--Personal Assurance Message-->
+                                <xs:enumeration value="CountryOfResidence"/><!--ISO code country of residence-->
                              </xs:restriction>
                           </xs:simpleType>
                         </xs:element>
@@ -1717,6 +1774,36 @@
                              <xs:restriction base="xs:string">
                                 <xs:enumeration value="TaxId"/>
                                 <xs:enumeration value="TaxReasonRegCode"/>
+                             </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="VAL" type="xs:string"/>
+                        <xs:element name="SEQ" type="xs:int" minOccurs="0"/>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SCAIndicators">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Row">
+                <xs:complexType>
+                     <xs:all>
+                        <xs:element name="ID">
+                           <xs:simpleType>
+                             <xs:annotation>
+                                <xs:documentation>Name field</xs:documentation>
+                             </xs:annotation>
+                             <xs:restriction base="xs:string">
+                                <xs:enumeration value="DA"/>
+                                <xs:enumeration value="LVEI"/>
+                                <xs:enumeration value="TRAEI"/>
+                                <xs:enumeration value="TMEI"/>
+                                <xs:enumeration value="SCPI"/>
+                                <xs:enumeration value="LRMI"/>
+                                <xs:enumeration value="TPEI"/>
+                                <xs:enumeration value="SID"/>
+                                <xs:enumeration value="AOI"/>
                              </xs:restriction>
                           </xs:simpleType>
                         </xs:element>
@@ -2874,11 +2961,11 @@
                 <xs:all>
                     <xs:element name="PAN" type="st:tCardNumber" minOccurs="0"/>
                     <xs:element name="MBR" type="st:tCardMember" minOccurs="0"/>
-                    <xs:element name="OldPassword" type="xs:string" minOccurs="0"/>
-                    <xs:element name="NewPassword" type="xs:string" minOccurs="0"/>
+                    <xs:element name="OldPassword" type="st:tCardAlphaNumericPassword" minOccurs="0"/>
+                    <xs:element name="NewPassword" type="st:tCardAlphaNumericPassword" minOccurs="0"/>
                     <xs:element name="CardUID" type="st:tCardUID" minOccurs="0"/>
-                    <xs:element name="Force" type="xs:int" minOccurs="0"/>
-                    <xs:element name="NewPasswordVersion" type="xs:int" minOccurs="0"/>
+                    <xs:element name="Force" type="st:tFlag" minOccurs="0"/>
+                    <xs:element name="NewPasswordVersion" type="st:tCardAlphaNumericPasswordVersion" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
         </xs:complexContent>
@@ -3024,6 +3111,7 @@
                           </xs:restriction>
                        </xs:simpleType>
                     </xs:element>
+                    <xs:element name="ZPK" type="xs:base64Binary" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
         </xs:complexContent>
@@ -4051,7 +4139,8 @@
                                             <xs:element name="PersonID" type="st:tPersonId" minOccurs="0"/>
                                             <xs:element name="PersonFIO" type="st:tPersonFIO" minOccurs="0"/>
                                             <xs:element name="AccountUID" type="st:tAccountUID" minOccurs="0"/>
-                                            <xs:element name="Branch" type="st:tBranchId" minOccurs="0"/>
+                                            <xs:element name="Branch" type="st:tBranchName" minOccurs="0"/>
+                                            <xs:element name="BranchId" type="st:tBranchId" minOccurs="0"/>
                                             <xs:element name="Type" type="st:tAccountType"/>
                                             <xs:element name="Status" type="st:tAccountStatus"/>
                                             <xs:element name="AggregateId" type="xs:string" minOccurs="0"/>
@@ -4083,7 +4172,8 @@
                     <xs:element name="UserFields" type="ns:ArrayUserFieldsRp" minOccurs="0"/>
                     <xs:element name="FoundAccountUID" type="st:tAccountUID" minOccurs="0"/>
                     <xs:element name="ParentAcctUID" type="st:tAccountUID" minOccurs="0"/>
-                    <xs:element name="Branch" type="st:tBranchId" minOccurs="0"/>
+                    <xs:element name="Branch" type="st:tBranchName" minOccurs="0"/>
+                    <xs:element name="BranchId" type="st:tBranchId" minOccurs="0"/>
                     <xs:element name="DropTmpOverOnDate" type="xs:dateTime" minOccurs="0"/>
                     <xs:element name="DropTmpOverNumber" type="xs:int" minOccurs="0"/>
                     <xs:element name="AggregateId" type="xs:string" minOccurs="0"/>
@@ -4298,7 +4388,13 @@
                                             </xs:element>
                                             <xs:element name="TIPAmount" type="st:tAmount" minOccurs="0"/>
                                             <xs:element name="ProtectedAmount" type="st:tAmount" minOccurs="0"/>
-                                        </xs:all>
+                                            <xs:element name="RetailerServicePhone" type="st:tRetailerServicePhoneNumber" minOccurs="0"/>
+                                            <xs:element name="RetailerURL" type="st:tRetailerURL" minOccurs="0"/>
+                                            <xs:element name="Currency" type="st:tISO3CharCodeCurrency" minOccurs="0"/>
+                                            <xs:element name="CurrencyISOCode" type="st:tISOCodeCurrency" minOccurs="0"/>
+                                            <xs:element name="OrigCurrencyISOCode" type="st:tISOCodeCurrency" minOccurs="0"/>
+                                            <xs:element name="TermRetailerName" type="st:tRetailerName" minOccurs="0"/>
+                                       </xs:all>
                                     </xs:complexType>
                                 </xs:element>
                             </xs:sequence>
@@ -4350,6 +4446,20 @@
                                             <xs:element name="SenderMemberId" type="st:tAliasServiceMemberId" minOccurs="0"/>
                                             <xs:element name="SenderFIO" type="xs:string" minOccurs="0"/>
                                             <xs:element name="SenderAlias" type="st:tAlias" minOccurs="0"/>
+                                            <xs:element name="SenderCountry" type="st:tISOCodeCountry" minOccurs="0"/>
+                                            <xs:element name="RecipientCountry" type="st:tISOCodeCountry" minOccurs="0"/>
+                                            <xs:element name="DebtorAmount" type="st:tAmount" minOccurs="0"/>
+                                            <xs:element name="DebtorCurrency" type="st:tISOCodeCurrency" minOccurs="0"/>
+                                            <xs:element name="CreditorAmount" type="st:tAmount" minOccurs="0"/>
+                                            <xs:element name="CreditorCurrency" type="st:tISOCodeCurrency" minOccurs="0"/>
+                                            <xs:element name="Fee" type="st:tAmount" minOccurs="0"/>
+                                            <xs:element name="PaymentDetailsCategoryCode"  minOccurs="0">
+                                               <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                     <xs:maxLength value="10"/>
+                                                  </xs:restriction>
+                                               </xs:simpleType>
+                                            </xs:element>
                                         </xs:all>
                                     </xs:complexType>
                                 </xs:element>
@@ -5646,8 +5756,9 @@
                                             <xs:element name="PersonID" type="st:tPersonId" minOccurs="0"/>
                                             <xs:element name="PersonFIO" type="st:tPersonFIO" minOccurs="0"/>
                                             <xs:element name="CardUID" type="st:tCardUID" minOccurs="0"/>
-                                            <xs:element name="Branch" type="st:tBranchId" minOccurs="0"/>
+                                            <xs:element name="Branch" type="st:tBranchName" minOccurs="0"/>
                                             <xs:element name="ExpirationDate" type="xs:dateTime" minOccurs="0"/>
+                                            <xs:element name="BranchId" type="st:tBranchId" minOccurs="0"/>
                                         </xs:all>
                                     </xs:complexType>
                                 </xs:element>
@@ -5765,7 +5876,8 @@
                     <xs:element name="MaskPVV" type="xs:int" minOccurs="0"/>
                     <xs:element name="PasswordFlag" type="st:tFlag" minOccurs="0"/>
                     <xs:element name="CardUID" type="st:tCardUID" minOccurs="0"/>
-                    <xs:element name="Branch" type="st:tBranchId" minOccurs="0"/>
+                    <xs:element name="Branch" type="st:tBranchName" minOccurs="0"/>
+                    <xs:element name="BranchId" type="st:tBranchId" minOccurs="0"/>
                     <xs:element name="TBTransfers" minOccurs="0">
                         <xs:complexType>
                             <xs:sequence maxOccurs="unbounded">
@@ -5827,11 +5939,10 @@
                    <xs:element name="ECNeedDynPwdAuth" type="st:tFlag" minOccurs="0"/>
                    <xs:element name="ECNeedCAPAuth" type="xs:int" minOccurs="0"/>
                    <xs:element name="ECNeedTokenAuth" type="st:tFlag" minOccurs="0"/>
-                   <xs:element name="ECNeedDecoupledAuth" type="st:tFlag" minOccurs="0"/>
                    <xs:element name="ECUseDecoupledAuth" type="st:tFlag" minOccurs="0"/>
                    <xs:element name="ECUseCardSettingsAuth" type="st:tFlag" minOccurs="0"/>
-                   <xs:element name="PasswordVersion" type="xs:int" minOccurs="0"/>
-                   <xs:element name="RequiredPasswordVersion" type="xs:int" minOccurs="0"/>
+                   <xs:element name="PasswordVersion" type="st:tCardAlphaNumericPasswordVersion" minOccurs="0"/>
+                   <xs:element name="RequiredPasswordVersion" type="st:tCardAlphaNumericPasswordVersion" minOccurs="0"/>
                    <xs:element name="ContactlessStatus" type="xs:int" minOccurs="0"/>
                    <xs:element name="CardLinks" minOccurs="0">
                         <xs:complexType>
@@ -6103,6 +6214,18 @@
                                             </xs:element>
                                             <xs:element name="TIPAmount" type="st:tAmount" minOccurs="0"/>
                                             <xs:element name="ProtectedAmount" type="st:tAmount" minOccurs="0"/>
+                                            <xs:element name="RetailerServicePhone" type="st:tRetailerServicePhoneNumber" minOccurs="0"/>
+                                            <xs:element name="RetailerURL" type="st:tRetailerURL" minOccurs="0"/>
+                                            <xs:element name="CardUID" type="st:tCardUID" minOccurs="0"/>
+                                            <xs:element name="TermCountry" type="st:tISOCodeCountry" minOccurs="0"/>
+                                            <xs:element name="TermCity" minOccurs="0">
+                                              <xs:simpleType>
+                                                 <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="90"/>
+                                                 </xs:restriction>
+                                              </xs:simpleType>
+                                            </xs:element>
+                                            <xs:element name="OnlineIssuerFee" type="st:tAmount" minOccurs="0"/>
                                         </xs:all>
                                     </xs:complexType>
                                 </xs:element>
@@ -6155,6 +6278,20 @@
                                             <xs:element name="SenderMemberId" type="st:tAliasServiceMemberId" minOccurs="0"/>
                                             <xs:element name="SenderFIO" type="xs:string" minOccurs="0"/>
                                             <xs:element name="SenderAlias" type="st:tAlias" minOccurs="0"/>
+                                            <xs:element name="SenderCountry" type="st:tISOCodeCountry" minOccurs="0"/>
+                                            <xs:element name="RecipientCountry" type="st:tISOCodeCountry" minOccurs="0"/>
+                                            <xs:element name="DebtorAmount" type="st:tAmount" minOccurs="0"/>
+                                            <xs:element name="DebtorCurrency" type="st:tISOCodeCurrency" minOccurs="0"/>
+                                            <xs:element name="CreditorAmount" type="st:tAmount" minOccurs="0"/>
+                                            <xs:element name="CreditorCurrency" type="st:tISOCodeCurrency" minOccurs="0"/>
+                                            <xs:element name="Fee" type="st:tAmount" minOccurs="0"/>
+                                            <xs:element name="PaymentDetailsCategoryCode"  minOccurs="0">
+                                               <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                     <xs:maxLength value="10"/>
+                                                  </xs:restriction>
+                                               </xs:simpleType>
+                                            </xs:element>
                                         </xs:all>
                                     </xs:complexType>
                                 </xs:element>
@@ -7425,6 +7562,7 @@
                                             <xs:element name="PostalCode" type="st:tPostalCode" minOccurs="0"/>
                                             <xs:element name="AddressInLatin" type="st:tAddressInLatin" minOccurs="0"/>
                                             <xs:element name="BranchId" type="st:tBranchId" minOccurs="0"/>
+                                            <xs:element name="Branch" type="st:tBranchName" minOccurs="0"/>
                                             <xs:element name="ParentPersonId" type="st:tPersonId" minOccurs="0"/>
                                             <xs:element name="ParentInstName" type="st:tInstitutionName" minOccurs="0"/>
                                             <xs:element name="ResidentState" type="xs:string" minOccurs="0"/>
@@ -7593,6 +7731,7 @@
                        </xs:simpleType>
                     </xs:element>
                     <xs:element name="NewPINBlock" type="st:tPINBlockUnderWK_LMK"/>
+                    <xs:element name="ZPK" type="xs:base64Binary" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
         </xs:complexContent>
@@ -7882,6 +8021,7 @@
                                             <xs:element name="TaxId" type="st:tTaxId" minOccurs="0"/>
                                             <xs:element name="InstName" type="st:tInstitutionName"/>
                                             <xs:element name="BranchId" type="st:tBranchId" minOccurs="0"/>
+                                            <xs:element name="Branch" type="st:tBranchName" minOccurs="0"/>
                                             <xs:element name="IsBlocked" type="st:tFlag"/>
                                             <xs:element name="BlokedTime" type="xs:dateTime" minOccurs="0"/>
                                         </xs:all>
@@ -8016,6 +8156,7 @@
                                             <xs:element name="Owner" type="st:tTerminalOwner" minOccurs="0"/>
                                             <xs:element name="Region" type="st:tTerminalRegion" minOccurs="0"/>
                                             <xs:element name="Branch" type="st:tBranchId" minOccurs="0"/>
+                                            <xs:element name="BranchName" type="st:tBranchName" minOccurs="0"/>
                                             <xs:element name="City" type="st:tTerminalCity" minOccurs="0"/>
                                             <xs:element name="Location" type="st:tTerminalLocation" minOccurs="0"/>
                                             <xs:element name="ZIP" type="st:tTerminalZIP" minOccurs="0"/>
@@ -8608,8 +8749,9 @@
         <xs:complexContent>
             <xs:extension base="ns:HeaderRp">
                 <xs:all>
-                    <xs:element name="Key" type="xs:string"/>
                     <xs:element name="KeyId" type="xs:int"/>
+                    <xs:element name="Key" type="xs:string" minOccurs="0"/>
+                    <xs:element name="PublicKey" type="xs:base64Binary" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
         </xs:complexContent>
@@ -8618,6 +8760,14 @@
         <xs:complexContent>
             <xs:extension base="ns:HeaderRq">
                 <xs:all>
+                    <xs:element name="KeyType" minOccurs="0">
+                       <xs:simpleType>
+                         <xs:restriction base="xs:int">
+                            <xs:enumeration value="1"/>  <!--TPK-->
+                            <xs:enumeration value="2"/>  <!--RSA Sign Key Pair (RSA-SK)-->
+                         </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
                     <xs:element name="PINEntryDevice" type="xs:string" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
@@ -9784,6 +9934,7 @@
                    <xs:element name="FPSData" type="xs:base64Binary" minOccurs="0"/>
                    <xs:element name="InvoiceId" type="st:tInvoiceId" minOccurs="0"/>
                    <xs:element name="LegalEntityData" type="ns:LegalEntityData" minOccurs="0"/>
+                   <xs:element name="SCAIndicators" type="ns:SCAIndicators" minOccurs="0"/>
                </xs:all>
             </xs:extension>
         </xs:complexContent>
@@ -9842,7 +9993,11 @@
                           </xs:restriction>
                        </xs:simpleType>
                     </xs:element>
+                    <xs:element name="ECI" type="xs:string" minOccurs="0"/>
                     <xs:element name="ECTranId" type="xs:string" minOccurs="0"/>
+                    <xs:element name="TransactionStatus" type="xs:string" minOccurs="0"/>
+                    <xs:element name="TransactionStatusReason" type="xs:string" minOccurs="0"/>
+                    <xs:element name="EC3DSNetwork" type="st:tTransactionNetwork" minOccurs="0"/>
                     <xs:element name="EC3DSTranCondition" type="xs:string" minOccurs="0"/>
                     <xs:element name="ECAAV" type="xs:string" minOccurs="0"/>
                     <xs:element name="CAVV" type="xs:string" minOccurs="0"/>
@@ -10049,9 +10204,6 @@
                     <xs:element name="ExtSTAN" type="xs:long" minOccurs="0"/>
                     <xs:element name="PurchaseIdentifier" type="xs:string" minOccurs="0"/>
                     <xs:element name="NewPINBlock" type="st:tPINBlockUnderWK" minOccurs="0"/>
-                    <xs:element name="ECI" type="xs:string" minOccurs="0"/>
-                    <xs:element name="TransactionStatus" type="xs:string" minOccurs="0"/>
-                    <xs:element name="TransactionStatusReason" type="xs:string" minOccurs="0"/>
                     <xs:element name="Reason" type="xs:int" minOccurs="0"/>
                     <xs:element name="TransactionIdentifier" type="st:tExternalTransactionNumber" minOccurs="0"/>
                     <xs:element name="AssignedId" type="xs:string" minOccurs="0"/>
@@ -11430,7 +11582,7 @@
                                          <xs:simpleType>
                                             <xs:restriction base="xs:int">
                                                <xs:totalDigits value="2"/>
-                                               <xs:maxInclusive value="22"/>
+                                               <xs:maxInclusive value="23"/>
                                                <xs:minInclusive value="1"/>
                                             </xs:restriction>
                                          </xs:simpleType>
@@ -11491,7 +11643,7 @@
                              <xs:element name="Row">
                                 <xs:complexType>
                                    <xs:all>
-                                      <xs:element name="RetaileName" type="st:tRetailerName"/>
+                                      <xs:element name="RetailerName" type="st:tRetailerName"/>
                                       <xs:element name="SubMerchantId">
                                           <xs:simpleType>
                                              <xs:restriction base="xs:string">
@@ -11512,6 +11664,8 @@
                           </xs:sequence>
                        </xs:complexType>
                     </xs:element>
+                    <xs:element name="ServicePhone" type="st:tRetailerServicePhoneNumber" minOccurs="0"/>
+                    <xs:element name="URL" type="st:tRetailerURL" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
         </xs:complexContent>
@@ -11542,6 +11696,8 @@
                     <xs:element name="PurchaseDetention" type="xs:int" minOccurs="0"/>
                     <xs:element name="RemoveMissingFields" type="st:tFlag" minOccurs="0"/>
                     <xs:element name="ChangeReason" type="st:tChangeReason" minOccurs="0"/>
+                    <xs:element name="ServicePhone" type="st:tRetailerServicePhoneNumber" minOccurs="0"/>
+                    <xs:element name="URL" type="st:tRetailerURL" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
         </xs:complexContent>
@@ -11668,7 +11824,7 @@
                                          <xs:simpleType>
                                             <xs:restriction base="xs:int">
                                                <xs:totalDigits value="2"/>
-                                               <xs:maxInclusive value="5"/>
+                                               <xs:maxInclusive value="6"/>
                                                <xs:minInclusive value="1"/>
                                             </xs:restriction>
                                          </xs:simpleType>
@@ -12064,6 +12220,20 @@
                     <xs:element name="ToAccount" type="xs:string" minOccurs="0"/>
                     <xs:element name="ToAccount2" type="ns:CustAcct" minOccurs="0"/>
                     <xs:element name="OrigTime" type="xs:dateTime" minOccurs="0"/>
+                    <xs:element name="EC3DSVersion" minOccurs="0">
+                       <xs:simpleType>
+                          <xs:annotation>
+                             <xs:documentation> 3D Secure Version for ECommerce transaction</xs:documentation>
+                          </xs:annotation>
+                          <xs:restriction base="xs:int">
+                             <xs:enumeration value="1"/> <!--3D Secure Version 1.0 (3DS 1.0)-->
+                             <xs:enumeration value="2"/> <!--3D Secure Version 2.1 (3DS 2.1)-->
+                             <xs:enumeration value="3"/> <!--3D Secure Version 2.2 (3DS 2.2)-->
+                             <xs:enumeration value="4"/> <!--3D Secure Version 2.3 (3DS 2.3)-->
+                          </xs:restriction>
+                       </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="ECI" type="xs:string" minOccurs="0"/>
                     <xs:element name="ECTranId" type="xs:string" minOccurs="0"/>
                     <xs:element name="ECAAV" type="xs:string" minOccurs="0"/>
                     <xs:element name="CAVV" type="xs:string" minOccurs="0"/>
@@ -12317,7 +12487,6 @@
                <xs:element name="ECNeedDynPwdAuth" type="st:tFlag" minOccurs="0"/>
                <xs:element name="ECNeedCAPAuth" type="xs:int" minOccurs="0"/>
                <xs:element name="ECNeedTokenAuth" type="st:tFlag" minOccurs="0"/>
-               <xs:element name="ECNeedDecoupledAuth" type="st:tFlag" minOccurs="0"/>
                <xs:element name="ECUseDecoupledAuth" type="st:tFlag" minOccurs="0"/>
                <xs:element name="ChangeReason" type="st:tChangeReason" minOccurs="0"/>
                <xs:element name="ECUseCardSettingsAuth" type="st:tFlag" minOccurs="0"/>
@@ -14383,6 +14552,60 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <xs:complexType name="AliasVerificationRp">
+        <xs:complexContent>
+            <xs:extension base="ns:HeaderRp">
+                <xs:all>
+                    <xs:element name="CreditorAmount" type="st:tAmount"/>
+                    <xs:element name="CreditorAmountCurrency" type="st:tISOCodeCurrency"/>
+                    <xs:element name="DebtorAmount" type="st:tAmount"/>
+                    <xs:element name="DebtorAmountCurrency" type="st:tISOCodeCurrency"/>
+                    <xs:element name="Amount" type="st:tAmount"/>
+                    <xs:element name="Currency" type="st:tISOCodeCurrency"/>
+                    <xs:element name="ExchangeRate" type="st:tAmount"/>
+                    <xs:element name="Fee" type="st:tAmount"/>
+                    <xs:element name="RecipientData" type="ns:PersonData"/>
+                </xs:all>
+            </xs:extension>    
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="AliasVerificationRq">
+        <xs:complexContent>
+            <xs:extension base="ns:HeaderRq">
+                <xs:all>
+                    <xs:element name="ServiceId" type="st:tAliasServiceId"/>
+                    <xs:element name="MemberType">
+                    <xs:simpleType>
+                          <xs:restriction base="xs:int">
+                             <xs:enumeration value="1"/> <!--International-->
+                          </xs:restriction>
+                       </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="MemberId" type="st:tAliasServiceMemberId"/>
+                    <xs:element name="Alias" type="st:tAlias"/>
+                    <xs:element name="CreditorAmount" type="st:tAmount" minOccurs="0"/>
+                    <xs:element name="DebtorAmount" type="st:tAmount" minOccurs="0"/>
+                    <xs:element name="Currency" type="st:tISOCodeCurrency"/>
+                    <xs:element name="PaymentDetailsCategoryCode"  minOccurs="0">
+                       <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                             <xs:maxLength value="10"/>
+                          </xs:restriction>
+                       </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="PaymentPurpose"  minOccurs="0">
+                       <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                             <xs:maxLength value="140"/>
+                          </xs:restriction>
+                       </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="InstName" type="st:tInstitutionName" minOccurs="0"/>
+                    <xs:element name="FromAccount" type="st:tAccountNumber"/>
+                </xs:all>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
     <xs:complexType name="GetServiceMembersListRp">
         <xs:complexContent>
             <xs:extension base="ns:HeaderRp">
@@ -14396,7 +14619,7 @@
                                             <xs:element name="Id" type="st:tAliasServiceMemberId"/>
                                             <xs:element name="Title" type="xs:string" minOccurs="0"/>
                                             <xs:element name="LatinTitle" type="xs:string" minOccurs="0"/>
-                                            <xs:element name="MemberType">
+                                            <xs:element name="ServiceMemberType">
                                                 <xs:simpleType>
                                                    <xs:annotation>
                                                       <xs:documentation>Member type in service</xs:documentation>
@@ -14410,6 +14633,28 @@
                                             </xs:element>
                                             <xs:element name="Capabilities" type="xs:long" minOccurs="0"/>
                                             <xs:element name="BIC" type="st:tInstitutionBIC" minOccurs="0"/>
+                                            <xs:element name="BICSwift" minOccurs="0">
+                                               <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                     <xs:maxLength value="11"/>
+                                                  </xs:restriction>
+                                               </xs:simpleType>
+                                            </xs:element>
+                                            <xs:element name="Country" type="st:tISOCodeCountry" minOccurs="0"/>
+                                            <xs:element name="Language" minOccurs="0">
+                                               <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                     <xs:maxLength value="2"/>
+                                                  </xs:restriction>
+                                               </xs:simpleType>
+                                            </xs:element>
+                                            <xs:element name="Currencies" minOccurs="0">
+                                               <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                     <xs:maxLength value="1000"/>
+                                                  </xs:restriction>
+                                               </xs:simpleType>
+                                            </xs:element>
                                         </xs:all>
                                     </xs:complexType>
                                 </xs:element>
@@ -14426,6 +14671,14 @@
                 <xs:all>
                     <xs:element name="ServiceId" type="st:tAliasServiceId"/>
                     <xs:element name="InstName" type="st:tInstitutionName" minOccurs="0"/>
+                    <xs:element name="MemberType" minOccurs="0">
+                    <xs:simpleType>
+                          <xs:restriction base="xs:int">
+                             <xs:enumeration value="0"/> <!--Domestic-->
+                             <xs:enumeration value="1"/> <!--International-->
+                          </xs:restriction>
+                       </xs:simpleType>
+                    </xs:element>
                     <xs:element name="Capabilities" type="xs:long" minOccurs="0"/>
                 </xs:all>
             </xs:extension>
@@ -14814,6 +15067,16 @@
                        </xs:simpleType>
                     </xs:element>
                     <xs:element name="TipValue" type="st:tPositiveAmount" minOccurs="0"/>
+                    <xs:element name="TaxType" minOccurs="0">
+                       <xs:simpleType>
+                          <xs:restriction base="xs:int">
+                             <xs:enumeration value="0"/> <!--not taxed-->
+                             <xs:enumeration value="1"/> <!--taxable, amount determined by merchant-->
+                             <xs:enumeration value="2"/> <!--taxable, amount determined by payer-->
+                          </xs:restriction>
+                       </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="TaxValue" type="st:tPositiveAmount" minOccurs="0"/>
                     <xs:element name="QRLanguageId" type="xs:int" minOccurs="0"/>
                     <xs:element name="MobileNumber" minOccurs="0">
                        <xs:simpleType>
@@ -14967,6 +15230,23 @@
                                           <xs:simpleType>
                                              <xs:restriction base="xs:string">
                                                 <xs:maxLength value="12"/>
+                                             </xs:restriction>
+                                          </xs:simpleType>
+                                       </xs:element>
+                                       <xs:element name="TipValue" type="st:tPositiveAmount" minOccurs="0"/>
+                                       <xs:element name="TaxType" minOccurs="0">
+                                          <xs:simpleType>
+                                             <xs:restriction base="xs:int">
+                                                <xs:enumeration value="0"/> <!--not taxed-->
+                                                <xs:enumeration value="1"/> <!--taxable, amount determined by merchant-->
+                                                <xs:enumeration value="2"/> <!--taxable, amount determined by payer-->
+                                             </xs:restriction>
+                                          </xs:simpleType>
+                                       </xs:element>
+                                       <xs:element name="UIP" minOccurs="0">
+                                          <xs:simpleType>
+                                             <xs:restriction base="xs:string">
+                                                <xs:maxLength value="15"/>
                                              </xs:restriction>
                                           </xs:simpleType>
                                        </xs:element>

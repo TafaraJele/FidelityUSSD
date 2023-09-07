@@ -1,0 +1,5 @@
+module_name=Financial Institution Maintenance Interface (FIMI) Protocol Specification
+CUSTOMER_DOC_LANG_MASK_ENG=*.wsdl;*.xsd;*(E).pdf
+CUSTOMER_DOC_LANG_MASK_RUS=*.wsdl;*.xsd;*(R).pdf
+CUSTOMER_DOC_LANG_MASK_IntENG=*.wsdl;*.xsd;CPGB/*(E).pdf
+CUSTOMER_DOC_LANG_MASK_IntRUS=*.wsdl;*.xsd;CPGB/*(R).pdf

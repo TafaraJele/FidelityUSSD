@@ -122,14 +122,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service References\FIMI\fimi.wsdl" />
-    <None Include="Service References\FIMI\fimi.xsd">
+    <None Include="Service References\FIMI\fimi1.wsdl" />
+    <None Include="Service References\FIMI\fimi1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\FIMI\fimi_types.xsd">
+    <None Include="Service References\FIMI\fimi_types1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\FIMI\fimi_userdefined.xsd">
+    <None Include="Service References\FIMI\fimi_userdefined1.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AcctCreditRp1.datasource">
@@ -138,13 +138,28 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AcctDebitRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddArrestRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddCardVendorRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddCMSAbonentRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddCumulativeLimitRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddEMVScriptRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddIssuerFeesForExternalTermRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddIssuerFeesForOwnTermRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddPersonCMSAbonentRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AddPersonConfidentialInfoRp1.datasource">
@@ -168,13 +183,22 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AdjustToVISARp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AliasVerificationRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AmExStoplistRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AssignKeyByTermRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ATMCommandRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AttachAutopaymentToCardRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AttachCardsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.AttachCardToTBCustomerRp1.datasource">
@@ -210,22 +234,46 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CardRiskControlRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CardTokenConfirmationRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeAcctBalancesRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeAlphaNumericPasswordRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeArrestRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeCMSAbonentRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeDeviceStatusRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeECMerchantStatusRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeECStatusRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeInvoiceStatusRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeKeyStatusRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangePasswordRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangePersonCMSAbonentRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangePersonConfidentialInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChangeStatusATMWithdrawalHoldRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChargebackReversalToMCRp1.datasource">
@@ -234,7 +282,13 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ChargebackToMCRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CheckAliasRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CheckPVV_PINOffsetRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CheckQRCodeStatusRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CNSCardConfigRp1.datasource">
@@ -246,6 +300,9 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ConfigureCMSProfileRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ConfigurePersonCMSProfileRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ConfirmCopyRequestToVISARp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -255,16 +312,40 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateAccountRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateAcctTokenRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateAliasRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateATMWithdrawalHoldRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateCardRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateCardTokenRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateFIMIClerkRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateIssuerObjectsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateLegalEntityRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreatePersonRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateRetailerRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateTBCustomerRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateTerminalRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.CreateVCardRp1.datasource">
@@ -279,10 +360,34 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteAccountRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteAliasRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteArrestRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteCard2AcctLinkRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteCardRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteCardTokenRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteCumulativeLimitRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteEMVScriptRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteIssuerFeesForExternalTermRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteIssuerFeesForOwnTermRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteLegalEntityRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DeleteOperatorSessionsRp1.datasource">
@@ -318,6 +423,9 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DetachCardFromTBCustomerRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DetachECMerchantRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.DetachForeignCardFromTBCustomerRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -336,10 +444,19 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.FileHeaderRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.FileTrailerRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GenerateDynamicPasswordRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GenerateQRCodeRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetAcct2CardLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetAcctCountersRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetAcctGroupLimitsRp1.datasource">
@@ -352,6 +469,15 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetAcctStatementRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetAcctTokensInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetAliasInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetArrestsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetATMActivityRp1.datasource">
@@ -381,13 +507,22 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetATMStatusRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetATMWithdrawalHoldRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetAvatarRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetBackOfficeInfoRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardAutopaymentHistoryRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardAutopaymentsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardCountersRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardInfoRp1.datasource">
@@ -396,10 +531,19 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardLimitsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardPARRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardProfileLimitsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardStatementRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardTokenNeedConfirmRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCardTokensInfoRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCMSArchiveRp1.datasource">
@@ -411,13 +555,28 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCMSCommandsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetConsumerPresentedQRCodeRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCorrespAcctInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCumulativeLimitsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetCVVRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetDDCAuditJournalRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetDeviceHistoryRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetDevicesListRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetECMerchantRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetEMVScriptsRp1.datasource">
@@ -441,6 +600,9 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetIAConfigurationRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetInvoiceRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetIssuerFeesForExternalTermRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -453,19 +615,40 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetIssuerHistoryRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetLegalEntityInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetNDCAuditJournalRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPersonCountersRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPersonGroupLimitsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPersonInfoRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPersonLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPersonsHierarchyRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPINRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPrefixInfoRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetPVV_PINOffsetRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetQRCodeInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetQRCodePayloadRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetRateGroupsRp1.datasource">
@@ -486,7 +669,25 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetRepositoryKeyRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetRetailerGroupLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetRetailerGroupSchemeLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetRetailerLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetRetailerListRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetRetailerSchemeLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetSchemeItemTypesRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetServiceMembersListRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.GetTBCustHistoryRp1.datasource">
@@ -522,6 +723,9 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.InitSessionRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.LocalAdjustmentRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.LocalChargebackReversalRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -543,10 +747,22 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.MCStoplistRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.MerchantRefundRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ModifyCorrespAcctRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ModifyQRCodeRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ModifyRateRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.NotificationQRSubscriptionRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.PingRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.POSCommandRp1.datasource">
@@ -558,10 +774,22 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.POSStateRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.PrepareProvisioningDataRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.PullQRRequestRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.PutEventRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ReassignCardTokensRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.RemoveCMSAbonentRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.RemovePersonCMSAbonentRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.RepresentToMCRp1.datasource">
@@ -588,10 +816,34 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetCard2AcctLinkRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetCardAbonentAdditionalInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetCardEMVATCRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetCardLimitsCounterRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetCumulativeLimitRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetPasswordRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetPersonAbonentAdditionalInfoRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetPersonBadDynAuthPwdTriesRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetPersonLimitCountersRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetRetailerGroupLimitCountersRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.ResetRetailerLimitCountersRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.Reset_IB_BadPINTriesRp1.datasource">
@@ -606,7 +858,13 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.RollBackRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SendMessageRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAccountOverdraftRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAccountPermissibleExcessRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAccountPersonRp1.datasource">
@@ -621,10 +879,31 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcct2CardStatusRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcctCountersRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcctLegalEntityRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcctLimitsRangesRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcctLimitsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcctProtectedAmountRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcctStatusRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAcctTokenStatusRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAliasPermissionRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAliasSubscriptionRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetAvatarRp1.datasource">
@@ -636,7 +915,16 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCard3DSecureAuthenticationRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardContactlessInterfaceRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardCountersRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardExpirationRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardLimitsRangesRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardLimitsRp1.datasource">
@@ -657,7 +945,16 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardStatusRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardTokenStatusRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardUdCVV2Rp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetCardUserFieldsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetDeviceAdditionalFieldsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetDynamicPVV_PINOffsetRp1.datasource">
@@ -672,6 +969,9 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetExtraAuthLevelRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetFIMIClerkActivityStatusRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetFIMIClerkPropertiesRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -684,13 +984,34 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetIssuerFeesForOwnTermRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetLegalEntityUserFieldsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetNeedChangePasswordRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetPersonCountersRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetPersonLimitsRangesRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetPersonLimitsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetPersonUserFieldsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetReissuedCardVariantRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetRetailerGroupLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetRetailerLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetTBLoginRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetTerminalAdditionalFieldsRp1.datasource">
@@ -702,6 +1023,9 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetTmpCardLimitsRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.SetTmpPersonLimitsRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.StandAloneReversalRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -711,13 +1035,31 @@
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.TextToVISARp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.TokenInquiryRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UnitCommandRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdateAliasRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdateCard2AcctLinkRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdateCardMetadataRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdateCardTokenRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdateCumulativeLimitRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdateEMVScriptRp1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdateLegalEntityRp1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\FIMI\Veneka.Module.TranzwareCompassPlusFIMI.FIMI.UpdatePersonRp1.datasource">

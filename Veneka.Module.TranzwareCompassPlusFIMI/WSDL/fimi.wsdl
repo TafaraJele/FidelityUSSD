@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--********************************************************************************************-->
-<!--*************************************** FIMI 16.23    **************************************-->
-<!--*************************************** TWO 5.3.43.1 ***************************************-->
+<!--*************************************** FIMI 16.25    **************************************-->
+<!--*************************************** TWO 5.3.45.1 ***************************************-->
 <!--********************************************************************************************-->
 <definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
              xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -1902,6 +1902,12 @@
     <message name="NotificationQRSubscriptionRp">
         <part name="Response" element="mess:NotificationQRSubscriptionRp"/>
     </message>
+    <message name="AliasVerificationRq">
+        <part name="Request" element="mess:AliasVerificationRq"/>
+    </message>
+    <message name="AliasVerificationRp">
+        <part name="Response" element="mess:AliasVerificationRp"/>
+    </message>
     <portType name="fimi">
         <operation name="ATMCommandRq">
             <input message="wsdl:ATMCommandRq"/>
@@ -2598,7 +2604,7 @@
             <output message="wsdl:AddTBTransferRp"/>
             <fault name="DeclineFault" message="wsdl:DeclineFault"/>
         </operation>
-        <operation name="DellTBTransferRq">
+        <operation name="DelTBTransferRq">
             <input message="wsdl:DelTBTransferRq"/>
             <output message="wsdl:DelTBTransferRp"/>
             <fault name="DeclineFault" message="wsdl:DeclineFault"/>
@@ -3471,6 +3477,11 @@
       <operation name="NotificationQRSubscriptionRq">
           <input message="wsdl:NotificationQRSubscriptionRq"/>
           <output message="wsdl:NotificationQRSubscriptionRp"/>
+          <fault name="DeclineFault" message="wsdl:DeclineFault"/>
+      </operation>
+      <operation name="AliasVerificationRq">
+          <input message="wsdl:AliasVerificationRq"/>
+          <output message="wsdl:AliasVerificationRp"/>
           <fault name="DeclineFault" message="wsdl:DeclineFault"/>
       </operation>
     </portType>
@@ -5144,8 +5155,8 @@
                 <soap12:fault name="DeclineFault" use="literal"/>
             </fault>
         </operation>
-        <operation name="DellTBTransferRq">
-            <soap12:operation soapAction="urn:\#DellTBTransferRq"/>
+        <operation name="DelTBTransferRq">
+            <soap12:operation soapAction="urn:\#DelTBTransferRq"/>
             <input>
                 <soap12:body use="literal"/>
             </input>
@@ -7234,6 +7245,18 @@
       </operation>
       <operation name="NotificationQRSubscriptionRq">
           <soap12:operation soapAction="urn:\#NotificationQRSubscriptionRq"/>
+          <input>
+              <soap12:body use="literal"/>
+          </input>
+          <output>
+              <soap12:body use="literal"/>
+          </output>
+          <fault name="DeclineFault">
+              <soap12:fault name="DeclineFault" use="literal"/>
+          </fault>
+      </operation>
+      <operation name="AliasVerificationRq">
+          <soap12:operation soapAction="urn:\#AliasVerificationRq"/>
           <input>
               <soap12:body use="literal"/>
           </input>

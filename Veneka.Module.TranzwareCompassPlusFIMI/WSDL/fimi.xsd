@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--********************************************************************************************-->
-<!--*************************************** FIMI 16.23    **************************************-->
-<!--*************************************** TWO 5.3.43.1 ***************************************-->
+<!--*************************************** FIMI 16.25    **************************************-->
+<!--*************************************** TWO 5.3.45.1 ***************************************-->
 <!--********************************************************************************************-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi_types.xsd"
@@ -4408,6 +4408,20 @@
         <xs:complexType>
             <xs:all>
                 <xs:element name="Request" type="fimi:NotificationQRSubscriptionRq" nillable="false"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AliasVerificationRp">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Response" type="fimi:AliasVerificationRp" nillable="false"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AliasVerificationRq">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Request" type="fimi:AliasVerificationRq" nillable="false"/>
             </xs:all>
         </xs:complexType>
     </xs:element>
