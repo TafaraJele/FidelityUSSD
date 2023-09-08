@@ -218,7 +218,7 @@ namespace Indigo.Controllers
 
         // GET: CardActivating
         [HttpPost]
-        [Route("api/get-card-status/account-number ")]
+        [Route("api/get-card-status/account-number")]
         public List<Status> CardStatus([FromBody] Veneka.Indigo.Abstractions.Models.AccountCardStatus cardParameters)
         {
             //initialising Response
